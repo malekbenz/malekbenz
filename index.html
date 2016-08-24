@@ -43,8 +43,13 @@ title: Malekbenz, Weblog
 
 		<div class="sidebar-text">
 			<h2>Text</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<ul class="posts">
+				{% for post in site.posts %}
+				<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+
+
 		</div>
 
 		<div class="sidebar-text">
