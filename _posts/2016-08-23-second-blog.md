@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Malekbenz, Blogpost , Launches Site"
+title: "Malekbenz, Second Blog , Site"
 date: 2016-07-29
 ---
 
