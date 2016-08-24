@@ -24,8 +24,8 @@ title: Malekbenz, Weblog
 
 			{% for post in site.posts %}
 			<li><span>{{ post.date | date_to_string }}</span> » 
-				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} And  {{post.auteur}}</a>
-
+				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} And  {{post.author}}</a>
+							{{ post.tags | array_to_sentence_string }}
 			</li>
 			{% endfor %}
 		</ul>
