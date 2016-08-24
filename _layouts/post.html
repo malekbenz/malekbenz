@@ -3,13 +3,12 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }}</p>
-<h2>Posts</h2>
 
 <ul class="post-by">
-  <li>By:<span>{{author}}</span></li>
-  <li>Category:<span>{{category}}</span></li>
-  <li>tags:<span>{{tags}}</span></li>
-  <li>Time:<span>{{date}}</span></li>
+  <li>By:<span>{{page.author}}</span></li>
+  <li>Category:<span>{{page.category}}</span></li>
+  <li>tags:<span>{{page.tags}}</span></li>
+  <li>Time:<span>{{page.date}}</span></li>
 </ul>
     
 <div class="post">
