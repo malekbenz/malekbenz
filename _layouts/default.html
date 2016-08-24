@@ -41,39 +41,7 @@
 </head>
 
 <body>
-	<div class="section sTop">
-		<div class="inner-container">
-
-			<div class="container">
-
-				<div class="section-heared">
-					<h1>Malekbenz</h1>
-					<span></span>
-
-					<h6>Hi, I'm MalekBenz. I author this blog, I'm FullStack Developer, create courses & love learning, writing, teaching technology.
-						(Javascript, C#, ASP.NET , NodeJS, SQL Server, DELPHI )</h6>
-
-					<ul class="inner-link">
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/cv">CV</a></li>
-						<li><a href="/blog">Blog</a></li>
-
-						<!--<li><a href="#">Home</a></li><span>/</span>
-						<li><a href="#">Blog</a></li>-->
-					</ul>
-
-				</div>
-				<!-- /section-heared -->
-
-			</div>
-
-		</div>
-		<!-- /top-container -->
-
-	</div>
-	<!-- /sTop -->
-
+{% include header.html %}
 	<div class="container">
 		<div class="row">
 
@@ -82,12 +50,8 @@
 		</div>
 	</div>
 	<!-- /.container -->
-	<footer>
-		<ul>
-			<li><a href="mailto:malekbenz@gmail.com">email</a></li>
-			<li><a href="https://github.com/malekbenz">github.com/malekbenz</a></li>
-		</ul>
-	</footer>
+	
+	{% include footer.html %}
 </body>
 
 </html>
