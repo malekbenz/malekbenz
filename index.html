@@ -20,31 +20,13 @@ title: Malekbenz, Weblog
 			<li>Time:<span>Jan 04 2014</span></li>
 		</ul>
 
-			{% assign index = true %}
-			<div itemscope itemtype="http://schema.org/Blog">
-			{% for post in paginator.posts %}
-			{% unless post.redirect %}
-			{% assign content = post.content %}
-				<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-					{% include article.html %}
-				</article>
-			{% endunless %}
+		<ul class="posts">
+
+			{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 			{% endfor %}
-			</div>
-			<nav id="pagenavi">
-				{% if paginator.previous_page %}
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" class="prev">Prev</a>
-				{% endif %}
-				{% if paginator.next_page %}
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
-				{% endif %}
-				<div class="center"><a href="/archive">Blog Archives</a></div>
-			</nav>
-
+		</ul>
 	</div>
-
-
-
 
 </div>
 
