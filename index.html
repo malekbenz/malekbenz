@@ -11,7 +11,6 @@ title: Malekbenz, Weblog
 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 	<div class="section-post">
 		<!--<img src="img/img8.jpg" alt="post-1" />-->
-
 		<h2>Posts</h2>
 		<ul class="post-by">
 			<li>By:<span>Jewel</span></li>
@@ -21,13 +20,22 @@ title: Malekbenz, Weblog
 		</ul>
 
 		<ul class="posts">
+			{% for post in paginator.posts %}
+				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+				<p class="author">
+					<span class="date">{{ post.date }}</span>
+				</p>
+				<div class="content">
+					{{ post.content }}
+				</div>
+			{% endfor %}
 
-			{% for post in site.posts %}
+			<!--{% for post in site.posts %}
 			<li><span>{{ post.date | date_to_string }}</span> » 
 				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} And  {{post.author}}</a>
 							{{ post.tags | array_to_sentence_string }}
 			</li>
-			{% endfor %}
+			{% endfor %}-->
 		</ul>
 	</div>
 
