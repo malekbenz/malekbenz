@@ -3,7 +3,7 @@ layout: post
 title: "03.Third,  Blog , Site"
 date: 2016-03-01
 author: "Malekbenz"
-category: "javascript"
+category: javascript
 tags : "HTML, CSS, Javascript"
 ---
 

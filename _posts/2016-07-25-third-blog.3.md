@@ -3,7 +3,7 @@ layout: post
 title: "06. Hi, Last Blog , Site"
 date: 2016-07-25
 author: "Malekbenz"
-category: "javascript"
+category: ASP.NET
 tags : "HTML, CSS, Javascript"
 ---
 
