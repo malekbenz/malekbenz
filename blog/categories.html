@@ -5,11 +5,11 @@ title: Categories
 
 <div class="tags-expo">
   <hr/>
-  <h1>Blogs by category</h1>
-  <div class="tags-expo-section">
+  <h1>CATEGORIES</h1>
+  <div >
     {% for tag in site.categories %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
+    <ul >
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
