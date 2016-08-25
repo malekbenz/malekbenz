@@ -1,12 +1,23 @@
 ---
 layout: default
-title: Malekbenz, Weblog
+title: Categories
 ---
 
-<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-	{% include posts.html %}
-</div>
-
-<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-	{% include sidebar.html %}
+<div class="tags-expo">
+  <hr/>
+  <div >
+    {% for tag in site.categories %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <ul >
+      {% for post in tag[1] %}
+        <a  href="{{ site.baseurl }}{{ post.url }}">
+      <li>
+        {{ post.title }}
+      <small >{{ post.date | date_to_string }}</small>
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
 </div>
