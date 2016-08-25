@@ -3,8 +3,8 @@ layout: post
 title: "02.Second, Blog , Site"
 date: 2016-02-01
 author: "Malekbenz"
-category: javascript
-tags : "HTML, CSS, Javascript"
+category: NodeJS
+tags : "HTML NodeJS Javascript"
 ---
 
 Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
