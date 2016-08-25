@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Malekbenz, Second Blog , Site"
-date: 2016-07-29
+title: "Second, Blog , Site"
+date: 2016-02-01
 author: "Malekbenz"
 category: "javascript"
 tags : "HTML, CSS, Javascript"

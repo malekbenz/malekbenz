@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Malekbenz, First Blog , For test"
-date: 2016-07-29
+title: "First Blog ,Janvier For test"
+date: 2016-01-01
 author: "Malekbenz"
 category: "javascript"
 tags : "HTML, CSS, Javascript"

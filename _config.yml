@@ -18,5 +18,10 @@ github_repo_url: https://github.com/malekbenz
 #
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
 paginate_path: "page/:num"
 category_dir: categories
+
+paginate: 5
+exclude: ["README.md"]
+
