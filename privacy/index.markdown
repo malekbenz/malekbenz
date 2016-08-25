@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Privacy Policy"
 date: 2004-09-01 -0800
 comments: false
