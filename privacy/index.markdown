@@ -1,34 +1,49 @@
-layout	title	date	comments	disqus_identifier	categories	sharing
-page
-Privacy Policy
-2004-09-01 -0800
-false
-1095
-false
-What? Why Have A Privacy Policy?
+---
+layout: page
+title: "Privacy Policy"
+date: 2004-09-01 -0800
+comments: false
+disqus_identifier: 1095
+categories: []
+sharing: false
+---
 
-Well, you wouldn't want Haacked.com sharing all sorts of deeply personal information about you, would you? Well of course not. Besides, some affiliate programs require a privacy policy. So here you go, a privacy policy.
+## What? Why Have A Privacy Policy?
 
-Besides Your Rear, What Does The Policy Cover?
+Well, you wouldn't want Haacked.com sharing all sorts of deeply
+personal information about you, would you? Well of course not. Besides,
+some affiliate programs require a privacy policy. So here you go, a
+privacy policy.
 
-This privacy policy covers how Haacked.com treats personal information it receives from visitors. It gives the average reader the assurance that his or her personal information is safe from Big Brother and other prying eyes.
+## Besides Your Rear, What Does The Policy Cover?
 
-How Do You Guarantee Privacy?
+This privacy policy covers how Haacked.com treats personal information
+it receives from visitors. It gives the average reader the assurance
+that his or her personal information is safe from Big Brother and other
+prying eyes.
 
-As in life, there are no perfect guarantees. However, as Haacked.com doesn't require registration, it really doesn't have much information to share in the first place.
+## How Do You Guarantee Privacy?
 
-What Information Do You Collect?
+As in life, there are no perfect guarantees. However, as Haacked.com
+doesn't require registration, it really doesn't have much information to
+share in the first place.
 
-This site doesn't itself collect data. It's a static site hosted on GitHub Pages. However, I do use Google Analytics so it's worth looking at Google Analytic's privacy policy. I also use Disqus for comments, so take a look at the Disqus's privacy policy.
+## What Information Do You Collect?
 
-What About Cookies?
+This site doesn't itself collect data. It's a static site hosted on GitHub Pages.
+However, I do use Google Analytics so it's worth looking at [Google Analytic's privacy policy](http://www.google.com/analytics/learn/privacy.html). 
+I also use Disqus for comments, so take a look at the [Disqus's privacy policy](http://help.disqus.com/customer/portal/articles/466259-privacy-policy).
+
+
+## What About Cookies?
 
 See the previous answer about Disqus and Google Analytics.
 
-So Who Do You Share This Information With?
+## So Who Do You Share This Information With?
 
 Absolutely nobody, other than occasionally posting aggregate stats about my blog on occasion.
 
-Even If I Offered You 10 Million Dollars?
+## Even If I Offered You 10 Million Dollars?
+Let's talk off-line in private.... er... I mean NO! Absolutely Not.
+Haacked.com doesn't gather any information worth selling.
 
-Let's talk off-line in private.... er... I mean NO! Absolutely Not. Haacked.com doesn't gather any information worth selling.
