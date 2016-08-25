@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hi, Last Blog , Site"
+title: "06. Hi, Last Blog , Site"
 date: 2016-07-25
 author: "Malekbenz"
 category: "javascript"
