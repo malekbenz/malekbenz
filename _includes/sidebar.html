@@ -31,6 +31,21 @@
 		<h2>Categories</h2>
 
 		<ul class="category">
+			{% for post in site.categories %}
+			<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+			<li><a href="#">JavaScript <span class="count">100</span></a></li>
+
+			{% endfor %}
+			{% for tag in site.categories %}
+			<li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }} <span class="count">100</span></a></li>
+			{% endfor %}
+			
+			<li><a href="#">JavaScript <span class="count">100</span></a></li>
+			<li><a href="#">ASP.NET <span class="count">50</span></a></li>
+			<li><a href="#">SQL SERVER <span class="count">20</span></a></li>
+		</ul>
+
+		<ul class="category">
 			<li><a href="#">JavaScript <span class="count">100</span></a></li>
 			<li><a href="#">ASP.NET <span class="count">50</span></a></li>
 			<li><a href="#">SQL SERVER <span class="count">20</span></a></li>
@@ -41,6 +56,10 @@
 		<h2>Tags</h2>
 
 		<ul class="tags">
+				{% for tag in site.tags %}
+				<li><a href="#{{ tag[0] | slugify }}"  class="tg-btn">{{ tag[0] }}</a></li>
+				{% endfor %}
+			
 			<li><a href="#" class="tg-btn">JavaScript </a></li>
 			<li><a href="#" class="tg-btn">ASP.NET</a></li>
 			<li><a href="#" class="tg-btn">SQL SERVER</a></li>
