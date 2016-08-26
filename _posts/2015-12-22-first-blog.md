@@ -37,7 +37,7 @@ Create new file 'app.js' and type the code above:
 ```javascript
 console.log("Hello World: ");
 ```
-run the application 
+run the application: 
 ```javascript
 node app.js
 ```
