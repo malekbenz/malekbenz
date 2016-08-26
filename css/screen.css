@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'FontAwesome';
     src: url("/font/fontawesome-webfont.eot");
     src: url("/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),url("/font/fontawesome-webfont.woff") format("woff"),url("/font/fontawesome-webfont.ttf") format("truetype"),url("/font/fontawesome-webfont.svgz#FontAwesomeRegular") format("svg"),url("/font/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
@@ -257,7 +257,7 @@ a {
 }
 @media screen and (max-width: 400px) { 
     #pagenavi .center { display: none }
-}
+}*/
 article {
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #fff;
@@ -396,6 +396,7 @@ article .entry-content .video-container embed {
     height: 100%;
     margin-top: 0;
 }
+
 .share {
     padding: 15px 0;
     border-top: 1px solid #fff;
