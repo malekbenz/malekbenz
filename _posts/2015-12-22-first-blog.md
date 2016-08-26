@@ -21,13 +21,20 @@ click to install nodejs.
 
 ![click next](/images/nodejs/nodejsfs01.png)
 
+click next.
+
 ![Next](/images/nodejs/nodejsfs02.png)
+
+click install.
 
 ![Install](/images/nodejs/nodejsfs03.png)
 
+click Finish.
+
 ![Finish](/images/nodejs/nodejsfs04.png)
 
-Add node to the system path variable  ![Path](/images/nodejs/nodejsfs05.png).
+
+Add node to the system path variable.  ![Path](/images/nodejs/nodejsfs05.png).
 To confim that if thing is ok lunch the (node js command line) ![CMD](/images/nodejs/nodejsfs06.01.png). and type 'node --version' ![CMD](/images/nodejs/nodejsfs06.png). 
 
 ## Work with Nodejs 
@@ -37,7 +44,10 @@ Create new file 'app.js' and type the code above:
 ```javascript
 console.log("Hello World: ");
 ```
+
 run the application: 
+
+
 ```javascript
 node app.js
 ```
