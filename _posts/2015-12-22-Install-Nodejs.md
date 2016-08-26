@@ -14,7 +14,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js 
 ## How to install Nodejs ?
 To install nodejs go to [Nodejs Official website](https://nodejs.org/) and download Nodejs.
 
-![Node js website](/images/nodejs/nodejswebsite.png){:height="450px" width="450px"}
+![Node js website](/images/nodejs/nodejswebsite.png){:height="450px" width="550px"}
 
 
 click to install nodejs.
