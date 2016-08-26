@@ -35,7 +35,17 @@ click Finish.
 
 
 Add node to the system path variable.  ![Path](/images/nodejs/nodejsfs05.png).
-To confim that if thing is ok lunch the (node js command line) ![CMD](/images/nodejs/nodejsfs06.01.png). and type 'node --version' ![CMD](/images/nodejs/nodejsfs06.png). 
+To confim that if thing is ok lunch the (node js command line) 
+
+![CMD](/images/nodejs/nodejsfs06.01.gif) 
+
+and type 'node --version'  
+
+```javascript
+node --version
+```
+
+![CMD](/images/nodejs/nodejsfs06.png)
 
 ## Work with Nodejs 
     
