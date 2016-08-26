@@ -14,30 +14,34 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js 
 ## How to install Nodejs ?
 To install nodejs go to [Nodejs Official website](https://nodejs.org/) and download Nodejs.
 
-![Node js website](/images/nodejs/nodejswebsite.png)
+![Node js website](/images/nodejs/nodejswebsite.png){:height="300px" width="300px"}
 
 
 click to install nodejs.
 
-![click next](/images/nodejs/nodejsfs01.png)
+![click next](/images/nodejs/nodejsfs01.png){:height="300px" width="300px"}
 
 click next.
 
-![Next](/images/nodejs/nodejsfs02.png)
+![Next](/images/nodejs/nodejsfs02.png){:height="300px" width="300px"}
 
 click install.
 
-![Install](/images/nodejs/nodejsfs03.png)
+![Install](/images/nodejs/nodejsfs03.png){:height="300px" width="300px"}
 
 click Finish.
 
-![Finish](/images/nodejs/nodejsfs04.png)
+![Finish](/images/nodejs/nodejsfs04.png){:height="300px" width="300px"}
 
 
-Add node to the system path variable.  ![Path](/images/nodejs/nodejsfs05.png).
+Add node to the system path variable.  
+
+![Path](/images/nodejs/nodejsfs05.png){:height="300px" width="300px"}
+
+
 To confim that if thing is ok lunch the (node js command line) 
 
-![CMD](/images/nodejs/nodejsfs06.01.gif) 
+![CMD](/images/nodejs/nodejsfs06.01.gif){:height="300px" width="300px"} 
 
 and type 'node --version'  
 
@@ -45,7 +49,7 @@ and type 'node --version'
 node --version
 ```
 
-![CMD](/images/nodejs/nodejsfs06.png)
+![CMD](/images/nodejs/nodejsfs06.png){:height="300px" width="300px"}
 
 ## Work with Nodejs 
     
