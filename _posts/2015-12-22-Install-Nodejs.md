@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install Nodejs"
-date: 2016-01-01
+date: 2015-12-22
 author: Malekbenz
 category: NodeJs
 tags : CSS Javascript
@@ -14,34 +14,34 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js 
 ## How to install Nodejs ?
 To install nodejs go to [Nodejs Official website](https://nodejs.org/) and download Nodejs.
 
-![Node js website](/images/nodejs/nodejswebsite.png){:height="300px" width="300px"}
+![Node js website](/images/nodejs/nodejswebsite.png){:height="450px" width="450px"}
 
 
 click to install nodejs.
 
-![click next](/images/nodejs/nodejsfs01.png){:height="300px" width="300px"}
+![click next](/images/nodejs/nodejsfs01.png){:height="450px" width="450px"}
 
 click next.
 
-![Next](/images/nodejs/nodejsfs02.png){:height="300px" width="300px"}
+![Next](/images/nodejs/nodejsfs02.png){:height="450px" width="450px"}
 
 click install.
 
-![Install](/images/nodejs/nodejsfs03.png){:height="300px" width="300px"}
+![Install](/images/nodejs/nodejsfs03.png){:height="450px" width="450px"}
 
 click Finish.
 
-![Finish](/images/nodejs/nodejsfs04.png){:height="300px" width="300px"}
+![Finish](/images/nodejs/nodejsfs04.png){:height="450px" width="450px"}
 
 
 Add node to the system path variable.  
 
-![Path](/images/nodejs/nodejsfs05.png){:height="300px" width="300px"}
+![Path](/images/nodejs/nodejsfs05.png){:height="450px" width="450px"}
 
 
 To confim that if thing is ok lunch the (node js command line) 
 
-![CMD](/images/nodejs/nodejsfs06.01.gif){:height="300px" width="300px"} 
+![CMD](/images/nodejs/nodejsfs06.01.gif){:height="450px" width="450px"} 
 
 and type 'node --version'  
 
@@ -49,7 +49,7 @@ and type 'node --version'
 node --version
 ```
 
-![CMD](/images/nodejs/nodejsfs06.png){:height="300px" width="300px"}
+![CMD](/images/nodejs/nodejsfs06.png){:height="450px" width="450px"}
 
 ## Work with Nodejs 
     
