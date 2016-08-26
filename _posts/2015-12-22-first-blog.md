@@ -6,13 +6,15 @@ author: Malekbenz
 category: NodeJs
 tags : CSS Javascript
 ---
-today We are going to install Nodejs and build a helloWorld application
+Today We are going to install Nodejs and build a helloWorld application
 ## What is Nodejs ? 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
 ## How to install Nodejs ?
-To install nodejs go to [Nodejs Official website] (https://nodejs.org/) and download Nodejs.
+To install nodejs go to [Nodejs Official website](https://nodejs.org/) and download Nodejs.
 ![Node js website](/images/nodejs/nodejswebsite.png)
+<img src="/images/nodejs/nodejswebsite.png" />
+
 click to install nodejs, 
 ![click next](/images/nodejs/nodejsfs01.png)
 ![next](/images/nodejs/nodejsfs02.png)
