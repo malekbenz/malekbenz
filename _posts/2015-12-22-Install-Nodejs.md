@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Nodejs "
+title: "Install Nodejs"
 date: 2016-01-01
 author: Malekbenz
 category: NodeJs
