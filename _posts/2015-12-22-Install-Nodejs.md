@@ -68,6 +68,6 @@ run the application:
 ```javascript
 node app.js
 ```
-Congratulation! your first application is working.
+** Congratulation! your first application is working.
 
 
