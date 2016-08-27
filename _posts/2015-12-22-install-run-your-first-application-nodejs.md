@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Nodejs & run your first application"
+title: "Install & run your first application Nodejs"
 date: 2015-12-22
 author: Malekbenz
 category: NodeJs
