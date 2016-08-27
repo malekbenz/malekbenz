@@ -42,7 +42,7 @@ Add node to the system path variable.
 ![Path](/images/nodejs/nodejsfs05.png){:class="img-responsive" :max-width="80%"}
 
 
-To confim that if thing is ok lunch the (node js command line) 
+To confim that everything is ok lunch the (node js command line) 
 
 ![CMD](/images/nodejs/nodejsfs06.01.gif) 
 
