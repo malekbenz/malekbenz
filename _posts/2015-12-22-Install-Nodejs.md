@@ -7,9 +7,10 @@ category: NodeJs
 tags : CSS Javascript
 ---
 
-Today We are going to install Nodejs and build a helloWorld application.
+Today We are going to install Nodejs and build a HelloWorld application.
 
 ## What is Nodejs ? 
+
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
 ## How to install Nodejs ?
