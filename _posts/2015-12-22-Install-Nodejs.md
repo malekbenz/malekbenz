@@ -53,7 +53,6 @@ and type 'node --version'
 node --version
 ```
 
-![CMD](/images/nodejs/nodejsfs06.png)
 
 ## Work with Nodejs 
     
@@ -63,13 +62,15 @@ Create new file 'app.js' and type the code above:
 console.log("Hello World: ");
 ```
 
-run the application: 
+![CMD](/images/nodejs/nodejsfs06.png)
 
+Run the application: 
 
 ```javascript
 node app.js
 ```
 >
 > ## **Congratulation! your first application is working**
+>
 
 
