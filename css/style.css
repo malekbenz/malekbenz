@@ -12,6 +12,13 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+.entry-content p {
+    
+    font: 400 20px/1.5 'Source Sans Pro',Open Sans,Roboto,'San Francisco',Helvetica,Arial,sans-serif;
+    /*color: #333;
+    margin: 0;
+    background-color: #fff;*/
+}
 /* button search */
 
 
