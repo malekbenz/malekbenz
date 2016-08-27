@@ -39,7 +39,7 @@ click Finish.
 Add node to the system path variable.  
 
 
-![Path](/images/nodejs/nodejsfs05.png){:class="img-responsive"}
+![Path](/images/nodejs/nodejsfs05.png){:class="img-responsive" :max-width="80%"}
 
 
 To confim that if thing is ok lunch the (node js command line) 
