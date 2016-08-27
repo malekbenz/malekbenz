@@ -13,7 +13,7 @@ Today We are going to install Nodejs and build our first application, of course 
 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
-it means applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+It means applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
 
 ## How to install Nodejs ?
 To install nodejs go to [Nodejs Official website](https://nodejs.org/) and download Nodejs.
@@ -45,11 +45,11 @@ Add node to the system path variable.
 ![Path](/images/nodejs/nodejsfs05.png){:class="img-responsive" :max-width="80%"}
 
 
-To confim that everything is ok lunch the (node js command line) 
+To confim that everything is ok, lunch the (node.js command line) and type 'node --version'   
 
 ![CMD](/images/nodejs/nodejsfs06.01.png) 
 
-and type 'node --version'  
+
 
 ```javascript
 node --version
