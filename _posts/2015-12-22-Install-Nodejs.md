@@ -64,11 +64,13 @@ console.log("Hello World: ");
 
 ![CMD](/images/nodejs/nodejsfs06.png)
 
+
 Run the application: 
 
 ```javascript
 node app.js
 ```
+
 >
 > ## **Congratulation! your first application is working**
 >
