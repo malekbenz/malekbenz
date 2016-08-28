@@ -4,7 +4,7 @@ title: "Install & run your first application Nodejs"
 date: 2015-12-22
 author: Malekbenz
 category: NodeJs
-tags : CSS Javascript
+tags : CSS Javascript NodeJs
 ---
 
 Today We are going to install Nodejs and build our first application, of course a HelloWorld application.
@@ -21,7 +21,7 @@ To install nodejs go to [Nodejs Official website](https://nodejs.org/) and downl
 ![Node js website](/images/nodejs/nodejswebsite.png){:class="img-responsive" :max-width="80%"}
 
 
-after that lunch the installer.
+after that launch the installer.
 
 ![click next](/images/nodejs/nodejsfs01.png)
 
@@ -45,7 +45,7 @@ Add node to the system path variable.
 ![Path](/images/nodejs/nodejsfs05.png){:class="img-responsive" :max-width="80%"}
 
 
-To confim that everything is ok, lunch the (node.js command line) and type 'node --version'   
+To confim that everything is ok, launch the (node.js command line) and type 'node --version'   
 
 ![CMD](/images/nodejs/nodejsfs06.01.png) 
 
