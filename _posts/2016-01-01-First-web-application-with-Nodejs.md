@@ -54,8 +54,7 @@ Run the application:
 
 ![vs code](/images/helloweb/launch.png){:class="img-responsive" :max-width="80%"}
 
-launch your browser and type `http://localhost:3000/`
-
+launch your browser and type [First web app](http://localhost:3000/)
 ![vs code](/images/helloweb/web.png){:class="img-responsive" :max-width="80%"}
 
 
