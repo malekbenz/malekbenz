@@ -22,7 +22,7 @@ and within a folder create a file 'app.js'
 
 ![CMD](/images/helloweb/cmd.png){:class="img-responsive" :max-width="80%"}
 
-We use Visual studio code you can use you'r editor of choice 
+We use Visual studio code you can use your editor of choice 
 
 ```javascript
     const http = require('http');
@@ -52,12 +52,15 @@ Run the application:
     node app.js
 ```
 
+![vs code](/images/helloweb/launch.png){:class="img-responsive" :max-width="80%"}
+
+launch your browser and type `http://localhost:3000/`
+
 ![vs code](/images/helloweb/web.png){:class="img-responsive" :max-width="80%"}
 
-launch your browser of choice and type 'http://localhost:3000/'
 
 >
-> ## **Congratulation! your first web application is worm4king**
+> ## **Our First web application is working**
 >
 
 
