@@ -20,7 +20,7 @@ mkdir  HelloWeb
 and within a folder create a file 'app.js'
 
 
-![CMD](/images/HelloWeb/cmd.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/helloweb/cmd.png){:class="img-responsive" :max-width="80%"}
 
 We use Visual studio code you can use you'r editor of choice 
 
@@ -41,7 +41,7 @@ We use Visual studio code you can use you'r editor of choice
     });
 ```
 
-![vs code](/images/HelloWeb/vscode.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/helloweb/vscode.png){:class="img-responsive" :max-width="80%"}
 
 
 ## Run the application 
@@ -52,7 +52,7 @@ Run the application:
     node app.js
 ```
 
-![vs code](/images/HelloWeb/web.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/helloweb/web.png){:class="img-responsive" :max-width="80%"}
 
 launch your browser of choice and type 'http://localhost:3000/'
 
