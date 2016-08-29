@@ -13,24 +13,20 @@ layout: default
   <artcicle class="section-post">
     {{ content }}
   </artcicle>
-  {% if page.comments %}
+{% if page.comments %}
     <h1 class="title">Comments</h1>
-    <hr>
-    <!--{% include post/disqus.html %}-->
-            
-      <div id="disqus_thread" aria-live="polite">
-        {% include post/disqus_thread.html %}
-      </div>
-
-
+ 
+      {% include post/disqus_thread.html %}
+  
             <script>
-              (function() { // DON'T EDIT BELOW THIS LINE
-                  var d = document, s = d.createElement('script');
-                 <h1 class="title">Comments</h1>
-                  (d.head || d.body).appendChild(s);
+             (function() { // DON'T EDIT BELOW THIS LINE
+                 var d = document, s = d.createElement('script');
+                 s.src = '//blog-malekbenz-com.disqus.com/embed.js';
+                 s.setAttribute('data-timestamp', +new Date());
+                 (d.head || d.body).appendChild(s);
               })();
             </script>
-  {% endif %}
+    {% endif %}
 
 </div>
 
