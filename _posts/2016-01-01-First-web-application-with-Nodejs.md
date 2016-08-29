@@ -3,6 +3,7 @@ layout: post
 title: "First web application with Nodejs"
 date: 2016-01-01
 author: Malekbenz
+comments: true
 category: NodeJs
 tags : CSS Javascript NodeJs
 ---

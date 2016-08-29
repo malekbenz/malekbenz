@@ -3,6 +3,7 @@ layout: post
 title: "Install & run your first application Nodejs"
 date: 2015-12-22
 author: Malekbenz
+comments: true
 category: NodeJs
 tags : CSS Javascript NodeJs
 ---

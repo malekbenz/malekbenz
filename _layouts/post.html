@@ -13,6 +13,8 @@ layout: default
   <artcicle class="section-post">
     {{ content }}
   </artcicle>
-  
+  {% if page.comments %}
+  <h3> Comments </h3>
+  {% endif %}
 </div>
 
