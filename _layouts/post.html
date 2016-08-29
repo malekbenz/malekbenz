@@ -16,9 +16,20 @@ layout: default
   {% if page.comments %}
     <h1 class="title">Comments</h1>
     <hr>
-    
-    {% include post/disqus.html %}
+    <!--{% include post/disqus.html %}-->
+            
+      <div id="disqus_thread" aria-live="polite">
+        {% include post/disqus_thread.html %}
+      </div>
 
+
+            <script>
+              (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                 <h1 class="title">Comments</h1>
+                  (d.head || d.body).appendChild(s);
+              })();
+            </script>
   {% endif %}
 
 </div>
