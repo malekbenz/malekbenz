@@ -16,7 +16,7 @@ In this post we are going to build our first web application, a HelloWeb applica
 Create a folder 'HelloWeb'
 
 ```javascript
-mkdir  HelloWeb
+$ mkdir  HelloWeb
 ```
 and within a folder create a file 'app.js'
 
@@ -34,7 +34,7 @@ We use Visual studio code you can use your editor of choice
     const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
+    res.end('Hello World!\n');
     });
 
     server.listen(port, hostname, () => {
@@ -47,20 +47,23 @@ We use Visual studio code you can use your editor of choice
 
 ## Run the application 
     
-Run the application: 
+Run the application  with the following command: 
 
 ```javascript
-    node app.js
+   $ node app.js
 ```
+The app starts a server and listens on port 3000 for connections. The app responds with “Hello World!”.
 
 ![vs code](/images/helloweb/launch.png){:class="img-responsive" :max-width="80%"}
 
-launch your browser and type [http://localhost:3000/](http://localhost:3000/)
+load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
+
+
 ![vs code](/images/helloweb/web.png){:class="img-responsive" :max-width="80%"}
 
 
 >
-> ## **Our First web application is working**
+> ## **your First web application with Nodejs is working**
 >
 
 
