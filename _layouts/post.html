@@ -15,7 +15,8 @@ layout: default
   </artcicle>
   {% if page.comments %}
   <h1 class="title">Comments</h1>
-  <div id="disqus_thread"></div>
+    {% include post/disqus_thread.html %}
+
           <script>
             (function() { // DON'T EDIT BELOW THIS LINE
                 var d = document, s = d.createElement('script');
@@ -24,9 +25,7 @@ layout: default
                 (d.head || d.body).appendChild(s);
             })();
           </script>
-         <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-
-  
   {% endif %}
+  
 </div>
 
