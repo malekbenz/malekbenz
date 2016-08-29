@@ -12,7 +12,7 @@ tags : CSS Javascript NodeJs ExpressJs
     
 Express  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-Express js is great for creating web application and web API .
+Express js is great for creating web application and web API.
 
 so let's build our first web application with express , `HelloExpress` application. if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
@@ -34,7 +34,6 @@ $ npm install express
 ```
 
 ## HelloExpress example
-
 
 add the following code to app.js file:
 
@@ -80,5 +79,3 @@ load [http://localhost:3000/](http://localhost:3000/) in a browser to see the ou
 >
 > ## **Our First Express application is working**
 >
-
-
