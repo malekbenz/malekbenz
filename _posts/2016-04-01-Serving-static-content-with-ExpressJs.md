@@ -109,11 +109,12 @@ Now our http server is working, let's add some functionalities  like caching :
 Modify you app.js file :   
 ```javascript
     app.use(express.static(__dirname + '/www'), { maxAge: 3600000 });
-
 ```
-`max-age property of the Cache-Control header is in milliseconds (3600000 =1 hour) `
+
 
 ![vs code](/images/helloexpress/vscodestaticAge.png){:class="img-responsive" :max-width="80%"}
+
+`max-age property of the Cache-Control header is in milliseconds (3600000 =1 hour) `
 
 Save the file and run th application again 
 
