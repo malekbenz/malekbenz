@@ -5,7 +5,8 @@ date: 2016-03-01
 author: Malekbenz
 comments: true
 category: NodeJs
-tags : Javascript NodeJs ExpressJs
+tags : [Javascript  NodeJs webapi Express]
+categories: [Javascript  NodeJs webapi Express]
 ---
 
 This post is an introduction to build a simple `WEB API`, we'll only cover  get request,  (post, delete, put will be covered in an other post). 
