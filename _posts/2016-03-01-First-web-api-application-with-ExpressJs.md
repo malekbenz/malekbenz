@@ -86,5 +86,5 @@ load [http://localhost:3000/](http://localhost:3000/persons) in a browser to see
 
 
 >
-> ## **Our First Express application is working**
+> ## **The application is working**
 >
