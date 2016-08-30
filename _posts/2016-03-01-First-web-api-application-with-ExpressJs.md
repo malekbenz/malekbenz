@@ -5,10 +5,10 @@ date: 2016-03-01
 author: Malekbenz
 comments: true
 category: NodeJs
-tags : CSS Javascript NodeJs ExpressJs
+tags : Javascript NodeJs ExpressJs
 ---
 
-This post is an introduction to build a simple api, we'll only cover  get request,  (post, delete, put will be covered in an other post). 
+This post is an introduction to build a simple `WEB API`, we'll only cover  get request,  (post, delete, put will be covered in an other post). 
 
     
 Express js is great for creating web application and web API.
@@ -18,11 +18,11 @@ We're going to build and run our first web api application with express , `Hello
 ## Install express  
 
 
-Create a `Helloapi` directory to hold your application, and make that your working directory
+Create a `helloexpress` directory to hold your application, and make that your working directory
 
 ```javascript
-$ mkdir  Helloapi
-$ cd Helloapi
+$ mkdir  helloexpress
+$ cd helloexpress
 ```
 create a file 'app.js'
 
