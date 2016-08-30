@@ -29,10 +29,13 @@ create a file 'app.js'
 
 Now install Express in the `HelloExpress` directory and save it in the dependencies list. For example:
 
+![CMD](/images/helloexpress/cmd.png){:class="img-responsive" :max-width="80%"}
+
 ```javascript
 $  npm install express
 ```
-![CMD](/images/helloexpress/cmd.png){:class="img-responsive" :max-width="80%"}
+
+![CMD](/images/helloexpress/npm.png){:class="img-responsive" :max-width="80%"}
 
 ## HelloExpress example
 
