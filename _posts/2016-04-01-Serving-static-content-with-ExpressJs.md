@@ -102,6 +102,25 @@ load [http://localhost:3000/](http://localhost:3000/) in a browser to see the ou
 
 ![vs code](/images/helloexpress/webstatic.png){:class="img-responsive" :max-width="80%"}
 
+## Alow contents to be cached
+
+Now our http server is working, let's add some functionalities  like caching :
+
+Modify you app.js file :   
+```javascript
+    app.use(express.static(__dirname + '/www'), { maxAge: 3600000 });
+
+```
+`max-age property of the Cache-Control header is in milliseconds (3600000 =1 hour) `
+
+![vs code](/images/helloexpress/vscodestaticAge.png){:class="img-responsive" :max-width="80%"}
+
+Save the file and run th application again 
+
+`To stop the app Ctrl + C`
+
+![vs code](/images/helloexpress/webstaticCache.png){:class="img-responsive" :max-width="80%"}
+
 >
 > ##  Any files under the `www` folder will be server 
 >
