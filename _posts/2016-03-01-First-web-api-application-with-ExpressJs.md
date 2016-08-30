@@ -8,6 +8,8 @@ category: NodeJs
 tags : CSS Javascript NodeJs ExpressJs
 ---
 
+This post is an introduction to build a simple api (we'll only cover  get  (post, delete, put will be covered in an other post)) 
+
 Express is a web application framework for nodejs, It is designed for building web applications and APIs.
     
 Express  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
