@@ -80,7 +80,7 @@ Run the application:
 
 The application starts a server and listens on port 3000 for connections. The app responds with “Welcome to express api” for requests to the root URL (/) or route. 
 
-load [http://localhost:3000/](http://localhost:3000/persons) in a browser to see the output.
+load [http://localhost:3000/persons](http://localhost:3000/persons) in a browser to see the output.
 
 ![vs code](/images/helloexpress/webapi.png){:class="img-responsive" :max-width="80%"}
 
