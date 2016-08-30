@@ -5,7 +5,7 @@ date: 2016-03-01
 author: Malekbenz
 comments: true
 category: NodeJs
-tags : ['Javascript',  'NodeJs', 'webapi', 'Express']
+tags : Javascript NodeJs Express
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
 ---
 
