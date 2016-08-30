@@ -9,11 +9,9 @@ tags : ['Javascript', 'NodeJs', 'Express']
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
 ---
 
-Serving a static content without using Appache, nginx or IIS.
+Serving a static content without using Appache, nginx or IIS. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
 
-All what we need is creating Http server with expressjs. This post goes into how this can be achieved 
-
-if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
+if you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
 ## Install express  
 `Express` is nodejs framework that has great built in capabilities to serve static content.  

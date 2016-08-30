@@ -10,7 +10,7 @@ categories: ['Javascript',  'NodeJs']
 ---
 Node js is great for creating web application. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
-In this post we are going to build our first web application, a HelloWeb application. if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
+In this post we are going to build our first web application, a HelloWeb application. if you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
 ## Create my first web application  
 

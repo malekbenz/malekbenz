@@ -14,7 +14,7 @@ This post is an introduction to build a simple `WEB API`, we'll only cover  get 
     
 Express js is great for creating web application and web API.
 
-We're going to build and run our first web api application with express , `Helloapi` application. if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
+We're going to build and run our first web api application with express , `Helloapi` application. if you don't have  node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
 ## Install express  
 
