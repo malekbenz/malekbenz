@@ -45,8 +45,19 @@ add the following code to app.js file, We use Visual studio code to edit the fil
     var express = require('express');
     var app = express();
 
+    var persons = [
+        { id: '001', name :'malekbenz', mail:'malek@malekbenz.com'   },
+        { id: '002', name :'user1', mail:'user1@malekbenz.com'   },
+        { id: '003', name :'user2', mail:'user2@malekbenz.com'   },
+        { id: '004', name :'user3', mail:'user3@malekbenz.com'   }
+
+        ];
     app.get('/', function (req, res) {
-    res.send('Hello Express!');
+        res.send('Welcome to express api');
+    });
+
+    app.get('/persons', function (req, res) {
+        res.json(persons);
     });
 
     app.listen(3000, function () {
@@ -54,7 +65,7 @@ add the following code to app.js file, We use Visual studio code to edit the fil
     });
 ```
 
-![vs code](/images/Helloapi/vscode.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/Helloapi/vscodeapi.png){:class="img-responsive" :max-width="80%"}
 
 
 ## Run the application 
@@ -65,15 +76,14 @@ Run the application:
     $ node app.js
 ```
 
-![vs code](/images/Helloapi/launch.png){:class="img-responsive" :max-width="80%"}
+![loadl application](/images/Helloapi/launch.png){:class="img-responsive" :max-width="80%"}
 
-The application starts a server and listens on port 3000 for connections. The app responds with “Hello Express!” for requests to the root URL (/) or route. For every other path, it will respond with a 404 Not Found.
+The application starts a server and listens on port 3000 for connections. The app responds with “Welcome to express api” for requests to the root URL (/) or route. 
 
-load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
+load [http://localhost:3000/](http://localhost:3000/persons) in a browser to see the output.
 
-![vs code](/images/Helloapi/web.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/Helloapi/webapi.png){:class="img-responsive" :max-width="80%"}
 
-![vs code](/images/Helloapi/404.png){:class="img-responsive" :max-width="80%"}
 
 
 >
