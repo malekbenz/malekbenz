@@ -5,8 +5,8 @@ date: 2015-12-22
 author: Malekbenz
 comments: true
 category: NodeJs
-tags : [Javascript  NodeJs]
-categories: [Javascript  NodeJs]
+tags : ['Javascript',  'NodeJs']
+categories: ['Javascript',  'NodeJs']
 ---
 
 Today We are going to install Nodejs and build our first application, of course a HelloWorld application.

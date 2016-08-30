@@ -5,8 +5,8 @@ date: 2016-01-01
 author: Malekbenz
 comments: true
 category: NodeJs
-tags : [Javascript  NodeJs]
-categories: [Javascript  NodeJs]
+tags : ['Javascript',  'NodeJs']
+categories: ['Javascript',  'NodeJs']
 ---
 Node js is great for creating web application. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
