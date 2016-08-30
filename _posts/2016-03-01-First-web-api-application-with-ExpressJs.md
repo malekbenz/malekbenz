@@ -8,15 +8,12 @@ category: NodeJs
 tags : CSS Javascript NodeJs ExpressJs
 ---
 
-This post is an introduction to build a simple api (we'll only cover  get  (post, delete, put will be covered in an other post)) 
+This post is an introduction to build a simple api, we'll only cover  get request,  (post, delete, put will be covered in an other post). 
 
-Express is a web application framework for nodejs, It is designed for building web applications and APIs.
     
-Express  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-
 Express js is great for creating web application and web API.
 
-So... let's build our first web api application with express , `Helloapi` application. if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
+We're going to build and run our first web api application with express , `Helloapi` application. if you didn't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
 ## Install express  
 
@@ -31,13 +28,13 @@ create a file 'app.js'
 
 Now install Express in the `Helloapi` directory and save it in the dependencies list. For example:
 
-![CMD](/images/Helloapi/cmd.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/helloexpress/cmd.png){:class="img-responsive" :max-width="80%"}
 
 ```javascript
 $  npm install express
 ```
 
-![CMD](/images/Helloapi/npm.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/helloexpress/npm.png){:class="img-responsive" :max-width="80%"}
 
 ## Helloapi example
 
@@ -67,7 +64,7 @@ add the following code to app.js file, We use Visual studio code to edit the fil
     });
 ```
 
-![vs code](/images/Helloapi/vscodeapi.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/helloexpress/vscodeapi.png){:class="img-responsive" :max-width="80%"}
 
 
 ## Run the application 
@@ -78,13 +75,13 @@ Run the application:
     $ node app.js
 ```
 
-![loadl application](/images/Helloapi/launch.png){:class="img-responsive" :max-width="80%"}
+![loadl application](/images/helloexpress/launch.png){:class="img-responsive" :max-width="80%"}
 
 The application starts a server and listens on port 3000 for connections. The app responds with “Welcome to express api” for requests to the root URL (/) or route. 
 
 load [http://localhost:3000/](http://localhost:3000/persons) in a browser to see the output.
 
-![vs code](/images/Helloapi/webapi.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/helloexpress/webapi.png){:class="img-responsive" :max-width="80%"}
 
 
 
