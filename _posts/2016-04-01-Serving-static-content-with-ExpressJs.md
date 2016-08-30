@@ -108,7 +108,7 @@ Now our http server is working, let's add some functionalities  like caching :
 
 Modify you app.js file :   
 ```javascript
-    app.use(express.static(__dirname + '/www'), { maxAge: 3600000 });
+    app.use(express.static(__dirname + '/www', { maxAge: 3600000 }));
 ```
 
 
