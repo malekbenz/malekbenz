@@ -8,30 +8,32 @@ category: NodeJs
 tags : ['Javascript', 'NodeJs', 'Express']
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
 ---
+## Serving a static contents  
 
-Serving a static content without using Appache, nginx or IIS. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
+What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
 
 if you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
 ## Install express  
-`Express` is nodejs framework that has great built in capabilities to serve static content.  
+`Express` is a nodejs framework that has great built in capabilities to serve static content.  
 
-Create a `helloexpress` directory to hold your application, and make that your working directory and then wreate `www`
+Create a `webserver` directory to hold your application, and make that your working directory and then wreate `www`
 
 ```javascript
-$ mkdir  webserver
-$ cd webserver
-$ mkdir www
+    $ mkdir  webserver
+    $ cd webserver
+    $ mkdir www
 
 ```
 create a file 'app.js'
 
-Now install Express in the `webserver` directory and save it in the dependencies list. For example:
-
 ![CMD](/images/helloexpress/cmdstatic.png){:class="img-responsive" :max-width="80%"}
 
+Now install Express in the `webserver` directory and save it in the dependencies list. For example:
+
+
 ```javascript
-$  npm install express
+    $  npm install express
 ```
 
 ![CMD](/images/helloexpress/npm.png){:class="img-responsive" :max-width="80%"}
@@ -101,7 +103,7 @@ load [http://localhost:3000/](http://localhost:3000/) in a browser to see the ou
 ![vs code](/images/helloexpress/webstatic.png){:class="img-responsive" :max-width="80%"}
 
 >
-> ##  Any files under the www folder will be server 
+> ##  Any files under the `www` folder will be server 
 >
 
 >
