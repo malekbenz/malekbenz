@@ -9,83 +9,34 @@ tags : ['Javascript', 'NodeJs', 'Angularjs']
 categories: ['Javascript',  'NodeJs', 'Angularjs']
 ---
 
-AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA). 
- 
-AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. You can [download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
 
 ## Create a web application  
 
-With Visual Studio `New Project`:  
+![CMD](/images/github/01.png){:class="img-responsive" :max-width="80%"}
 
-![CMD](/images/vstudio/vsnewproject.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/02.png){:class="img-responsive" :max-width="80%"}
 
-Name your project and click `Ok`. 
+![CMD](/images/github/03.png){:class="img-responsive" :max-width="80%"}
 
-![CMD](/images/vstudio/vsnewprojectempty.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/04.png){:class="img-responsive" :max-width="80%"}
 
-Select `Empty` project template and click `Ok`.
+![CMD](/images/github/05.png){:class="img-responsive" :max-width="80%"}
 
-![CMD](/images/vstudio/vsnewhtml.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/06.png){:class="img-responsive" :max-width="80%"}
 
-Add the following code inside your `body` tag.
+![CMD](/images/github/07.png){:class="img-responsive" :max-width="80%"}
 
-```javascript
-    <h1> index.html </h1>
-```
-![CMD](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/08.png){:class="img-responsive" :max-width="80%"}
 
-Run a project : 
+![CMD](/images/github/09.png){:class="img-responsive" :max-width="80%"}
 
-![CMD](/images/vstudio/index.html.prev.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/10.png){:class="img-responsive" :max-width="80%"}
 
-## What about AngularJS   
+![CMD](/images/github/11.png){:class="img-responsive" :max-width="80%"}
 
-To install AngularJs you can download from the  [official web site](https://angularjs.org/). OR Right click on a project click `Manage nuGet package`.
+![CMD](/images/github/12.png){:class="img-responsive" :max-width="80%"}
 
-
-
-![CMD](/images/vstudio/add.angular.png){:class="img-responsive" :max-width="80%"}
-
-Search for angularjs and click install.
-
-![CMD](/images/vstudio/add.angular.nuget.png){:class="img-responsive" :max-width="80%"}
-
-Now add you `angular.js` script to you `index.html`
-
-```javascript
-    <script src="Scripts/angular.js"></script>
-```
-
-`index.html` : 
-
-```javascript
-        <!DOCTYPE html>
-        <html xmlns="http://www.w3.org/1999/xhtml">
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <title></title>
-            </head>
-            <body ng-app="myapp">
-                <div ng-controller="mycontroller">
-                    <h1>{{message}}</h1>
-                </div>
-
-                <script src="Scripts/angular.js"></script>
-                <script>
-                    var app = angular.module("myapp", []);
-                    app.controller("mycontroller", fnController);
-                    function fnController($scope) {
-                        $scope.message = "Hello From Angularjs App";
-                    };
-                </script>
-            </body>
-        </html>
-
-```
-
-`index.html` file should look like :
-
-![vs code](/images/vstudio/angular.First.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
 
 
 ## Run the application 
