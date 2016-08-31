@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "First Angularjs application with Visual Studio" 
-date: 2016-05-01
+title: "Create a Free-website-with-github" 
+date: 2016-06-01
 author: Malekbenz
 comments: true
 category: Angularjs
@@ -40,7 +40,7 @@ Run a project :
 
 ## What about AngularJS   
 
-To install angularjs you can download from the  [official web site](https://angularjs.org/). OR Right click on a project click `Manage nuGet package`.
+To install AngularJs you can download from the  [official web site](https://angularjs.org/). OR Right click on a project click `Manage nuGet package`.
 
 
 
@@ -90,7 +90,6 @@ Now add you `angular.js` script to you `index.html`
 
 ## Run the application 
     
-Run the application. 
 
 ![vs code](/images/vstudio/angular.First.preview.png){:class="img-responsive" :max-width="80%"}
 
