@@ -1,23 +1,32 @@
 ---
 layout: post
-title: "Serving static content with ExpressJs"
-date: 2016-04-01
+title: "First Angularjs application"
+date: 2016-05-01
 author: Malekbenz
 comments: true
-category: NodeJs
-tags : ['Javascript', 'NodeJs', 'Express']
-categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
+category: Angularjs
+tags : ['Javascript', 'NodeJs', 'Angularjs']
+categories: ['Javascript',  'NodeJs', 'Angularjs']
 ---
-## Serving a static contents  
+## Angularjs  
 
-What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
+AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA). 
+ 
+AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.
 
-if you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
+You can download Visual studio community[download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
 
-## Install express  
-`Express` is a nodejs framework that has great built in capabilities to serve static content.  
+## Create a web application  
 
-Create a `webserver` directory to hold your application, and make that your working directory and then create `www`
+With visualstudio `New Project`:  
+
+![CMD]("/images/vstudio\vsnewproject.png"){:class="img-responsive" :max-width="80%"}
+
+Name you project and click `Ok`. 
+
+![CMD]("/images/vstudio\vsnewprojectempty.png"){:class="img-responsive" :max-width="80%"}
+
+Select `Empty` and click `Ok`.
 
 ```javascript
     $ mkdir  webserver
@@ -27,16 +36,21 @@ Create a `webserver` directory to hold your application, and make that your work
 ```
 create a file 'app.js'
 
-![CMD](/images/helloexpress/cmdstatic.png){:class="img-responsive" :max-width="80%"}
 
-Now install Express in the `webserver` directory and save it in the dependencies list. For example:
+Select an `Empty` template :
 
+![CMD]("/images/helloexpress/index.html.png){:class="img-responsive" :max-width="80%"}
+
+
+![CMD]("/images/helloexpress/vsnewhtml.png"){:class="img-responsive" :max-width="80%"}
+
+Add the following code inside your `body` tag. 
 
 ```javascript
-    $  npm install express
+    <h1> index.html </h1>
 ```
 
-![CMD](/images/helloexpress/npm.png){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/helloexpress/index.html.prev.png"){:class="img-responsive" :max-width="80%"}
 
 ## Let's type some code 
 
