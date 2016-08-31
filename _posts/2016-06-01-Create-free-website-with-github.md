@@ -4,31 +4,36 @@ title: "Create a Free website with Github"
 date: 2016-06-01
 author: Malekbenz
 comments: true
-category: Angularjs
-tags : ['Javascript', 'NodeJs', 'Angularjs']
-categories: ['Javascript',  'NodeJs', 'Angularjs']
+category: Github
+tags : ['html', 'Github', 'website']
+categories: ['html',  'NodeJs', 'Angularjs']
 ---
 
 
-## Create a Github account  
-if you don't have [Github website](https://github.com/) and signup.
-Enter a `username`, `email` and `password` and click `Create a account`.
+## Create a Github account
+
+
+if you don't have [Github account click and signup](https://github.com/) .
+Enter a `username`, `email` and `password`.
 
 ![CMD](/images/github/01.png){:class="img-responsive" :max-width="80%"}
 
-click continue 
+click `Create a account` 
 
 ![CMD](/images/github/02.png){:class="img-responsive" :max-width="80%"}
 
+click continue 
+
 ![CMD](/images/github/03.png){:class="img-responsive" :max-width="80%"}
+
+`skip this steps`
 
 ![CMD](/images/github/04.png){:class="img-responsive" :max-width="80%"}
 
-`skip this step`
 
 ## Create new repository:
 
-Click on start a project :
+Now that you have a github account Click on start a project :
 
 ![CMD](/images/github/05.png){:class="img-responsive" :max-width="80%"}
 
@@ -69,7 +74,7 @@ commit the change by clicking `commit new file`
 
 ## Create new Branche
 
-Create a new Branche and name `ng-pages`
+In order to be able to publish the website we must `Create a new Branche` and name it `ng-pages`
 
 ![CMD](/images/github/10.png){:class="img-responsive" :max-width="80%"}
 
@@ -77,7 +82,7 @@ Click `Settings`.
 
 ![CMD](/images/github/11.png){:class="img-responsive" :max-width="80%"}
 
-As you see in the  repository Settings the site is published at `https://malektrainer.github.io`
+As you can see in the  repository Settings, the website is published at `https://malektrainer.github.io`
 
 ![CMD](/images/github/12.png){:class="img-responsive" :max-width="80%"}
 
