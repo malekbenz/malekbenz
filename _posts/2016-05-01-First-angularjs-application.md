@@ -8,13 +8,10 @@ category: Angularjs
 tags : ['Javascript', 'NodeJs', 'Angularjs']
 categories: ['Javascript',  'NodeJs', 'Angularjs']
 ---
-## Angularjs  
 
 AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA). 
  
-AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.
-
-You can [download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
+AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. You can [download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
 
 ## Create a web application  
 
@@ -86,14 +83,14 @@ Now add you `angular.js` script to you `index.html`
 
 `index.html` file should looks like :
 
-![vs code](/images/vstudio/angular.first.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/angular.First.png){:class="img-responsive" :max-width="80%"}
 
 
 ## Run the application 
     
 Run the application. 
 
-![vs code](/images/vstudio/angular.first.preview.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/angular.First.preview.png){:class="img-responsive" :max-width="80%"}
 
 
 
