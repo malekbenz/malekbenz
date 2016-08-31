@@ -36,13 +36,13 @@ categories: ['Javascript',  'NodeJs', 'Angularjs']
 
 ![CMD](/images/github/12.png){:class="img-responsive" :max-width="80%"}
 
-![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
+
 
 
 ## Run the application 
     
 
-![vs code](/images/vstudio/angular.First.preview.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
 
 
 
