@@ -3,9 +3,12 @@ layout: post
 title: "Install & run your first application Nodejs"
 date: 2015-12-22
 author: Malekbenz
+comments: true
 category: NodeJs
 tags : CSS Javascript NodeJs
 comments: true
+tags : ['Javascript',  'NodeJs']
+categories: ['Javascript',  'NodeJs']
 ---
 
 Today We are going to install Nodejs and build our first application, of course a HelloWorld application.

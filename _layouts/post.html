@@ -5,7 +5,7 @@ layout: default
 <ul class="post-by">
   <li>By:<span>{{page.author}}</span></li>
   <li>Category:<span>{{page.category}}</span></li>
-  <li>tags:<span>{{page.tags}}</span></li>
+  <li>tags:<span>{{ page.tags | array_to_sentence_string}}</span></li>
   <li>Time:<span>{{page.date | date_to_string}}</span></li>
 </ul>
 
@@ -16,5 +16,20 @@ layout: default
   {% if page.comments %}
   
   {% endif %}
+{% if page.comments %}
+    <h1 class="title">Comments</h1>
+ 
+      {% include post/disqus_thread.html %}
+  
+            <script>
+             (function() { // DON'T EDIT BELOW THIS LINE
+                 var d = document, s = d.createElement('script');
+                 s.src = '//blog-malekbenz-com.disqus.com/embed.js';
+                 s.setAttribute('data-timestamp', +new Date());
+                 (d.head || d.body).appendChild(s);
+              })();
+            </script>
+    {% endif %}
+
 </div>
 
