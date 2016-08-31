@@ -14,17 +14,17 @@ AngularJS JavaScript-based front-end web application framework, it alows you to 
  
 AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.
 
-You can download Visual studio community[download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
+You can [download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
 
 ## Create a web application  
 
 With visualstudio `New Project`:  
 
-![CMD]("/images/vstudio\vsnewproject.png"){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/vstudio/vsnewproject.png"){:class="img-responsive" :max-width="80%"}
 
 Name you project and click `Ok`. 
 
-![CMD]("/images/vstudio\vsnewprojectempty.png"){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/vstudio/vsnewprojectempty.png"){:class="img-responsive" :max-width="80%"}
 
 Select `Empty` and click `Ok`.
 
@@ -39,10 +39,10 @@ create a file 'app.js'
 
 Select an `Empty` template :
 
-![CMD]("/images/helloexpress/index.html.png){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
 
 
-![CMD]("/images/helloexpress/vsnewhtml.png"){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/vstudio/vsnewhtml.png"){:class="img-responsive" :max-width="80%"}
 
 Add the following code inside your `body` tag. 
 
@@ -50,7 +50,7 @@ Add the following code inside your `body` tag.
     <h1> index.html </h1>
 ```
 
-![CMD]("/images/helloexpress/index.html.prev.png"){:class="img-responsive" :max-width="80%"}
+![CMD]("/images/vstudio/index.html.prev.png"){:class="img-responsive" :max-width="80%"}
 
 ## Let's type some code 
 
@@ -65,7 +65,7 @@ add the following code to app.js file, We use Visual studio code to edit the fil
     app.listen(3000);
 
 ```
-![vs code](/images/helloexpress/vscodestatic.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/vscodestatic.png){:class="img-responsive" :max-width="80%"}
 
 add `index.html` file to `www` folder:
 
@@ -84,7 +84,7 @@ add `index.html` file to `www` folder:
         </html>
 
 ```
-![vs code](/images/helloexpress/index.html.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
 
 Add `style.css` file to `www` folder:
 
@@ -94,11 +94,11 @@ Add `style.css` file to `www` folder:
     }
 ```
 
-![vs code](/images/helloexpress/style.css.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/style.css.png){:class="img-responsive" :max-width="80%"}
 
 then Add an image to `www` folder and name it `image.jpg` 
 
-![vs code](/images/helloexpress/imagestatic.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/imagestatic.png){:class="img-responsive" :max-width="80%"}
 
 ## Run the application 
     
@@ -108,13 +108,13 @@ Run the application:
     $ node app.js
 ```
 
-![loadl application](/images/helloexpress/launch.png){:class="img-responsive" :max-width="80%"}
+![loadl application](/images/vstudio/launch.png){:class="img-responsive" :max-width="80%"}
 
 The application starts a server and listens on port 3000 for connections. The app responds with “Welcome to express api” for requests to the root URL (/) or route. 
 
 load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
 
-![vs code](/images/helloexpress/webstatic.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/webstatic.png){:class="img-responsive" :max-width="80%"}
 
 ## Alow contents to be cached
 
@@ -126,7 +126,7 @@ Modify you app.js file :
     app.use(express.static(__dirname + '/www', { maxAge: 3600000 }));
 ```
 
-![vs code](/images/helloexpress/vscodestaticAge.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/vscodestaticAge.png){:class="img-responsive" :max-width="80%"}
 
 `max-age property of the Cache-Control header is in milliseconds (3600000 =1 hour)`
 
@@ -134,7 +134,7 @@ Save the file and run th application again
 
 `To stop the app Ctrl + C`
 
-![vs code](/images/helloexpress/webstaticCache.png){:class="img-responsive" :max-width="80%"}
+![vs code](/images/vstudio/webstaticCache.png){:class="img-responsive" :max-width="80%"}
 
 
 >
