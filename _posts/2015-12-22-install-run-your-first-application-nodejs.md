@@ -5,6 +5,7 @@ date: 2015-12-22
 author: Malekbenz
 category: NodeJs
 tags : CSS Javascript NodeJs
+comments: true
 ---
 
 Today We are going to install Nodejs and build our first application, of course a HelloWorld application.

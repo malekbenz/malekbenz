@@ -5,6 +5,7 @@ date: 2016-01-01
 author: Malekbenz
 category: NodeJs
 tags : CSS Javascript NodeJs
+comments: true
 ---
 Node js is great for creating web application. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
