@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Angularjs application"
+title: "First Angularjs application with Visual Studio" 
 date: 2016-05-01
 author: Malekbenz
 comments: true
@@ -23,7 +23,7 @@ Name your project and click `Ok`.
 
 ![CMD](/images/vstudio/vsnewprojectempty.png){:class="img-responsive" :max-width="80%"}
 
-Select `Empty` and click `Ok`.
+Select `Empty` project template and click `Ok`.
 
 ![CMD](/images/vstudio/vsnewhtml.png){:class="img-responsive" :max-width="80%"}
 
@@ -38,9 +38,11 @@ Run a project :
 
 ![CMD](/images/vstudio/index.html.prev.png){:class="img-responsive" :max-width="80%"}
 
-## Add AngularJS   
+## What about AngularJS   
 
-Right click on a project click `Manage nuGet package`.
+To install angularjs you can download from the  [official web site](https://angularjs.org/). OR Right click on a project click `Manage nuGet package`.
+
+
 
 ![CMD](/images/vstudio/add.angular.png){:class="img-responsive" :max-width="80%"}
 
@@ -81,7 +83,7 @@ Now add you `angular.js` script to you `index.html`
 
 ```
 
-`index.html` file should looks like :
+`index.html` file should look like :
 
 ![vs code](/images/vstudio/angular.First.png){:class="img-responsive" :max-width="80%"}
 
