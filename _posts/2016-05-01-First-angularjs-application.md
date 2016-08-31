@@ -18,37 +18,26 @@ You can [download Visual studio community](https://www.visualstudio.com/en-us/ne
 
 ## Create a web application  
 
-With visualstudio `New Project`:  
+With Visual Studio `New Project`:  
 
 ![CMD](/images/vstudio/vsnewproject.png){:class="img-responsive" :max-width="80%"}
 
-Name you project and click `Ok`. 
+Name your project and click `Ok`. 
 
 ![CMD](/images/vstudio/vsnewprojectempty.png){:class="img-responsive" :max-width="80%"}
 
 Select `Empty` and click `Ok`.
 
-```javascript
-    $ mkdir  webserver
-    $ cd webserver
-    $ mkdir www
-
-```
-create a file 'app.js'
-
-
-Select an `Empty` template :
-
-![CMD](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
-
-
 ![CMD](/images/vstudio/vsnewhtml.png){:class="img-responsive" :max-width="80%"}
 
-Add the following code inside your `body` tag. 
+Add the following code inside your `body` tag.
 
 ```javascript
     <h1> index.html </h1>
 ```
+![CMD](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
+
+Run a project : 
 
 ![CMD](/images/vstudio/index.html.prev.png){:class="img-responsive" :max-width="80%"}
 
