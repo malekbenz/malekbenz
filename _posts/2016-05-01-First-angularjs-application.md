@@ -20,11 +20,11 @@ You can [download Visual studio community](https://www.visualstudio.com/en-us/ne
 
 With visualstudio `New Project`:  
 
-![CMD]("/images/vstudio/vsnewproject.png"){:class="img-responsive" :max-width="80%"}
+![CMD](/images/vstudio/vsnewproject.png){:class="img-responsive" :max-width="80%"}
 
 Name you project and click `Ok`. 
 
-![CMD]("/images/vstudio/vsnewprojectempty.png"){:class="img-responsive" :max-width="80%"}
+![CMD](/images/vstudio/vsnewprojectempty.png){:class="img-responsive" :max-width="80%"}
 
 Select `Empty` and click `Ok`.
 
@@ -39,10 +39,10 @@ create a file 'app.js'
 
 Select an `Empty` template :
 
-![CMD]("/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
 
 
-![CMD]("/images/vstudio/vsnewhtml.png"){:class="img-responsive" :max-width="80%"}
+![CMD](/images/vstudio/vsnewhtml.png){:class="img-responsive" :max-width="80%"}
 
 Add the following code inside your `body` tag. 
 
@@ -50,7 +50,7 @@ Add the following code inside your `body` tag.
     <h1> index.html </h1>
 ```
 
-![CMD]("/images/vstudio/index.html.prev.png"){:class="img-responsive" :max-width="80%"}
+![CMD](/images/vstudio/index.html.prev.png){:class="img-responsive" :max-width="80%"}
 
 ## Let's type some code 
 
