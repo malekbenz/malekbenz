@@ -41,95 +41,62 @@ Run a project :
 
 ![CMD](/images/vstudio/index.html.prev.png){:class="img-responsive" :max-width="80%"}
 
-## Let's type some code 
+## Add AngularJS   
 
-add the following code to app.js file, We use Visual studio code to edit the file:
+Right click on a project click `Manage nuGet package`.
+
+![CMD](/images/vstudio/add.angular.png){:class="img-responsive" :max-width="80%"}
+
+Search for angularjs and click install.
+
+![CMD](/images/vstudio/add.angular.nuget.png){:class="img-responsive" :max-width="80%"}
+
+Now add you `angular.js` script to you `index.html`
 
 ```javascript
-    var express = require('express');
-    var app = express();
-
-    app.use(express.static(__dirname + '/www'));
-
-    app.listen(3000);
-
+    <script src="Scripts/angular.js"></script>
 ```
-![vs code](/images/vstudio/vscodestatic.png){:class="img-responsive" :max-width="80%"}
 
-add `index.html` file to `www` folder:
+`index.html` : 
 
 ```javascript
         <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Document</title>
-            <link href='/style.css' rel='stylesheet' type='text/css'>
-        </head>
-        <body>
-            <h1> Serving static contents with expressjs app </h1>
-            <img src="/image.jpg" alt="image">
-        </body>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <title></title>
+            </head>
+            <body ng-app="myapp">
+                <div ng-controller="mycontroller">
+                    <h1>{{message}}</h1>
+                </div>
+
+                <script src="Scripts/angular.js"></script>
+                <script>
+                    var app = angular.module("myapp", []);
+                    app.controller("mycontroller", fnController);
+                    function fnController($scope) {
+                        $scope.message = "Hello From Angularjs App";
+                    };
+                </script>
+            </body>
         </html>
 
 ```
-![vs code](/images/vstudio/index.html.png){:class="img-responsive" :max-width="80%"}
 
-Add `style.css` file to `www` folder:
+`index.html` file should looks like :
 
-```javascript
-    h1 {
-        background-color: rosybrown
-    }
-```
+![vs code](/images/vstudio/angular.first.png){:class="img-responsive" :max-width="80%"}
 
-![vs code](/images/vstudio/style.css.png){:class="img-responsive" :max-width="80%"}
-
-then Add an image to `www` folder and name it `image.jpg` 
-
-![vs code](/images/vstudio/imagestatic.png){:class="img-responsive" :max-width="80%"}
 
 ## Run the application 
     
-Run the application: 
+Run the application. 
 
-```javascript
-    $ node app.js
-```
+![vs code](/images/vstudio/angular.first.preview.png){:class="img-responsive" :max-width="80%"}
 
-![loadl application](/images/vstudio/launch.png){:class="img-responsive" :max-width="80%"}
-
-The application starts a server and listens on port 3000 for connections. The app responds with “Welcome to express api” for requests to the root URL (/) or route. 
-
-load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
-
-![vs code](/images/vstudio/webstatic.png){:class="img-responsive" :max-width="80%"}
-
-## Alow contents to be cached
-
-Now our http server is working, let's add some functionalities  like caching :
-
-Modify you app.js file :  
-
-```javascript
-    app.use(express.static(__dirname + '/www', { maxAge: 3600000 }));
-```
-
-![vs code](/images/vstudio/vscodestaticAge.png){:class="img-responsive" :max-width="80%"}
-
-`max-age property of the Cache-Control header is in milliseconds (3600000 =1 hour)`
-
-Save the file and run th application again 
-
-`To stop the app Ctrl + C`
-
-![vs code](/images/vstudio/webstaticCache.png){:class="img-responsive" :max-width="80%"}
 
 
 >
-> ##  Any files under the `www` folder will be server 
->
-
->
-> ## **This is your static content web server working **
+> ## **First angular js application**
 >
