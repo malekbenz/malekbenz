@@ -1018,6 +1018,9 @@ ul.inner-link li a {
 	margin-bottom: 10px;
 	}
 	
+.section-post h1 {
+    text-align: center;
+	}
 .section-post h2 {
 	font-size: 34px;
 	color: #428bca;
