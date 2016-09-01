@@ -1051,9 +1051,12 @@ h1.section-post  {
 	max-width: 80%;
 }
 	
-	
-ul.post-by {
+div.post-by{
 	text-align: center;
+}	
+
+ul.post-by {
+
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 20px;
