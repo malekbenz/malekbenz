@@ -1027,15 +1027,16 @@ h1.section-post {
 	
 	
 .section-post h2 {
-	font-size: 34px;
+	font-size: 28px;
 	color: #428bca;
 	margin-top: 30px;
 	font-family: 'Open Sans',sans-serif;
 	font-weight: 100;
+	font-weight: bold;
 	}
 .section-post p {
 	color: #484848;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.375;
     
 	
