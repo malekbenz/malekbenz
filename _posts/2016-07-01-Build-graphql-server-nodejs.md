@@ -31,6 +31,7 @@ Install `graphql`, `express` and `express-graphql`.
 ```
 ![CMD](/images/graph-ql/01.png){:class="img-responsive" :max-width="80%"}
 
+
 ## Create `users.json` Json file for Data 
 
 Create a file and name it `users.json`
@@ -60,12 +61,13 @@ Create a file and name it `users.json`
     }
 ```
 
+![users.json](/images/graph-ql/02.png){:class="img-responsive" :max-width="80%"}
 
 ## Create the Server
 
 Create a file and name it `app.js` 
 
-``` Javascript
+```Javascript
     var graphql = require('graphql'),
         graphqlHTTP = require('express-graphql'),
         express = require('express');
@@ -84,8 +86,8 @@ var userType = new graphql.GraphQLObjectType({
   }
 });
 
-// Define the schema with one top-level field, `user`, that
-// takes an `id` argument and returns the User with that ID.
+// Define the schema with one top-level field, 'user', that
+// takes an 'id' argument and returns the User with that ID.
 
 var schema = new graphql.GraphQLSchema({
   query: new graphql.GraphQLObjectType({
@@ -93,12 +95,12 @@ var schema = new graphql.GraphQLSchema({
     fields: {
       user: {
         type: userType,
-        // `args` arguments that the `user` query accepts
+        // 'args' arguments that the 'user' query accepts
         args: {
           id: { type: graphql.GraphQLString }
         },
-        // The resolve function take `id` argument from above as a key
-        // to get the User from `users`
+        // The resolve function take 'id' argument from above as a key
+        // to get the User from 'users'
         resolve: function (_, args) {
           return users[args.id];
         }
@@ -114,11 +116,16 @@ express()
 console.log('Server running on http://localhost:3000/graphql');
 
 ```
-Save the file and run the application 
+
+ 
+![app.js](/images/graph-ql/03.png){:class="img-responsive" :max-width="80%"}
+
+Save the file and run the application
 
 ```
     $ node app.js 
 ```
+
 The server is running at localhost:3000/graphql. If you navigate to this address you will receive this notice:
 
 ```
@@ -131,17 +138,65 @@ The server is running at localhost:3000/graphql. If you navigate to this address
 }
 ```
 
+![running](/images/graph-ql/04.png){:class="img-responsive" :max-width="80%"}
+
 This message indicate that we need to provide a query.  
 
 
-![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
+
+## Using a Queries againste a schema
+
+A query is a string interpreted by a server that returns data in a specified format. Here is an example query:
+
+```
+{
+  user(id: "1") {
+    name
+  }
+}
+```
+
+Result: 
+
+```
+{
+  "data": {
+    "user": {
+      "name": "malekbenz"
+    }
+  }
+}
+```
+```
+{
+  user(id: "2") {
+    name,email
+  }
+}
+```
+
+Result: 
+
+```
+{
+  "data": {
+    "user": {
+      "name": "user",
+      "email":"user@email.com"
+    }
+  }
+}
+```
+
+![Query](/images/graph-ql/05.png){:class="img-responsive" :max-width="80%"}
+
+You can edit the above query; the result will automatically update when you do. If you make a syntax mistake it will be underlined in red. Try replacing id: "1" with id: "2"; replace name with id or with name id.
+
+Remove all the whitespace in the query: {user(id:"1"){name}} (whitespace is optional in GraphQL). You can send this to your server via a GET request with a URL query string: [query](http://localhost:3000/graphql?query={user(id:"1"){name}}) - the server should respond with
 
 
-
-
-![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
 
 
 >
-> ### This website is available at [https://malektrainer.github.io](https://malektrainer.github.io)
+> ### Congratulations! You've built your first GraphQL server. Try different queries, or changing the data, or even adding new fields to the schema.
 >
