@@ -1015,6 +1015,7 @@ h1.section-post {
 	}
 
 .section-post {
+	font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 100%;
 	height: auto;
 	margin-top: 50px;
@@ -1033,7 +1034,11 @@ h1.section-post {
 	font-weight: 100;
 	}
 .section-post p {
-    font: 400 20px/1.5 'Source Sans Pro',Open Sans,Roboto,'San Francisco',Helvetica,Arial,sans-serif;
+	color: #484848;
+    font-size: 16px;
+    line-height: 1.375;
+    
+	
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
