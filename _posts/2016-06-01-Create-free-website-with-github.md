@@ -10,7 +10,7 @@ categories: ['html',  'NodeJs', 'Angularjs']
 ---
 
 
-if you already have github account you can  [skip this section](#/Create new repository) . 
+if you already have github account you can  [skip this section](/#/Create new repository) . 
 
 ## Create a Github account
 
