@@ -94,5 +94,5 @@ As you can see in the  repository Settings, the website is published at `https:/
 
 
 >
-> ### This website is available at ![https://malektrainer.github.io](https://malektrainer.github.io)
+> ### This website is available at [https://malektrainer.github.io](https://malektrainer.github.io)
 >
