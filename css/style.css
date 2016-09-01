@@ -1013,14 +1013,12 @@ ul.inner-link li a {
 	height: auto;
 	margin-top: 50px;
 	display: inline-block;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 	border-bottom: 1px solid #CCC;
 	margin-bottom: 10px;
 	}
 	
-h1.section-post  {
-    text-align: center;
-	}
+	
 .section-post h2 {
 	font-size: 34px;
 	color: #428bca;
@@ -1051,9 +1049,7 @@ h1.section-post  {
 	max-width: 80%;
 }
 	
-div.post-by{
-	text-align: center;
-}	
+
 
 ul.post-by {
 
