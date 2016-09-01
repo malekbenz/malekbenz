@@ -195,7 +195,7 @@ Result:
 
 You can edit the above query; the result will automatically update when you do. If you make a syntax mistake it will be underlined in red. Try replacing id: "1" with id: "2"; replace name with id or with name id.
 
-Remove all the whitespace in the query: {user(id:"1"){name}} (whitespace is optional in GraphQL). You can send this to your server via a GET request with a URL query string: [query](http://localhost:3000/graphql?query={user(id:"1"){name}}) - the server should respond with
+Remove all the whitespace in the query: {user(id:"1"){name}} (whitespace is optional in GraphQL). You can send this to your server via a GET request with a URL query string: [http://localhost:3000/graphql?query={user(id:"1"){name}}](http://localhost:3000/graphql?query={user(id:"1"){name}}) - the server should respond with
 
 
 
