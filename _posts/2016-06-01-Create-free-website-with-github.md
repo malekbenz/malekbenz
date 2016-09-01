@@ -10,7 +10,7 @@ categories: ['html',  'NodeJs', 'Angularjs']
 ---
 
 
-if you already have github account you can  [skip this section](#create-new-repository). 
+if you already have `github account` you can  [skip this section](#create-new-repository). 
 
 ## Create a Github account
 
@@ -96,5 +96,5 @@ As you can see in the  repository Settings, the website is published at `https:/
 
 
 >
-> ## This website is available at `https://malektrainer.github.io`
+> ### This website is available at `https://malektrainer.github.io`
 >
