@@ -9,7 +9,6 @@ tags : ['html', 'Github', 'website']
 categories: ['html',  'NodeJs', 'Angularjs']
 ---
 
-
 if you already have `github account` you can  [skip this section](#create-new-repository). 
 
 ## Create a Github account
