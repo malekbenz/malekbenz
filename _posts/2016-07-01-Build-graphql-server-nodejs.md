@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build a simple graphql Server with nodejs" 
+title: "Build a simple Graph-QL Server with nodejs" 
 date: 2016-07-01
 author: Malekbenz
 comments: true
@@ -148,6 +148,7 @@ This message indicate that we need to provide a query.
 
 A query is a string interpreted by a server that returns data in a specified format. Here is an example query:
 
+Query:
 ```
 {
   user(id: "1") {
@@ -167,6 +168,8 @@ Result:
   }
 }
 ```
+Query:
+
 ```
 {
   user(id: "2") {
