@@ -94,7 +94,6 @@ As you can see in the  repository Settings, the website is published at `https:/
 ![CMD](/images/github/13.png){:class="img-responsive" :max-width="80%"}
 
 
-
 >
-> ### This website is available at `https://malektrainer.github.io`
+> ### This website is available at ![https://malektrainer.github.io](https://malektrainer.github.io)
 >
