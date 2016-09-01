@@ -10,15 +10,16 @@ categories: ['html',  'NodeJs', 'Angularjs']
 ---
 
 
+if you already have github account you can  [skip this section](#/Create new repository) . 
+
 ## Create a Github account
 
 
-if you don't have [Github account click and signup](https://github.com/) .
-Enter a `username`, `email` and `password`.
+[Go to Github website](https://github.com/) and signup, Enter a `username`, `email` and `password`.
 
 ![CMD](/images/github/01.png){:class="img-responsive" :max-width="80%"}
 
-click `Create a account` 
+choose a account name and click `Create a account` 
 
 ![CMD](/images/github/02.png){:class="img-responsive" :max-width="80%"}
 
@@ -26,12 +27,12 @@ click continue
 
 ![CMD](/images/github/03.png){:class="img-responsive" :max-width="80%"}
 
-`skip this steps`
+you can `skip this steps`
 
 ![CMD](/images/github/04.png){:class="img-responsive" :max-width="80%"}
 
 
-## Create new repository:
+## Create new repository
 
 Now that you have a github account Click on start a project :
 
