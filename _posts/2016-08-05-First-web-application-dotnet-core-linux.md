@@ -122,12 +122,12 @@ namespace aspnetcoreapp
 $ dotnet run
 ```
 
-![CMD](/images/dotnet/browseaspnet.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/dotnet/dotnetrun.png){:class="img-responsive" :max-width="80%"}
 
 Browse to http://localhost:5000
 
 ![CMD](/images/dotnet/browseaspnet.png){:class="img-responsive" :max-width="80%"}
 
 >
-> ### Congratulations! You now have .NET core running on your machine!
+> ### Congratulations!
 >
