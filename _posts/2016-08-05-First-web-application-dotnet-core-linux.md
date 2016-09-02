@@ -114,7 +114,7 @@ namespace aspnetcoreapp
 }
 ```
 
-![CMD](/images/dotnet/startup.cs.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/dotnet/Program.cs.png){:class="img-responsive" :max-width="80%"}
 
 ## Run the app
 
