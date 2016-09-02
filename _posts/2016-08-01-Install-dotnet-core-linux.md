@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Install dotnet core on linux" 
-date: 2016-07-01
+title: "Install .Net Core on linux" 
+date: 2016-08-01
 author: Malekbenz
 comments: true
-category: dotnet
-tags : ['donet',  'asp']
-categories: ['dotnet',   'asp']
+category: .Net
+tags : ['.Net',  'Asp']
+categories: ['.Net',   'Asp']
 ---
 
 In order to install .NET Core on Ubuntu or Linux Mint, we need to first set up the apt-get feed that hosts the package we need.
