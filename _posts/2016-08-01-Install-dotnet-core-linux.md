@@ -39,7 +39,7 @@ To install .NET Core on Ubuntu or Linux Mint, simply use apt-get.
 $ sudo apt-get install dotnet-dev-1.0.0-preview2-003121
 
 ```
-
+![CMD](/images/dotnet/version.png){:class="img-responsive" :max-width="80%"}
 ## Create our first app
 
 Let's initialize a sample Hello World application!
@@ -60,7 +60,7 @@ The first command will restore the packages specified in the project.json file, 
 $ dotnet restore
 $ dotnet run
 ```
-
+![CMD](/images/dotnet/run.png){:class="img-responsive" :max-width="80%"}
 And you're ready!
 
 
