@@ -141,6 +141,72 @@ Create `index.html` file and  put some images under `wwwroot` directory:
 
 ![CMD](/images/dotnet/webserverpreview.png){:class="img-responsive" :max-width="80%"}
 
+## Can I serve another direcory contents:
+
+Static files are typically located in the `web root` (`<content-root>/wwwroot`) folder. See Content root and Web root in Introduction to ASP.NET Core for more information. 
+
+### Content root
+
+The `content root` is the base path to any content used by the app, such as its views and web content. By default `content root` == `application base path for the executable hosting` the app.
+
+### Web root
+
+The `web root` of your app is the directory in your project for public, `static resources` like `css`, `js`, and `image` files. The web root path defaults to `<content root>/wwwroot`.
+but you can specify a different location using the WebHostBuilder.
+
+To serve another direcory for example `statics` (you must create the directory), then configure the static files middleware as follows :  
+
+```
+public void Configure(IApplicationBuilder app)
+{
+    app.UseStaticFiles();
+
+    app.UseStaticFiles(new StaticFileOptions()
+    {
+        FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"static")),
+        RequestPath = new PathString("/public")
+    });
+}
+```
+
+A request to http://localhost:5000/public/test.png will serve the test.png file.
+
+## Enabling directory browsing
+
+Directory browsing allows the user of your web app to see a list of directories and files within a specified directory. To enable directory browsing, call the UseDirectoryBrowser extension method from `Startup.Configure`:
+
+```
+public void Configure(IApplicationBuilder app)
+{
+    app.UseStaticFiles(); // For the wwwroot folder
+
+    app.UseStaticFiles(new StaticFileOptions()
+    {
+        FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images")),
+        RequestPath = new PathString("/Images")
+    });
+
+    app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+    {
+        FileProvider = new PhysicalFileProvider(
+            Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\images")),
+        RequestPath = new PathString("/Images")
+    });
+}
+```
+
+And add required services by calling AddDirectoryBrowser extension method from Startup.ConfigureServices:
+
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDirectoryBrowser();
+}
+```
+
+The code above allows directory browsing of the wwwroot/images folder using the URL http://localhost:5000/Images, with links to each file and folder:
 
 
 >
