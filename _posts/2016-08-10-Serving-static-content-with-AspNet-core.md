@@ -141,7 +141,56 @@ Create `index.html` file and  put some images under `wwwroot` directory:
 
 ![CMD](/images/dotnet/webserverpreview.png){:class="img-responsive" :max-width="80%"}
 
-## Can I serve another direcory contents:
+
+Notice that you must specify the name of a file to serve, in order to server a `default file` call the `UseDefaultFiles` extension method from `Startup.Configure` as follows.
+
+```
+    public void Configure(IApplicationBuilder app)
+        {
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+        }
+```
+
+With `UseDefaultFiles`, requests to a folder will search for:
+
+```
+    default.htm
+    default.html
+    index.htm
+    index.html
+```
+
+Run the app again 
+
+![CMD](/images/dotnet/webserverdefault.png){:class="img-responsive" :max-width="80%"}
+
+
+To change the default file name to home.html.
+
+```
+    public void Configure(IApplicationBuilder app)
+    {
+        // Serve home.html default file, if present.
+        DefaultFilesOptions options = new DefaultFilesOptions();
+        options.DefaultFileNames.Clear();
+        options.DefaultFileNames.Add("home.html");
+        app.UseDefaultFiles(options);
+        app.UseStaticFiles();
+    }
+```
+
+```
+Note: 
+        app.UseFileServer();
+
+    is the same as :
+        app.UseStaticFiles();
+        app.UseDefaultFiles ; 
+
+```
+
+## Can we serve another direcory contents:
 
 Static files are typically located in the `web root` (`<content-root>/wwwroot`) folder. See Content root and Web root in Introduction to ASP.NET Core for more information. 
 
