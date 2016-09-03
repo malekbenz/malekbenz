@@ -94,7 +94,6 @@ namespace webserver
 }
 ```
 
-![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
 
 ## Configure a static files Middleware:
 
@@ -126,7 +125,10 @@ Calling the `UseStaticFiles` extension method from Startup.Configure
 ```
 `app.UseStaticFiles()` makes the files in `web root` (`wwwroot` by default) servable. 
 
+![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
+
 run the app: 
+
 ```
     $ dotnet run
 ```
