@@ -257,13 +257,20 @@ public void ConfigureServices(IServiceCollection services)
 ```
 ![CMD](/images/dotnet/webserverStartBrowseDir.png){:class="img-responsive" :max-width="80%"}
 
-The code above allows `directory browsing` of the `wwwroot/images` direcory using the URL [http://localhost:5000/Images](http://localhost:5000/Images), with links to each file and direcory:
+The code above allows `directory browsing` of the `wwwroot/images` direcory using the URL [http://localhost:5000/images](http://localhost:5000/images), with links to each file and direcory:
 
 ![CMD](/images/dotnet/webserverbrowsedir.png){:class="img-responsive" :max-width="80%"}
 
->
-> ##  Any files under the `wwwroot` folder will be server 
->
+
+## UseFileServer
+
+You can use `UseFileServer` to enables static files and the default file to be served and allow directory browsing:
+
+```
+app.UseFileServer(enableDirectoryBrowsing: true);
+
+```
+
 
 >
 > ## **This is your static content web server working **
