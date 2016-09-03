@@ -133,11 +133,11 @@ run the app:
 
 Create `index.html` file and  put some images under `wwwroot` directory:
 
-[(http://localhost:5000/index.html](http://localhost:5000/index.html)
+[http://localhost:5000/index.html](http://localhost:5000/index.html)
 
 ![CMD](/images/dotnet/webserverindex.png){:class="img-responsive" :max-width="80%"}
 
-[(http://localhost:5000/image1.png](http://localhost:5000/image1.png)
+[http://localhost:5000/image1.png](http://localhost:5000/image1.png)
 
 ![CMD](/images/dotnet/webserverpreview.png){:class="img-responsive" :max-width="80%"}
 
