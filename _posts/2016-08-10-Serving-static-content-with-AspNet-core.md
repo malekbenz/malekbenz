@@ -275,5 +275,5 @@ app.UseFileServer(enableDirectoryBrowsing: true);
 
 
 >
-> ## Serve a static content with .NET Core **
+> ## Serve a static content with .NET Core
 >
