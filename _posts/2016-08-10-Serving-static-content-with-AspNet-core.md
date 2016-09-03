@@ -62,6 +62,7 @@ Update the project.json file to add the Kestrel HTTP server package as a depende
 
 
 and run `dotnet restore`
+
 ```
     $ dotnet restore
 ```
@@ -123,8 +124,14 @@ Calling the `UseStaticFiles` extension method from Startup.Configure
         }
     }
 ```
-
 `app.UseStaticFiles()` makes the files in `web root` (`wwwroot` by default) servable. 
+
+run the app: 
+```
+    $ dotnet run
+```
+
+Create `index.html` file and  put some images under `wwwroot` directory:
 
 [(http://localhost:5000/index.html](http://localhost:5000/index.html)
 
