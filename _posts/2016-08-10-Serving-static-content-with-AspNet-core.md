@@ -249,14 +249,17 @@ public void Configure(IApplicationBuilder app)
 And add required services by calling AddDirectoryBrowser extension method from Startup.ConfigureServices:
 
 ```
+
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddDirectoryBrowser();
 }
 ```
+![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
 
 The code above allows directory browsing of the wwwroot/images folder using the URL http://localhost:5000/Images, with links to each file and folder:
 
+![CMD](/images/dotnet/webserverbrowsedir.png){:class="img-responsive" :max-width="80%"}
 
 >
 > ##  Any files under the `wwwroot` folder will be server 
