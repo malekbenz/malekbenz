@@ -31,9 +31,9 @@ Create a `webserver` directory to hold your application, and make that your work
 
 ![CMD](/images/dotnet/webserver01.png){:class="img-responsive" :max-width="80%"}
 
-## Add the Kestrel package
+## Add the Kestrel & StaticFiles packages
 
-Update the project.json file to add the Kestrel HTTP server package as a dependency:
+Update the project.json file to add the Kestrel HTTP server & StaticFiles packages as a dependency:
 
 ```
     {
@@ -273,5 +273,5 @@ app.UseFileServer(enableDirectoryBrowsing: true);
 
 
 >
-> ## **This is your static content web server working **
+> ## Serve a static content with .NET Core **
 >
