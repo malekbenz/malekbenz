@@ -223,7 +223,7 @@ A request to http://localhost:5000/public/test.png will serve the test.png file.
 
 ## Enabling directory browsing
 
-Directory browsing allows the user of your web app to see a list of directories and files within a specified directory. To enable directory browsing, call the UseDirectoryBrowser extension method from `Startup.Configure`:
+Directory browsing allows the user of your web app to see a list of directories and files within a specified directory. To enable directory browsing, call the `UseDirectoryBrowser` extension method from `Startup.Configure`:
 
 ```
 public void Configure(IApplicationBuilder app)
@@ -246,7 +246,7 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-And add required services by calling AddDirectoryBrowser extension method from Startup.ConfigureServices:
+And add required services by calling `AddDirectoryBrowser` extension method from `Startup.ConfigureServices`:
 
 ```
 
@@ -255,9 +255,9 @@ public void ConfigureServices(IServiceCollection services)
     services.AddDirectoryBrowser();
 }
 ```
-![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/dotnet/webserverStartBrowseDir.png){:class="img-responsive" :max-width="80%"}
 
-The code above allows directory browsing of the wwwroot/images folder using the URL http://localhost:5000/Images, with links to each file and folder:
+The code above allows `directory browsing` of the `wwwroot/images` direcory using the URL [http://localhost:5000/Images](http://localhost:5000/Images), with links to each file and direcory:
 
 ![CMD](/images/dotnet/webserverbrowsedir.png){:class="img-responsive" :max-width="80%"}
 
