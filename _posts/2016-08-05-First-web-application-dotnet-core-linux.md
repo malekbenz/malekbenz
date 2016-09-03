@@ -87,6 +87,7 @@ Add a Startup.cs file that defines the request handling logic:
         }
     }
 ```
+
 ![CMD](/images/dotnet/startup.cs.png){:class="img-responsive" :max-width="80%"}
 
 ## Update  Program.cs:
