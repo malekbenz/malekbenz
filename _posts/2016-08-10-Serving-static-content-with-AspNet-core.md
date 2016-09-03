@@ -60,6 +60,7 @@ Update the project.json file to add the Kestrel HTTP server package as a depende
 ```
 ![CMD](/images/dotnet/webserverproject.png){:class="img-responsive" :max-width="80%"}
 
+
 and run `dotnet restore`
 ```
     $ dotnet restore
@@ -92,6 +93,8 @@ namespace webserver
 }
 ```
 
+![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
+
 ## Configure a static files Middleware:
 
 In order for static files to be served, you must configure the Middleware to add static files to the pipeline.
@@ -122,6 +125,15 @@ Calling the `UseStaticFiles` extension method from Startup.Configure
 ```
 
 `app.UseStaticFiles()` makes the files in `web root` (`wwwroot` by default) servable. 
+
+[(http://localhost:5000/index.html](http://localhost:5000/index.html)
+
+![CMD](/images/dotnet/webserverindex.png){:class="img-responsive" :max-width="80%"}
+
+[(http://localhost:5000/image1.png](http://localhost:5000/image1.png)
+
+![CMD](/images/dotnet/webserverpreview.png){:class="img-responsive" :max-width="80%"}
+
 
 
 >
