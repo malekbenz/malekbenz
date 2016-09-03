@@ -144,7 +144,7 @@ Create `index.html` file and  put some images under `wwwroot` directory:
 ![CMD](/images/dotnet/webserverpreview.png){:class="img-responsive" :max-width="80%"}
 
 
-Notice that you must specify the name of a file to serve, in order to server a `default file` call the `UseDefaultFiles` extension method from `Startup.Configure` as follows.
+Notice that you must specify the name of a file to serve, in order to server a `default` file call the `UseDefaultFiles` extension method from `Startup.Configure` as follows.
 
 ```
     public void Configure(IApplicationBuilder app)
@@ -221,7 +221,7 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-A request to http://localhost:5000/public/test.png will serve the test.png file.
+A request to `http://localhost:5000/public/test.png` will serve the test.png file.
 
 ## Enabling directory browsing
 
