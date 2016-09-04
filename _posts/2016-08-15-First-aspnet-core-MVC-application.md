@@ -136,6 +136,7 @@ ASP.NET Core MVC is built on top of ASP.NET Core’s routing, a powerful URL-map
     routes.MapRoute(name: "Default", template: "{controller=Home}/{action=Index}/{id?}");
 
 ```
+
 ![CMD](/images/aspnet/Startup.routes.png){:class="img-responsive" :max-width="80%"}
 
 run the app again: 
@@ -146,11 +147,43 @@ run the app again:
 
 ![CMD](/images/aspnet/run.with.routes.png){:class="img-responsive" :max-width="80%"}
 
+## View 
+In order to add a view first we must create `views` directory. and under that direcory we add a direcory foreach `controller`.
+
+So create `Home` directory under `views` and add `index.cshtml` file:      
+
 ```csharp
-    app.UseFileServer(enableDirectoryBrowsing: true);
+ <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1> This is from the view </h1>
+            <h1> Thanks </h1>
+        </body>
+    </html>   
+
+```
+![CMD](/images/aspnet/index.cshtml.png){:class="img-responsive" :max-width="80%"}
+run the app: 
+```
+    $ dotnet run
 ```
 
+![CMD](/images/aspnet/runWithoutCompilationContext.png){:class="img-responsive" :max-width="80%"}
+
+But it doesn't work!
+in order to compile views we must set `preserveCompilationContext` to `true` in `project.json` file: 
+
+```csharp
+"preserveCompilationContext": true
+```
+Run the app and everything is okay.
+
+![CMD](/images/aspnet/runwithCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
 >
-> ## Serve a static content with .NET Core
+> ## ASP.Net Core MVC application.
 >
