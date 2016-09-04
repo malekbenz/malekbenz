@@ -31,7 +31,7 @@ $ dotnet new
 
 Update the project.json file to add the Kestrel HTTP server package as a dependency:
 
-```
+```csharp
     {
     "version": "1.0.0-*",
     "buildOptions": {
@@ -67,7 +67,7 @@ $ dotnet restore
 
 Add a Startup.cs file that defines the request handling logic:
 
-```
+```csharp
     using System;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -94,7 +94,7 @@ Add a Startup.cs file that defines the request handling logic:
 
 Update the code in Program.cs to setup and start the Web host:
 
-```
+```csharp
 using System;
 using Microsoft.AspNetCore.Hosting;
 

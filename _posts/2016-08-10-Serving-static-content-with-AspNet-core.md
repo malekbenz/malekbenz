@@ -58,6 +58,7 @@ Update the project.json file to add the Kestrel HTTP server & StaticFiles packag
     }
     }
 ```
+
 ![CMD](/images/dotnet/webserverproject.png){:class="img-responsive" :max-width="80%"}
 
 
@@ -170,7 +171,7 @@ Run the app again
 
 To change the default file name to home.html.
 
-```
+```csharp
     public void Configure(IApplicationBuilder app)
     {
         // Serve home.html default file, if present.
@@ -192,7 +193,7 @@ Note:
 
 ```
 
-## Can we serve another direcory contents:
+## What about serving other direcories contents:
 
 Static files are typically located in the `web root` (`<content-root>/wwwroot`) folder. See Content root and Web root in Introduction to ASP.NET Core for more information. 
 
