@@ -35,7 +35,7 @@ Create a `webserver` directory to hold your application, and make that your work
 
 Update the project.json file to add the Kestrel HTTP server & StaticFiles packages as a dependency:
 
-```
+```csharp
     {
     "version": "1.0.0-*",
     "buildOptions": {
@@ -71,7 +71,7 @@ and run `dotnet restore`
 
 Update the code in Program.cs to setup and start the Web host:
 
-```
+```csharp
 using System;
 using Microsoft.AspNetCore.Hosting;
 
@@ -105,7 +105,7 @@ The static file middleware can be configured by adding a dependency on the `Micr
 Calling the `UseStaticFiles` extension method from Startup.Configure
 
 
-```
+```csharp
 // Startup.cs
     using System;
     using Microsoft.AspNetCore.Builder;
@@ -146,7 +146,7 @@ Create `index.html` file and  put some images under `wwwroot` directory:
 
 Notice that you must specify the name of a file to serve, in order to server a `default` file call the `UseDefaultFiles` extension method from `Startup.Configure` as follows.
 
-```
+```csharp
     public void Configure(IApplicationBuilder app)
         {
             app.UseDefaultFiles();
@@ -207,7 +207,7 @@ but you can specify a different location using the WebHostBuilder.
 
 To serve another direcory for example `statics` (you must create the directory), then configure the static files middleware as follows :  
 
-```
+```csharp
 public void Configure(IApplicationBuilder app)
 {
     app.UseStaticFiles();
@@ -227,7 +227,7 @@ A request to `http://localhost:5000/public/test.png` will serve the test.png fil
 
 Directory browsing allows the user of your web app to see a list of directories and files within a specified directory. To enable directory browsing, call the `UseDirectoryBrowser` extension method from `Startup.Configure`:
 
-```
+```csharp
 public void Configure(IApplicationBuilder app)
 {
     app.UseStaticFiles(); // For the wwwroot folder
@@ -250,7 +250,7 @@ public void Configure(IApplicationBuilder app)
 
 And add required services by calling `AddDirectoryBrowser` extension method from `Startup.ConfigureServices`:
 
-```
+```csharp
 
 public void ConfigureServices(IServiceCollection services)
 {
@@ -268,7 +268,7 @@ The code above allows `directory browsing` of the `wwwroot/images` direcory usin
 
 You can use `UseFileServer` to enables static files and the default file to be served and allow directory browsing:
 
-```
+```csharp
 app.UseFileServer(enableDirectoryBrowsing: true);
 
 ```
