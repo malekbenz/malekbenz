@@ -29,7 +29,7 @@ Create a `mvcapp` directory to hold your application.
 
 ## Add the Kestrel & MVC packages
 
-Update the project.json file to add the Kestrel HTTP server & MVX packages as a dependency:
+Update the project.json file to add the Kestrel HTTP server & MVC packages as a dependency:
 
 ```csharp
     {
@@ -113,7 +113,7 @@ namespace mvcapp
 }
 ```
 
-![CMD](/images/aspnet/Startup.Mvc.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/aspnet/HomeControllerString.png){:class="img-responsive" :max-width="80%"}
 
 run the app: 
 
@@ -123,7 +123,7 @@ run the app:
 
 ![CMD](/images/aspnet/404.error.cs.png){:class="img-responsive" :max-width="80%"}
 
-And It doesn't work! we got 404 error, Because the app doesn't know how to route a request.   
+And `It doesn't work!` we got `404` error, Because the app doesn't know how to `route` a request.   
 
 ## Routing 
 
