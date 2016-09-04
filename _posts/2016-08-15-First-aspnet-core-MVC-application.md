@@ -174,12 +174,16 @@ run the app:
 
 ![CMD](/images/aspnet/runWithoutCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
-But it doesn't work!
-in order to compile views we must set `preserveCompilationContext` to `true` in `project.json` file: 
+But it doesn't work!.
+
+In order to compile views we must set `preserveCompilationContext` to `true` in `project.json` file: 
 
 ```csharp
 "preserveCompilationContext": true
 ```
+
+![CMD](/images/aspnet/preserveCompilationContext.png){:class="img-responsive" :max-width="80%"}
+
 Run the app and everything is okay.
 
 ![CMD](/images/aspnet/runwithCompilationContext.png){:class="img-responsive" :max-width="80%"}
