@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Serving static content with Asp.Net Core"
+title: "First Asp.Net Core MVC application"
 date: 2016-08-10
 author: Malekbenz
 comments: true
@@ -10,9 +10,8 @@ categories: ['Asp.Net', '.Net']
 ---
 ## Serving a static contents  
 
-What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. 
 
-This post will guide you to Build a simple static file server using only the CLI and a text editor. I also wanted to do this completely in Linux.
+This post will guide you to Build a your First MVC application with ASP.NET Core. I also wanted to do this completely in Linux.
 
 In order to install .NET Core on Ubuntu or Linux Mint you can see [Install .Net Core on linux](/blog/2016/08/01/Install-dotnet-core-linux).
 
@@ -20,12 +19,11 @@ If you don't kown how to create a simple web server you can see [Create a First 
 
 ## Create .Net Core project
 
-Create a `webserver` directory to hold your application, and make that your working directory and then create `wwwroot`
+Create a `mvcapp` directory to hold your application.
 
 ```javascript
-    $ mkdir  webserver
-    $ cd webserver
-    $ mkdir wwwroot
+    $ mkdir  mvcapp
+    $ cd mvcapp
 
 ```
 
@@ -51,7 +49,7 @@ Update the project.json file to add the Kestrel HTTP server & StaticFiles packag
             "version": "1.0.0"
             },
             "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
-            "Microsoft.AspNetCore.StaticFiles" : "1.0.0"
+            "Microsoft.AspNetCore.Mvc" : "1.0.0"
         },
         "imports": "dnxcore50"
         }
@@ -59,7 +57,7 @@ Update the project.json file to add the Kestrel HTTP server & StaticFiles packag
     }
 ```
 
-![CMD](/images/dotnet/webserverproject.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/aspnet/project.json.png){:class="img-responsive" :max-width="80%"}
 
 
 and run `dotnet restore`
@@ -76,7 +74,7 @@ Update the code in Program.cs to setup and start the Web host:
 using System;
 using Microsoft.AspNetCore.Hosting;
 
-namespace webserver
+namespace mvcapp
 {
     public class Program
     {
@@ -93,45 +91,67 @@ namespace webserver
     }
 }
 ```
+![CMD](/images/aspnet/Program.cs.png){:class="img-responsive" :max-width="80%"}
 
 
-## Configure a static files Middleware:
+## Create a Conroller :
 
-In order for static files to be served, you must configure the Middleware to add static files to the pipeline.
+In order to create a controller, you must create a `Controllers` folder.
 
-The static file middleware can be configured by adding a dependency on the `Microsoft.AspNetCore.StaticFiles` package to your `project.json` file.
-
-
-Calling the `UseStaticFiles` extension method from Startup.Configure
-
+Under the `Controllers` folder create `HomeController` file:  
 
 ```csharp
-// Startup.cs
-    using System;
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
-    namespace webserver
+namespace mvcapp
+{
+    public class HomeController : Controller
     {
-        public class Startup
+        public string Index()
         {
-            public void Configure(IApplicationBuilder app)
-            {
-                app.UseStaticFiles();
-             }
+            return "Helloo From my MVC APP";
         }
     }
+}
 ```
-`app.UseStaticFiles()` makes the files in `web root` (`wwwroot` by default) servable. 
 
-![CMD](/images/dotnet/webserverStartup.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/aspnet/Startup.Mvc.png){:class="img-responsive" :max-width="80%"}
 
 run the app: 
 
 ```
     $ dotnet run
 ```
+
+![CMD](/images/aspnet/404.error.cs.png){:class="img-responsive" :max-width="80%"}
+
+
+## Routing 
+
+ASP.NET Core MVC is built on top of ASP.NET Core’s routing, a powerful URL-mapping component that lets you build applications that have comprehensible and searchable URLs. This enables you to define your application’s URL naming patterns that work well for search engine optimization (SEO) and for link generation, without regard for how the files on your web server are organized. You can define your routes using a convenient route template syntax that supports route value constraints, defaults and optional values.
+
+Convention-based routing enables you to globally define the URL formats that your application accepts and how each of those formats maps to a specific action method on given controller. When an incoming request is received, the routing engine parses the URL and matches it to one of the defined URL formats, and then calls the associated controller’s action method.
+
+```
+    routes.MapRoute(name: "Default", template: "{controller=Home}/{action=Index}/{id?}");
+
+```
+![CMD](/images/aspnet/Startup.routes.png){:class="img-responsive" :max-width="80%"}
+
+run the app again: 
+
+```
+    $ dotnet run
+```
+
+![CMD](/images/aspnet/run.with.routes.png){:class="img-responsive" :max-width="80%"}
+
+
+
+
+
+
+
 
 Create `index.html` file and  put some images under `wwwroot` directory:
 
