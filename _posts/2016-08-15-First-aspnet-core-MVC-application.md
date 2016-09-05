@@ -148,7 +148,7 @@ run the app again:
 ![CMD](/images/aspnet/run.with.routes.png){:class="img-responsive" :max-width="80%"}
 
 ## View (the V of MVC)
-In order to add a view first we must create `views` directory. and under that direcory we add a direcory foreach `controller`.
+In order to add a `view`, first we must create `views` directory. and under that direcory we add a `directory` foreach `controller`.
 
 So create `Home` directory under `views` and add `index.cshtml` file:      
 
@@ -167,16 +167,18 @@ So create `Home` directory under `views` and add `index.cshtml` file:
 
 ```
 ![CMD](/images/aspnet/index.cshtml.png){:class="img-responsive" :max-width="80%"}
+
 run the app: 
+
 ```
     $ dotnet run
 ```
 
 ![CMD](/images/aspnet/runWithoutCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
-But it doesn't work!.
+>But it doesn't work!.
 
-In order to compile views we must set `preserveCompilationContext` to `true` in `project.json` file: 
+>In order to compile views we must update `project.json` and set `preserveCompilationContext` to `true`: 
 
 ```csharp
 "preserveCompilationContext": true
@@ -187,6 +189,8 @@ In order to compile views we must set `preserveCompilationContext` to `true` in 
 Run the app and everything is okay.
 
 ![CMD](/images/aspnet/runwithCompilationContext.png){:class="img-responsive" :max-width="80%"}
+
+
 
 >
 > ## ASP.Net Core MVC application.
