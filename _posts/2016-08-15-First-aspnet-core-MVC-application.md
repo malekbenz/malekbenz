@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Asp.Net Core MVC application"
-date: 2016-08-10
+date: 2016-08-15
 author: Malekbenz
 comments: true
 category: Asp.Net
@@ -58,7 +58,7 @@ Update the project.json file to add the Kestrel HTTP server & MVC packages as a 
 ![CMD](/images/aspnet/project.json.png){:class="img-responsive" :max-width="80%"}
 
 
-and run `dotnet restore`
+and run `dotnet restore`to restore dependencies that are specified in the project.json.
 
 ```
     $ dotnet restore
@@ -66,7 +66,7 @@ and run `dotnet restore`
 
 ## Update  Program.cs:
 
-Update the code in Program.cs to setup and start the Web host:
+Update the code in Program.cs to setup and start the `Web host`:
 
 ```csharp
 using System;
@@ -92,7 +92,7 @@ namespace mvcapp
 ![CMD](/images/aspnet/Program.cs.png){:class="img-responsive" :max-width="80%"}
 
 
-## Create a Conroller:
+## Create a Controller:
 
 In order to create a controller, you must create a `Controllers` folder.
 
@@ -123,7 +123,7 @@ run the app:
 
 ![CMD](/images/aspnet/404.error.cs.png){:class="img-responsive" :max-width="80%"}
 
-And `It doesn't work!` we got `404` error, Because the app doesn't know how to `route` a request.   
+>> And `It doesn't work!` we got `404` error, Because the app doesn't know how to `route` a request.   
 
 ## Routing 
 
