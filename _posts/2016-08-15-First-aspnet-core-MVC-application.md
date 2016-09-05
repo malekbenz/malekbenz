@@ -92,7 +92,7 @@ namespace mvcapp
 ![CMD](/images/aspnet/Program.cs.png){:class="img-responsive" :max-width="80%"}
 
 
-## Create a Controller (the C of MVC):
+## Create a Controller (C part of MVC):
 
 In order to create a controller, you must create a `Controllers` folder.
 
@@ -147,7 +147,7 @@ run the app again:
 
 ![CMD](/images/aspnet/run.with.routes.png){:class="img-responsive" :max-width="80%"}
 
-## View (the V of MVC)
+## View (V  part of MVC)
 In order to add a `view`, first we must create `views` directory. and under that direcory we add a `directory` foreach `controller`.
 
 So create `Home` directory under `views` and add `index.cshtml` file:      
@@ -190,7 +190,7 @@ Run the app and everything is okay.
 
 ![CMD](/images/aspnet/runwithCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
-## Model (the M of MVC)
+## Model (M part of MVC)
 
 Now Create a Direcory `Models` and add `Person.cs` file:
 
