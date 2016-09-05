@@ -176,7 +176,7 @@ run the app:
 
 ![CMD](/images/aspnet/runWithoutCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
->But it doesn't work!.
+>But it doesn't work! we got `500 Internal Server Error`.
 
 >In order to compile views we must update `project.json` and set `preserveCompilationContext` to `true`: 
 
@@ -190,7 +190,81 @@ Run the app and everything is okay.
 
 ![CMD](/images/aspnet/runwithCompilationContext.png){:class="img-responsive" :max-width="80%"}
 
+## Model (the M of MVC)
 
+Now Create a Direcory `Models` and add `Person.cs` file:
+
+```csharp
+    namespace  mvcapp.models
+    {
+        public class Person
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Email { get; set; }
+
+        }
+    }   
+```
+
+![CMD](/images/aspnet/Persone.cs.png){:class="img-responsive" :max-width="80%"}
+
+Update  `HomeController.cs` file: 
+
+```csharp 
+using Microsoft.AspNetCore.Mvc;
+using mvcapp.models;
+
+namespace mvcapp 
+{
+    public class HomeController:Controller
+    {
+        public IActionResult Index()
+        {
+            var person =new Person(){
+                Id = 1,
+                Name = "Malekbenz",
+                Email = "malekbenz@gmail.com"  
+            } ;
+
+            return View(person);
+        }        
+    }
+}
+```
+
+Update  `Index.cshtml` file: 
+
+```csharp 
+    @model mvcapp.models.Person
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>MVC APP</title>
+        </head>
+        <body>
+
+            <h1>Welcome to ASP.NET Core MVC</h1>    
+            <ul>
+                <li>ID: @Model.Id</li>
+                <li>Name : @Model.Name</li>
+                <li>Email: @Model.Email</li>
+                
+            </ul>
+        </body>
+    </html>
+```
+
+![CMD](/images/aspnet/IndexWithModel.png){:class="img-responsive" :max-width="80%"}
+
+run the app: 
+
+```
+    $ dotnet run
+```
+
+![CMD](/images/aspnet/runwithModel.png){:class="img-responsive" :max-width="80%"}
 
 >
 > ## ASP.Net Core MVC application.
