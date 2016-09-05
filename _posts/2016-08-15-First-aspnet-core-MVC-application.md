@@ -92,7 +92,7 @@ namespace mvcapp
 ![CMD](/images/aspnet/Program.cs.png){:class="img-responsive" :max-width="80%"}
 
 
-## Create a Controller:
+## Create a Controller (the C of MVC):
 
 In order to create a controller, you must create a `Controllers` folder.
 
@@ -123,16 +123,16 @@ run the app:
 
 ![CMD](/images/aspnet/404.error.cs.png){:class="img-responsive" :max-width="80%"}
 
->> And `It doesn't work!` we got `404` error, Because the app doesn't know how to `route` a request.   
+> And `It doesn't work!` we got `404` error, Because the app doesn't know how to `route` a request.   
 
 ## Routing 
 
-Routing is used to map requests to route handlers. Routes are configured when the application starts.
+Routing is used to `map requests` to route `handlers`. Routes are configured when the application starts `Startup.configure`.
 
 ASP.NET Core MVC is built on top of ASP.NET Core’s routing, a powerful URL-mapping component that lets you build applications that have comprehensible and searchable URLs. This enables you to define your application’s URL naming patterns that work well for search engine optimization (SEO) and for link generation, without regard for how the files on your web server are organized. You can define your routes using a convenient route template syntax that supports route value constraints, defaults and optional values.
 
 
-```
+```csharp
     routes.MapRoute(name: "Default", template: "{controller=Home}/{action=Index}/{id?}");
 
 ```
@@ -147,7 +147,7 @@ run the app again:
 
 ![CMD](/images/aspnet/run.with.routes.png){:class="img-responsive" :max-width="80%"}
 
-## View 
+## View (the V of MVC)
 In order to add a view first we must create `views` directory. and under that direcory we add a direcory foreach `controller`.
 
 So create `Home` directory under `views` and add `index.cshtml` file:      
