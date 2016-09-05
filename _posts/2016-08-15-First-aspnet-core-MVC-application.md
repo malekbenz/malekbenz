@@ -233,6 +233,8 @@ namespace mvcapp
 }
 ```
 
+![CMD](/images/aspnet/HomeControllerModel.png){:class="img-responsive" :max-width="80%"}
+
 Update  `Index.cshtml` file: 
 
 ```csharp 
