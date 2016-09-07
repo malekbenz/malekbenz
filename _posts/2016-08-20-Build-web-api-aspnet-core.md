@@ -325,7 +325,7 @@ Run the app:
 
 ![CMD](/images/webapi/index.preview3.png){:class="img-responsive" :max-width="80%"}
 
-You can find the code source on [https://github.com/malektrainer/samplewebapi](https://github.com/malektrainer/samplewebapi). 
+You can get the code source on [https://github.com/malektrainer/samplewebapi](https://github.com/malektrainer/samplewebapi). 
 
 >
 > ## Build ASP.Net Core WebAPI  application.
