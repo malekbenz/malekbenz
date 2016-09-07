@@ -8,9 +8,9 @@ category: Asp.Net
 tags : ['Asp.Net', '.Net']
 categories: ['Asp.Net', '.Net']
 ---
-## ASP.NET Core MVC  
+## Introduction  
 
-In this post we we will use Asp.NET core to create Web API that return list of student, and we'll consume it using JQuery.
+In this post we will use Asp.NET core to create Web API that return list of student, and we'll consume it using JQuery.
 
 In order to install .NET Core on Ubuntu or Linux Mint you can see [Install .Net Core on linux](/blog/2016/08/01/Install-dotnet-core-linux).
 
