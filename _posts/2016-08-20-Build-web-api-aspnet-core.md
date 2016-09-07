@@ -162,6 +162,7 @@ We create a array that store list of Students inside the controller class.
 The controller defines two methods that return Students:
 
 >The GetAll method returns the entire list of students as an IEnumerable<student> type.
+
 >The Get method looks up a single student by its ID.
 
 That's it! You have a working web API.  Each method on the controller corresponds to one or more URIs:
