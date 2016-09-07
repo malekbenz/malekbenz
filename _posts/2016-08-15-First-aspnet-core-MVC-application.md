@@ -24,6 +24,7 @@ Create a `mvcapp` directory to hold your application.
 ```javascript
     $ mkdir  mvcapp
     $ cd mvcapp
+    $ dotnet new
 
 ```
 
