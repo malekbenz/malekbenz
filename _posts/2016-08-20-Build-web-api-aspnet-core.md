@@ -157,12 +157,13 @@ namespace mvcapp
 
 ![CMD](/images/webapi/ControllerStudentbyId.png){:class="img-responsive" :max-width="80%"}
 
-We create a array tha store list od Students inside the controller class.
+We create a array that store list of Students inside the controller class.
 
 The controller defines two methods that return Students:
 
-The GetAll method returns the entire list of students as an IEnumerable<student> type.
-The  Get method looks up a single student by its ID.
+>The GetAll method returns the entire list of students as an IEnumerable<student> type.
+>The Get method looks up a single student by its ID.
+
 That's it! You have a working web API.  Each method on the controller corresponds to one or more URIs:
 
 run the app: 
@@ -179,7 +180,8 @@ If the student doesn't exist:
 
 ![CMD](/images/webapi/404student.png){:class="img-responsive" :max-width="80%"}
 
-Now 
+ 
+
 ## Calling the Web API with jQuery
 
 We'll add an HTML page that uses AJAX to call the web API. We'll use jQuery to make the AJAX calls and also to update the page with the results.
@@ -271,6 +273,7 @@ Create `wwwroot` directory, then add `index.html`
 To get a list of students, send an HTTP GET request to "/api/student".
 
 The jQuery getJSON function sends an AJAX request. For response contains array of JSON objects. The done function specifies a callback that is called if the request succeeds. In the callback, we update the DOM with the student information.
+
 ```
    $(function () {
       // Send an AJAX request
@@ -303,6 +306,7 @@ To get a student by ID, send an HTTP GET  request to "/api/student/id", where id
     }
 
 ```
+
 ![CMD](/images/webapi/index.html.png){:class="img-responsive" :max-width="80%"}
 
 ![CMD](/images/webapi/index.js.png){:class="img-responsive" :max-width="80%"}
@@ -321,6 +325,7 @@ Run the app:
 ![CMD](/images/webapi/index.preview3.png){:class="img-responsive" :max-width="80%"}
 
 You can find the code source on [https://github.com/malektrainer/samplewebapi](https://github.com/malektrainer/samplewebapi). 
+
 >
-> ## ASP.Net Core MVC application.
+> ## Build ASP.Net Core WebAPI  application.
 >
