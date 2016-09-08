@@ -8,7 +8,7 @@ category: Asp.Net
 tags : ['Asp.Net', '.Net']
 categories: ['Asp.Net', '.Net']
 ---
-## Introduction  
+## Getting Started  
 
 In this post we will use Asp.NET core to create Web API that return list of student, and we'll consume it using JQuery.
 
@@ -90,9 +90,9 @@ namespace mvcapp
 ```
 ![CMD](/images/webapi/programe.cs.png){:class="img-responsive" :max-width="80%"}
 
-## Create a Student class (Model):
+## Create a `Student` class (Model):
 
-Create a `Models` folder and Add a `student.cs` :
+Create a `Models` folder and Add a `student.cs` file:
 
 ```csharp
     namespace mvcapp
@@ -109,11 +109,11 @@ Create a `Models` folder and Add a `student.cs` :
 
 ![CMD](/images/webapi/student.cs.png){:class="img-responsive" :max-width="80%"}
 
-## Create a Controller:
+## Create a `Student` Controller:
 
 In order to create a controller, you must create a `Controllers` folder.
 
-Under the `Controllers` folder create `StudentController` file:  
+Under the `Controllers` folder create `StudentController.cs` file:  
 
 ```csharp
 using System.Collections.Generic;
@@ -132,13 +132,15 @@ namespace mvcapp
             new Student { Id = 3, Name = "Hammer" ,Age = 22 }
              };
 
+        //api/student
         [HttpGet]     
         public IEnumerable<Student> GetAll()
         {
             return students;
         }
-        [HttpGet("{id}")]
 
+        //api/student/1
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             var student = students.FirstOrDefault((s) => s.Id == id);
@@ -161,13 +163,11 @@ We create a array that store list of Students inside the controller class.
 
 The controller defines two methods that return Students:
 
->The GetAll method returns the entire list of students as an IEnumerable<student> type.
+>'GetAll' method returns the entire list of students as an 'IEnumerable<student>' type.
 
->The Get method looks up a single student by its ID.
+>'Get' method looks up a single student by its ID.
 
-That's it! You have a working web API.  Each method on the controller corresponds to one or more URIs:
-
-run the app: 
+That's it! You have a working web API.  Each method on the controller corresponds to one or more URIs, Run the app: 
 
 ```
     $ dotnet run
@@ -177,7 +177,7 @@ run the app:
 
 ![CMD](/images/webapi/getFirststudent.png){:class="img-responsive" :max-width="80%"}
  
-If the student doesn't exist: 
+We got '404 error'  If the student doesn't exist: 
 
 ![CMD](/images/webapi/404student.png){:class="img-responsive" :max-width="80%"}
 
@@ -185,13 +185,13 @@ If the student doesn't exist:
 
 ## Calling the Web API with jQuery
 
-We'll add an HTML page that uses AJAX to call the web API. We'll use jQuery to make the AJAX calls and also to update the page with the results.
+We'll add an HTML page that uses `AJAX` to call the web API. We'll use `jQuery` to make the `AJAX` calls and also to update the page with the results.
 
-But to be able to serve and  our html file we must add stat Middleware let's do it.
+But in order to be able to serve our html file we must add `StaticFiles` Middleware let's do it.
 
 ### Configure a static files Middleware to server our index.html 
 
-Update the project.json file to add StaticFiles packages as a dependency:
+Update the `project.json` file to add `StaticFiles` packages as a dependency:
 
 ```csharp
     "Microsoft.AspNetCore.StaticFiles" : "1.0.0"
@@ -200,15 +200,17 @@ Update the project.json file to add StaticFiles packages as a dependency:
 ![CMD](/images/webapi/Project.staticFile.png){:class="img-responsive" :max-width="80%"}
 
 
-Now update the `Startup.Configure` methode :
+Now update the `Startup.Configure` method :
 
 ```csharp
     app.UseFileServer();
     app.UseMvc();
 ```
+
 ![CMD](/images/webapi/startupFileServer.png){:class="img-responsive" :max-width="80%"}
 
 ### Create `index.html` 
+
 Create `wwwroot` directory, then add `index.html`
 
 
@@ -273,7 +275,7 @@ Create `wwwroot` directory, then add `index.html`
 
 To get a list of students, send an HTTP GET request to "/api/student".
 
-The jQuery getJSON function sends an AJAX request. For response contains array of JSON objects. The done function specifies a callback that is called if the request succeeds. In the callback, we update the DOM with the student information.
+The `jQuery` `getJSON` function sends an `AJAX` request. For response contains array of `JSON` objects. The `done` function specifies a `callback` that is called if the request succeeds. In the callback, we update the DOM with the student information.
 
 ```
    $(function () {
@@ -292,7 +294,7 @@ The jQuery getJSON function sends an AJAX request. For response contains array o
 
 ### Getting a student By ID
 
-To get a student by ID, send an HTTP GET  request to "/api/student/id", where id is the student ID.
+To get a `student` by ID, send an`HTTP GET`  request to `/api/student/id`, where id is the `student ID`.
 
 ```
     function find() {
@@ -308,25 +310,26 @@ To get a student by ID, send an HTTP GET  request to "/api/student/id", where id
 
 ```
 
-![CMD](/images/webapi/index.html.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/webapi/index.html.png){:class="img-responsive" }
 
-![CMD](/images/webapi/index.js.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/webapi/index.js.png){:class="img-responsive" }
 
 ### Running the Application
 
 Run the app: 
+
 ```
     $ dotnet run
 ```
 
-![CMD](/images/webapi/index.preview1.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/webapi/index.preview1.png){:class="img-responsive"}
 
-![CMD](/images/webapi/index.preview2.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/webapi/index.preview2.png){:class="img-responsive" }
 
-![CMD](/images/webapi/index.preview3.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/webapi/index.preview3.png){:class="img-responsive"}
 
 You can get the code source on [https://github.com/malektrainer/samplewebapi](https://github.com/malektrainer/samplewebapi). 
 
 >
-> ## Build ASP.Net Core WebAPI  application.
+> ## Build ASP.Net Core WebAPI Application.
 >
