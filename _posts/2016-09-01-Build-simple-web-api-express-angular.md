@@ -123,76 +123,86 @@ Create `www` directory, then add `index.html`:
 
 <head>
     <meta charset="UTF-8">
-    <title>Student application</title>
+    <title>Student application Angular Js</title>
 </head>
 
-<body>
+<body ng-app="studentApp">
 
-    <div>
-        <h2>Students</h2>
-        <ul id="students" />
+    <div ng-controller="studentCtrl">
+        <div>
+            <h2>Students</h2>
+            <ul>
+                <li ng-repeat="student in students"> {{student.name}} : {{ student.age}} </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Search by ID</h2>
+            <input type="text" ng-model="id" size="5" />
+            <input type="button" value="Search" ng-click="find(id)" />
+            <p>{{result}}</p>
+
+        </div>
     </div>
-    <div>
-        <h2>Search by ID</h2>
-        <input type="text" id="studentId" size="5" />
-        <input type="button" value="Search" onclick="find();" />
-        <p id="student" />
-    </div>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-    
-    <script>
-    var uri = 'api/student';
-    $(function () {
-      // Send an AJAX request
-      $.getJSON(uri)
-          .done(function (data) {
-            // On success, 'data' contains a list of students.
-            $.each(data, function (key, item) {
-              // Add a list item for the student.
-              $('<li>', { text: formatStudent(item) }).appendTo($('#students'));
-            });
-          });
-    });
 
-    function formatStudent(item) {
-      return item.name + ': ' + item.age;
-    }
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/studentApp.js"></script>
 
-    function find() {
-      var id = $('#studentId').val();
-      $.getJSON(uri + '/' + id)
-          .done(function (data) {
-            $('#student').text(formatStudent(data));
-          })
-          .fail(function (jqXHR, textStatus, err) {
-            $('#student').text('We got an error: ' + err);
-          });
-    }
-  </script>
 </body>
 
 </html>
-```
 
+```
+Now add  `studentApp.js` file: 
+ 
+```
+var uri = 'api/student/';
+
+var app = angular.module("studentApp", []);
+
+app.controller("studentCtrl", studentCtrl);
+
+function studentCtrl($scope, $http) {
+
+    $http.get(uri).then( getAll, fail);
+
+    $scope.find = find;
+
+    function find(id) {
+        $http.get(uri + id).then(getStudent, fail);
+    }
+
+    function getAll(result) {
+        $scope.students = result.data;
+    }
+
+    function getStudent(result) {
+        $scope.result = result.data.name + ': ' + result.data.age;
+    }
+
+    function fail(error) {
+        $scope.result = error.data;
+    }
+
+}
+
+```
 ### Getting a List of students
 
 To get a list of students, send an HTTP GET request to "/api/student".
 
-The `jQuery` `getJSON` function sends an `AJAX` request. For response contains array of `JSON` objects. The `done` function specifies a `callback` that is called if the request succeeds. In the callback, we update the DOM with the student information.
+The `$http` `get` function sends an `AJAX` request. For response contains array of `JSON` objects. The `then` function specifies a `callback` that is called if the request succeeds.
 
 ```
-   $(function () {
-      // Send an AJAX request
-      $.getJSON(uri)
-          .done(function (data) {
-            // On success, 'data' contains a list of students.
-            $.each(data, function (key, item) {
-              // Add a list item for the student.
-              $('<li>', { text: formatStudent(item) }).appendTo($('#students'));
-            });
-          });
-    });
+    $http.get(uri).then( getAll, fail);
 
+    function getAll(result) {
+            $scope.students = result.data;
+        }
+
+    function fail(error) {
+        $scope.result = error.data;
+    }
+    
 ```
 
 ### Getting a student By ID
@@ -200,15 +210,16 @@ The `jQuery` `getJSON` function sends an `AJAX` request. For response contains a
 To get a `student` by ID, send an`HTTP GET`  request to `/api/student/id`, where id is the `student ID`.
 
 ```
-    function find() {
-      var id = $('#studentId').val();
-      $.getJSON(uri + '/' + id)
-          .done(function (data) {
-            $('#student').text(formatStudent(data));
-          })
-          .fail(function (jqXHR, textStatus, err) {
-            $('#student').text('We got an error: ' + err);
-          });
+    function find(id) {
+        $http.get(uri + id).then(getStudent, fail);
+    }
+
+    function getStudent(result) {
+        $scope.result = result.data.name + ': ' + result.data.age;
+    }
+
+    function fail(error) {
+        $scope.result = error.data;
     }
 
 ```
@@ -237,7 +248,7 @@ Search for a student with Id 05.
 
 ![CMD](/images/webapi/index.preview3.png){:class="img-responsive"}
 
-You can get the code source on [https://github.com/malektrainer/studentExpressApi](https://github.com/malektrainer/studentExpressApi). 
+You can get the code source on [https://github.com/malektrainer/webapiExpressAngular](https://github.com/malektrainer/webapiExpressAngular). 
 
 >
 > ## Build Student WebAPI Application with Expressjs and JQuery.
