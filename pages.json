@@ -8,6 +8,7 @@ layout: null
       "title": "{{ page.title }}",
       "url": "{{ page.url | prepend: site.baseurl }}",
       "categories": "{{ page.categories }}",
+      "tags": "{{ page.tags }}",
       "date": "{{ page.date | date: "%B %-d, %Y" }}",
       "raw_date": "{{ page.date }}"
     }{% unless forloop.last %},{% endunless %}
