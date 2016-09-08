@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First web api application with ExpressJs"
+title: "First web api application with Express Js"
 date: 2016-03-01
 author: Malekbenz
 comments: true

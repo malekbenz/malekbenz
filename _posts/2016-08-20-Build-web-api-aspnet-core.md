@@ -5,7 +5,7 @@ date: 2016-08-20
 author: Malekbenz
 comments: true
 category: Asp.Net
-tags : ['Asp.Net', '.Net']
+tags : ['Asp.Net', '.Net', 'WebAPI', 'JQuery']
 categories: ['Asp.Net', '.Net']
 ---
 ## Getting Started  

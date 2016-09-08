@@ -5,7 +5,7 @@ date: 2016-08-15
 author: Malekbenz
 comments: true
 category: Asp.Net
-tags : ['Asp.Net', '.Net']
+tags : ['Asp.Net', '.Net', 'WebAPI']
 categories: ['Asp.Net', '.Net']
 ---
 ## ASP.NET Core MVC  
