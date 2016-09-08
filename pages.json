@@ -7,7 +7,6 @@ layout: null
     {% for page in site.pages %}{
       "title": "{{ page.title }}",
       "url": "{{ page.url | prepend: site.baseurl }}",
-    //   "content": "{{ page.content }}",
       "categories": "{{ page.categories }}",
       "date": "{{ page.date | date: "%B %-d, %Y" }}",
       "raw_date": "{{ page.date }}"
