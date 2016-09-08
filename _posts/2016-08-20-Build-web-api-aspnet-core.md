@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build Web API With Asp.Net Core"
+title: "Build Web API With Asp.Net Core and JQuery"
 date: 2016-08-20
 author: Malekbenz
 comments: true

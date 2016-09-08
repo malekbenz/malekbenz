@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build A Simle Web API With Expressjs"
+title: "Build A Simple Web API With Expressjs and JQuery"
 date: 2016-08-25
 author: Malekbenz
 comments: true
@@ -84,13 +84,13 @@ Load [http://localhost:3000/student](http://localhost:3000/student) in a browser
 
 ![CMD](/images/expressapi/getAllstudents.png)
 
-Load [http://localhost:3000/student](http://localhost:3000/student/1) in a browser to see the output.
+Load [http://localhost:3000/student/1](http://localhost:3000/student/1) in a browser to see the output.
 
 ![CMD](/images/expressapi/getFirststudent.png)
 
 We got '404 error'  If the student doesn't exist: 
 
-Load [http://localhost:3000/student](http://localhost:3000/student/5) in a browser to see the output.
+Load [http://localhost:3000/student/5](http://localhost:3000/student/5) in a browser to see the output.
 
 ![CMD](/images/expressapi/404student.png)
  
@@ -101,7 +101,7 @@ We'll add an HTML page that uses `AJAX` to call the web API. We'll use `jQuery` 
 
 But in order to be able to serve our html file we must add `express.static` Middleware let's do it.
 
-### Configure a express.static to server our index.html 
+### Configure a `express.static` to server `index.html` 
 
 Update the `app.js` file to add `express.static`:
 
@@ -213,7 +213,6 @@ To get a `student` by ID, send an`HTTP GET`  request to `/api/student/id`, where
 
 ```
 
-Load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
 
 ![CMD](/images/expressapi/index.html.png){:class="img-responsive" }
 
@@ -226,14 +225,20 @@ Run the app:
     $ node app.js
 ```
 
+Load [http://localhost:3000/](http://localhost:3000/) in a browser to see the output.
+
 ![CMD](/images/webapi/index.preview1.png){:class="img-responsive"}
 
+Search for a student with Id 01.
+
 ![CMD](/images/webapi/index.preview2.png){:class="img-responsive" }
+
+Search for a student with Id 05.
 
 ![CMD](/images/webapi/index.preview3.png){:class="img-responsive"}
 
 You can get the code source on [https://github.com/malektrainer/studentExpressApi](https://github.com/malektrainer/studentExpressApi). 
 
 >
-> ## Build Student WebAPI Application with Expressjs.
+> ## Build Student WebAPI Application with Expressjs .
 >
