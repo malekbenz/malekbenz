@@ -3,10 +3,12 @@ layout: null
 ---
 
 {
-  "posts": [
+  "pages": [
     {% for page in site.pages %}{
       "title": "{{ page.title }}",
       "url": "{{ page.url | prepend: site.baseurl }}",
+      "content": "{{ page.content }}",
+      "excerpt": "{{ page.excerpt }}",
       "date": "{{ page.date | date: "%B %-d, %Y" }}",
       "raw_date": "{{ page.date }}"
     }{% unless forloop.last %},{% endunless %}
