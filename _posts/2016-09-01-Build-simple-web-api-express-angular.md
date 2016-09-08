@@ -255,5 +255,5 @@ Search for a student with Id 05.
 You can get the code source on [https://github.com/malektrainer/webapiExpressAngular](https://github.com/malektrainer/webapiExpressAngular). 
 
 >
-> ## Build Student WebAPI Application with Expressjs and JQuery.
+> ## Build Student WebAPI Application with Expressjs and AnguarJs.
 >
