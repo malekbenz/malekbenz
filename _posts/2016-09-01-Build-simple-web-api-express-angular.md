@@ -5,7 +5,7 @@ date: 2016-09-01
 author: Malekbenz
 comments: true
 category: Asp.Net
-tags : ['Nodejs', 'Express', 'WebAPI', 'JQuery']
+tags : ['Nodejs', 'Express', 'WebAPI', 'Angular']
 categories: ['Express', 'Nodejs']
 ---
 ## Getting Started  
@@ -95,9 +95,9 @@ Load [http://localhost:3000/student/5](http://localhost:3000/student/5) in a bro
 ![CMD](/images/expressapi/404student.png)
  
 
-## Calling the Web API with jQuery
+## Calling the Web API with Angular
 
-We'll add an HTML page that uses `AJAX` to call the web API. We'll use `jQuery` to make the `AJAX` calls and also to update the page with the results.
+We'll add an HTML page that uses `AJAX` to call the web API. We'll use `AngularJS` to make the `AJAX` calls using `$http` module and also to update the page with the results.
 
 But in order to be able to serve our html file we must add `express.static` Middleware let's do it.
 
@@ -152,8 +152,11 @@ Create `www` directory, then add `index.html`:
 </html>
 
 ```
+
+![CMD](/images/expressapi/index.angular.png)
+
 Now add  `studentApp.js` file: 
- 
+
 ```
 var uri = 'api/student/';
 
@@ -186,6 +189,9 @@ function studentCtrl($scope, $http) {
 }
 
 ```
+
+![CMD](/images/expressapi/studentApp.js.png)
+
 ### Getting a List of students
 
 To get a list of students, send an HTTP GET request to "/api/student".
@@ -224,8 +230,6 @@ To get a `student` by ID, send an`HTTP GET`  request to `/api/student/id`, where
 
 ```
 
-
-![CMD](/images/expressapi/index.html.png){:class="img-responsive" }
 
 
 ### Running the Application
