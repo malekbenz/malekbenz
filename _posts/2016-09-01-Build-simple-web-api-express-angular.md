@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Build A Simple Web API With Expressjs and JQuery"
-date: 2016-08-25
+title: "Build A Simple Web API With Expressjs and AngularJS"
+date: 2016-09-01
 author: Malekbenz
 comments: true
 category: Asp.Net
@@ -10,7 +10,7 @@ categories: ['Express', 'Nodejs']
 ---
 ## Getting Started  
 
-In this post we will use Expressjs framework to create Web API that return list of student, and we'll consume it using JQuery.
+In this post we will use Expressjs framework to create Web API that return list of student, and we'll consume it using AngularJs.
 
 In order to install `Nodejs` you can see [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).
 
