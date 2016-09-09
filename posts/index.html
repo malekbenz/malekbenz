@@ -7,9 +7,12 @@ title: Malekbenz, blog
 
 	<div class="posts">
 		{% for post in site.posts %}
-		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<h3>
+            <a href="{{ post.url }}">{{ post.title }} </a>
+            <span class="date"> {{ post.date | date_to_string }}</span>
+        </h3>
 		<p class="author">
-			<span class="date">{{ post.date | date_to_string }}</span>
+			
 			<ul class="post-by">
 				<li>Category:<span>{{post.category}}</span></li>
 				<li>tags:<span>{{ post.tags | array_to_sentence_string }}</span></li>
