@@ -1,0 +1,43 @@
+---
+layout: default
+title: Malekbenz, blog
+---
+
+<div class="section-post">
+
+	<div class="posts">
+		{% for post in site.posts %}
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		<p class="author">
+			<span class="date">{{ post.date | date_to_string }}</span>
+			<ul class="post-by">
+				<li>Category:<span>{{post.category}}</span></li>
+				<li>tags:<span>{{ post.tags | array_to_sentence_string }}</span></li>
+				<li>Time:<span>{{ post.date | date_to_string }}</span></li>
+			</ul>
+		</p>
+		{% endfor %}
+
+
+		<!-- Pagination links -->
+		<!--<nav aria-label="pagination">
+			<ul class="pager">
+				{% if paginator.previous_page %}
+				<li class="previous"><a href="{{ paginator.previous_page_path }}"><span aria-hidden="true">&larr;</span> Newer</a></li>
+				{% else %}
+				<li class="disabled previous"><a href="{{ paginator.previous_page_path }}"><span aria-hidden="true">&larr;</span> Newer</a></li>
+
+				{% endif %}
+				<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page
+				%}
+				<li class="next"><a href="{{ paginator.next_page_path }}">Older <span aria-hidden="true">&rarr;</span></a></li>
+				{% else %}
+				<li class="disabled next"><a href="{{ paginator.next_page_path }}">Older <span aria-hidden="true">&rarr;</span></a></li>
+				{% endif %}
+			</ul>
+		</nav>-->
+
+	</div>
+
+</div>
+
