@@ -49,9 +49,7 @@ Now that hexo is installed run the following commands to initialise Hexo project
 
 ![CMD](/images/hexo/hexo-project.png){:class="img-responsive" }
 
-You can modify site settings in _config.yml.
-
-for the sake of simplicity we're only modify the `Title` and `author` name .
+You can modify site settings in `_config.yml`. for the sake of simplicity we're only modify the `Title` and `author` name .
 
 ## Run the Blog 
 
