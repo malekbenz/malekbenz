@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create a Free website with Github" 
+title: "Host your website for Free on Github" 
 date: 2016-06-01
 author: Malekbenz
 comments: true
