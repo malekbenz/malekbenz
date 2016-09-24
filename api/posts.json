@@ -8,7 +8,7 @@ layout: null
       "title": "{{ post.title }}",
       "category": "{{ post.category }}",
       "tags": {{ post.tags | jsonify }},
-      "excerpt": {{ post.excerpt | remove: '<p>' | remove: '</p>' }},
+      "excerpt": "{{ post.excerpt | remove: '<p>' | remove: '</p>' }}",
       "url": "{{ post.url | prepend: site.url }}",
       "date": "{{ post.date | date: "%B %-d, %Y" }}",
       "raw_date": "{{ post.date }}"
