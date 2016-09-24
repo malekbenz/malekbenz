@@ -8,7 +8,6 @@ category: Asp.Net
 tags : ['Asp.Net', '.Net', 'WebAPI', 'JQuery']
 categories: ['Asp.Net', '.Net']
 ---
-## Getting Started  
 
 In this post we will use Asp.NET core to create Web API that return list of student, and we'll consume it using JQuery.
 

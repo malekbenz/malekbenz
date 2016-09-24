@@ -8,7 +8,6 @@ category: NodeJs
 tags : ['Javascript', 'NodeJs', 'Express']
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
 ---
-## Serving a static contents  
 
 What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
 

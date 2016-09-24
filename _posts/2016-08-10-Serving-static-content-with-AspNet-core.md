@@ -8,7 +8,6 @@ category: Asp.Net
 tags : ['Asp.Net', '.Net']
 categories: ['Asp.Net', '.Net']
 ---
-## Serving a static contents  
 
 What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. 
 

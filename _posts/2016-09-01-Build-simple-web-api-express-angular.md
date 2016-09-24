@@ -8,7 +8,6 @@ category: Asp.Net
 tags : ['Nodejs', 'Express', 'WebAPI', 'Angular']
 categories: ['Express', 'Nodejs']
 ---
-## Getting Started  
 
 In this post we will use Expressjs framework to create Web API that return list of student, and we'll consume it using AngularJs.
 

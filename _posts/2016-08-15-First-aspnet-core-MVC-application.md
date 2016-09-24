@@ -8,8 +8,6 @@ category: Asp.Net
 tags : ['Asp.Net', '.Net', 'WebAPI']
 categories: ['Asp.Net', '.Net']
 ---
-## ASP.NET Core MVC  
-
 
 This post will guide you to Build a your First MVC application with ASP.NET Core. I also wanted to do this completely on Linux.
 
