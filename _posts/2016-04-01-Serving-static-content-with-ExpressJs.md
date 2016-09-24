@@ -9,7 +9,7 @@ tags : ['Javascript', 'NodeJs', 'Express']
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
 ---
 
-What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved 
+What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. What we need is creating `Http server with expressjs`. This post goes into how this can be achieved. 
 
 if you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).  
 
