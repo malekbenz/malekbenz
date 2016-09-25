@@ -35,7 +35,7 @@ Once all the requirements are installed, you can install Hexo.
 ```
 
 
-![CMD](/images/hexo/hexo-version.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/hexo/hexo-version.png){:class="img-responsive" }
 
 ## Create a blog
 
