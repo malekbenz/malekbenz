@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create your blog with hexo"
+title: "Create and deploy your blog for free with hexo & Github"
 date: 2016-09-10
 author: Malekbenz
 comments: true
