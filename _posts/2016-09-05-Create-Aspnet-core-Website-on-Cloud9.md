@@ -19,7 +19,7 @@ If you don't kown how to create a simple web server you can see [Create a First 
 
 Go to [Cloud9 website ](https://c9.io/) and signin.
 
-![CMD](/images/c9Aspnet/c9signin.png.png){:class="img-responsive" :max-width="80%"}
+![CMD](/images/c9Aspnet/c9signin.png){:class="img-responsive" :max-width="80%"}
 
 Select `Create a new workspace` 
 
