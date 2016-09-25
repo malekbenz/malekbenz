@@ -114,7 +114,7 @@ Run the server again:
 
 ## Deployment on Github
 
-Now what about Deployment and it's exactly what we are going to do, first  Create new Github repository :
+Now what about Deployment, it's exactly what we are going to do, first  Create new Github repository :
 
 ![CMD](/images/hexo/hexo-git-project.png){:class="img-responsive" }
 
@@ -156,5 +156,5 @@ To preview launch your browser.
 
 
 >
-> ## 
+> ## Congratulation
 >
