@@ -92,9 +92,9 @@ This my first post using [Hexo](https://hexo.io/)!
 
 ### a first subtitile 
 
-``` bash
-$ hexo new "My New Post"
-```
+    ``` bash
+    $ hexo new "My New Post"
+    ```
 
 ## Second title
 
