@@ -9,6 +9,10 @@ tags : ['Asp.Net', '.Net', 'WebAPI', 'JQuery']
 categories: ['Asp.Net', '.Net']
 ---
 
+ASP.NET MVC was designed for creating websites. Throughout the platform are obvious design decisions that indicate the assumed usage: responding to requests from browsers and returning HTML.
+
+ASP.NET Web API is a framework that offers the ASP.NET MVC developer a way to write HTTP services. so they could use it to create web services that returned XML, JSON, or other non-HTML formats. 
+
 In this post we will use Asp.NET core to create Web API that return list of student, and we'll consume it using JQuery.
 
 In order to install .NET Core on Ubuntu or Linux Mint you can see [Install .Net Core on linux](/blog/2016/08/01/Install-dotnet-core-linux).
