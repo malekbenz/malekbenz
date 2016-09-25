@@ -38,17 +38,18 @@ Install the package apt-transport-https.
 ![CMD](/images/c9Aspnet/c9apt-transport-https.png){:class="img-responsive" :max-width="80%"}
 
 
-## Install Yeoman (gulp and bower) 
+## Install Yeoman (gulp & bower) 
 
 Yeoman is web scaffolding tool for modern webapps, Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.
 
-First of all we need to upgrade npm (node packgae manager): :
+First of all we need to `upgrade npm` (node packgae manager): :
 
 ```
     $ npm install npm     
 ```
 
 ![CMD](/images/c9Aspnet/c9npm-upgrade.png){:class="img-responsive" }
+
 
 And then install `Yeoman`,`Gulp` and  `bower` globaly :
 
@@ -58,7 +59,7 @@ And then install `Yeoman`,`Gulp` and  `bower` globaly :
 
 ![CMD](/images/c9Aspnet/c9-bower-gulp-yo.png){:class="img-responsive" }
 
-To be able to create new aspnet project with `Yeoman` we must install `aspnet generator` :
+To be able to create new aspnet project with `Yeoman` we need to install `aspnet generator` so let's do it:
 
 ```
     $ npm install -g generator-aspnet    
@@ -66,9 +67,9 @@ To be able to create new aspnet project with `Yeoman` we must install `aspnet ge
  
 ![CMD](/images/c9Aspnet/c9-asp-gen.png){:class="img-responsive" }
 
-## Install Dotnet core
+## Install `.NET Core`
 
-Now let's install dotnet core, In order to install .NET Core you need to first set up the apt-get feed that hosts the package you need.
+Now let's install `.NET Core`, In order to install `.NET Core` you need to first set up the apt-get feed that hosts the package you need.
 
 ```
     $ sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
@@ -78,7 +79,7 @@ Now let's install dotnet core, In order to install .NET Core you need to first s
     $ sudo apt-get update
 ```
 
-Install .NET Core SDK Before you start, remove any previous versions of .NET Core from your system.
+Install `.NET Core` SDK Before you start, remove any previous versions of `.NET Core` from your system.
 
 To .NET Core on Ubuntu or Linux Mint, simply use apt-get.
 
@@ -96,6 +97,7 @@ To confirm that donet is installed:
 And you're ready!
 
 ![CMD](/images/c9Aspnet/c9-net-version.png){:class="img-responsive" }
+
 
 ## Create the application with Yeoman
 
