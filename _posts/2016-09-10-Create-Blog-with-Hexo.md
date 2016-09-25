@@ -112,8 +112,47 @@ Run the server again:
 
 ![CMD](/images/hexo/hexo-preview1.png){:class="img-responsive" }
 
+## Deployment on Github
+
+Now what about Deployment and it's exactly what we are going to do, first  Create new Github repository :
+
+![CMD](/images/hexo/hexo-git-project.png){:class="img-responsive" }
+
+Click `settings` 
+
+![CMD](/images/hexo/hexo-git-project-prop.png){:class="img-responsive" }
 
 
+![CMD](/images/hexo/hexo-git-pages.png){:class="img-responsive" }
+
+Then install hexo-deployer-git: 
+
+```
+$ npm install hexo-deployer-git --save
+
+```
+
+![CMD](/images/hexo/hexo-deployer-git.png){:class="img-responsive" }
+
+Click clone or download button:
+
+![CMD](/images/hexo/hexo-git-clone.png){:class="img-responsive" }
+
+Update `_config.yaml` file :
+
+![CMD](/images/hexo/hexo-git-config.yaml.png){:class="img-responsive" }
+
+It's time for deployement : 
+
+```
+    $ hexo deploy
+
+```
+![CMD](/images/hexo/hexo-deployer.png){:class="img-responsive" }
+
+To preview launch your browser.
+
+![CMD](/images/hexo/hexo-preview-web.png){:class="img-responsive" }
 
 
 >
