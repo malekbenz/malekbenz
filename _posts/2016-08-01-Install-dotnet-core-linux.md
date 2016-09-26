@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install .Net Core on linux" 
+title: "Install & Run .Net Core on linux" 
 date: 2016-08-01
 author: Malekbenz
 comments: true
