@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build your first ASP.NET application with .Net Core on linux" 
+title: "Build your first ASP.NET Core application on linux" 
 date: 2016-08-05
 author: Malekbenz
 comments: true
