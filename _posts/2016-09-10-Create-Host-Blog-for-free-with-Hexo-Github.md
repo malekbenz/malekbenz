@@ -156,6 +156,7 @@ To preview launch your browser.
 
 You can get see the blog on [https://malektrainer.github.io/](https://malektrainer.github.io/). 
 
+
 >
-> ## Congratulation
+> ## Congratulations! You have now created a blog.
 >
