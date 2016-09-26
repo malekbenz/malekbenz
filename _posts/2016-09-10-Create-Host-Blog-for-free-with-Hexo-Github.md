@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create and deploy your blog for free with hexo & Github"
+title: "Create and host your blog for free with hexo & Github"
 date: 2016-09-10
 author: Malekbenz
 comments: true
@@ -154,6 +154,7 @@ To preview launch your browser.
 
 ![CMD](/images/hexo/hexo-preview-web.png){:class="img-responsive" }
 
+You can get see the blog on [https://malektrainer.github.io/](https://malektrainer.github.io/). 
 
 >
 > ## Congratulation
