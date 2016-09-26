@@ -12,7 +12,7 @@ categories: ['Asp.Net', '.Net']
 If you’ve ever wondered how to start a blog, you’re in luck because that’s exactly what I’m going to show you today. Starting your own blog doesn’t have to be complicated or difficult. In fact, more and more people are starting blogs every day. It seems that just about every person or business has 
 a blog these days.
 
-I am going to show you exactly how to start a blog with the `hexo`, which can be used from any computer, tablet, or smartphone. In this post  I am going to show you EXACTLY how to create a blog so that you get the most out of it.
+I am going to show you exactly how to start a blog with the `hexo`, which can be used from any computer, tablet, or smartphone. In this post  I am going to show you exactly how to create a blog so that you get the most out of it.
 
 
 ## What is Hexo? 
