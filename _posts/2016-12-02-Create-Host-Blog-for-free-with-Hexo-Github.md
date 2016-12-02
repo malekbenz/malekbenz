@@ -44,19 +44,19 @@ Now create a new folder `app` and add new html page `index.html`:
 update `index.html` : 
 
 ```
- <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <meta charset="utf-8" />
-</head>
-<body ng-app="app">
-    <h1>My first Angular js application with visual studio</h1>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <meta charset="utf-8" />
+    </head>
+    <body ng-app="app">
+        <h1>My first Angular js application with visual studio</h1>
 
-</body>
+    </body>
 
-</html>
+    </html>
   
 ```
 
