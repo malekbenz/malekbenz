@@ -5,8 +5,8 @@ date: 2016-12-01
 author: Malekbenz
 comments: true
 category: Asp.Net
-tags : [ 'javascript',  'angularjs']
-categories: ['Asp.Net', 'angularjs']
+tags : [ 'Javascript',  'Angularjs']
+categories: ['Asp.Net', 'Angularjs']
 ---
 
 You've always heard about Angularjs, but you don't know how or why to use it ?, you’re in luck because you are in the right place to learn that.
