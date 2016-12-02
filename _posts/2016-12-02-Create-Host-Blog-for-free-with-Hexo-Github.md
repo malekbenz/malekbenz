@@ -62,6 +62,8 @@ update `index.html` :
 
 ![CMD](/images/firstAngularApp/index.html.png){:class="img-responsive" }
 
+this is a simple web application.
+
 ## But what about Angularjs :
 
 Now it's time for angularjs, first goto [angularjs web site ](https://angularjs.org/)  
