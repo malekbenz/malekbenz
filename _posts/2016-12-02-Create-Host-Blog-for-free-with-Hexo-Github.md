@@ -64,17 +64,18 @@ update `index.html` :
 
 ## But what about Angularjs :
 
-now it's time for angularjs, first goto [angularjs web site ](https://angularjs.org/)  
+Now it's time for angularjs, first goto [angularjs web site ](https://angularjs.org/)  
 
 ![CMD](/images/firstAngularApp/angularjs.org.png){:class="img-responsive" }
 
-Click download angularjs 1 : 
+Click download `angularjs 1` : 
 
 ![CMD](/images/firstAngularApp/angularjs.download.png){:class="img-responsive" }
 
 Select `1.5x stable `  and click `download`, and copy `angular.min.js` to the `app` folder 
 
 Update index.html : 
+
 ```
 <body ng-app="app">
     <h1>My first Angular js application with visual studio</h1>
