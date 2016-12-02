@@ -104,9 +104,10 @@ Update index.html :
 
 ![CMD](/images/firstAngularApp/index.html.v01.png){:class="img-responsive" }
 
-Run the app and you should get: 
+Run the app and you should see something like: 
 
 ![CMD](/images/firstAngularApp/index.html.v01.preview.png){:class="img-responsive" }
+
 
 Congratulations for you first angularjs app.
 
