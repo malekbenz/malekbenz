@@ -108,6 +108,37 @@ Run the app and you should see something like:
 
 ![CMD](/images/firstAngularApp/index.html.v01.preview.png){:class="img-responsive" }
 
+### how to use `ng-repeat` directive: 
+
+`ng-repeat` directive is used to iterate over an array or the properties of an object, let's add to our `booksController` an array of books: 
+  
+```
+        function fnbooksController($scope) {
+
+            $scope.title = "Learn angularjs";
+            $scope.books = [
+                { id: 1, title: "Learn asp.net" },
+                { id: 2, title: "Learn javascript" },
+                { id: 3, title: "Learn angularjs" },
+                { id: 4, title: "Learn nodejs" }
+            ];
+
+        }
+
+```
+
+![CMD](/images/firstAngularApp/index.html.v02.png){:class="img-responsive" }
+
+```
+        <ul>
+            <li ng-repeat="book in books">  {{ book.id}} -- {{book.title}}</li>
+        </ul>
+
+```
+Run the app: 
+
+![CMD](/images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
+
 
 Congratulations for you first angularjs app.
 
