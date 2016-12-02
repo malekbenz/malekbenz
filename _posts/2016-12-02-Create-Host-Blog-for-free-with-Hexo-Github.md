@@ -25,7 +25,7 @@ Angularjs is javascipt front-end web framework maintained by Google and by a com
 ## Create a Empty ASP.NET project? 
 let's first create an empty web application, launch visual studio and create a new asp.net application: 
 
-Click New Project in the Start page or in the File menu.
+- Click New Project in the Start page or in the File menu.
 
 ![CMD](/images/firstAngularApp/newAspApp.png){:class="img-responsive" }
 
