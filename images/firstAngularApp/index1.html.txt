@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body ng-app="app">
+    <h1>My first Angular js application with visual studio</h1>
+
+    <div ng-controller="booksController">
+        Select a title: <input type="text" ng-model="title" />
+        
+        book title is : {{title}}
+    </div>
+
+    <script src="app/angular.min.js"></script>
+    <script>
+        app = angular.module("app",[]);
+        app.controller("booksController", fnbooksController);
+
+        function fnbooksController($scope) {
+            $scope.title = "Learn angularjs";
+
+        }
+    </script>
+</body>
+
+</html>
