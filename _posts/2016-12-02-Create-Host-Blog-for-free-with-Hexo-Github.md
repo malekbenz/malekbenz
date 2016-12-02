@@ -108,7 +108,7 @@ Run the app and you should see something like:
 
 ![CMD](/images/firstAngularApp/index.html.v01.preview.png){:class="img-responsive" }
 
-## how to use `ng-repeat` directive: 
+## How to use `ng-repeat` directive: 
 
 `ng-repeat` directive is used to iterate over an array or the properties of an object, let's add to our `booksController` an array of books: 
   
@@ -131,7 +131,7 @@ Run the app and you should see something like:
 
 ```
         <ul>
-            <li ng-repeat="book in books">  {{ book.id}} -- {{book.title}}</li>
+            <li ng-repeat="book in books">  {{ book.id}}   {{book.title}}</li>
         </ul>
 
 ```
@@ -145,7 +145,7 @@ now let's add some Filter to add a search functionality, update `index.html`
 
 ```
         <ul>
-            <li ng-repeat="book in books | filter: title">  {{ book.id}} -- {{book.title}}</li>
+            <li ng-repeat="book in books | filter: title">  {{ book.id}}   {{book.title}}</li>
         </ul>
 
 ```
@@ -153,9 +153,8 @@ now let's add some Filter to add a search functionality, update `index.html`
 
 Run the app: 
 
-![CMD](/images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/index.html.v03.preview.png){:class="img-responsive" }
 
-Congratulations for you first angularjs app.
 
 
 >
