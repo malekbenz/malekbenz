@@ -66,11 +66,11 @@ this is a simple web application.
 
 ## But what about Angularjs :
 
-Now it's time for angularjs, first goto [angularjs web site ](https://angularjs.org/)  
+Now it's time for `angularjs`, in order to use `angularjs` we have first to go to [angularjs web site ](https://angularjs.org/)  
 
 ![CMD](/images/firstAngularApp/angularjs.org.png){:class="img-responsive" }
 
-Click download `angularjs 1` : 
+and download by clicking `download` `angularjs 1` : 
 
 ![CMD](/images/firstAngularApp/angularjs.download.png){:class="img-responsive" }
 
