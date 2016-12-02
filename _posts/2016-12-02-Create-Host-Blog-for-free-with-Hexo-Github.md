@@ -29,20 +29,19 @@ let's first create an empty web application, launch visual studio and create a n
 
 ![CMD](/images/firstAngularApp/newAspApp.png){:class="img-responsive" }
 
-In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane.
+- In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane.
 
 Specify project Name `firstAngularApp`, Location, and other options, and then click OK.
 
 ![CMD](/images/firstAngularApp/EmptywebApp.png){:class="img-responsive" }
 
-The New ASP.NET Project dialog appears Click a empty template , and then click OK.
+- The New ASP.NET Project dialog appears Click a empty template , and then click OK.
 
 Now create a new folder `app` and add new html page `index.html`:  
 
 ![CMD](/images/firstAngularApp/AddHtmlPage.png){:class="img-responsive" }
 
 update `index.html` : 
-
 
 ```
  <!DOCTYPE html>
@@ -62,7 +61,6 @@ update `index.html` :
 ```
 
 ![CMD](/images/firstAngularApp/index.html.png){:class="img-responsive" }
-
 
 ## But what about Angularjs :
 
