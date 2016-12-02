@@ -9,7 +9,9 @@ tags : [ 'javascript',  'angularjs']
 categories: ['Asp.Net', 'angularjs']
 ---
 
-You've always heard about Angularjs, but you don't know how or why to use it ?, so you are in the right place to learn that,  Angularjs is front-end web javascript framework, but how to use it? this is all what this blog is about. 
+You've always heard about Angularjs, but you don't know how or why to use it ?, you’re in luck because you are in the right place to learn that.
+
+Angularjs is front-end web javascript framework, but how to use it? this is all what this blog is about. 
 
 In this post I am going to guide on how create you first angularjs application using visual studio.
 
@@ -20,8 +22,7 @@ if you don't already have visual studio you can download free version of visual 
 Angularjs is javascipt front-end web framework maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.
 
 
-
-## Create a empty asp.net project? 
+## Create a Empty ASP.NET project? 
 
 launch visual studio and create a new asp.net application: 
 
