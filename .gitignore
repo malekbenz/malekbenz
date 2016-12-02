@@ -2,3 +2,4 @@ _site/
 node_modules
 bower_components
 cfg.json
+npm-debug.log
