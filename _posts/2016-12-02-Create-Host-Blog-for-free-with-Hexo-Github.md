@@ -9,28 +9,46 @@ tags : [ 'javascript',  'angularjs']
 categories: ['Asp.Net', 'angularjs']
 ---
 
-If you’ve ever wondered how to start a blog, you’re in luck because that’s exactly what I’m going to show you today. Starting your own blog doesn’t have to be complicated or difficult. In fact, more and more people are starting blogs every day. It seems that just about every person or business has 
-a blog these days.
+You've always heard about Angularjs, but you don't know how or why to use it ?, so you are in the right place to learn that,  Angularjs is front-end web javascript framework, but how to use it? this is all what this blog is about. 
 
-I am going to show you exactly how to start a blog with the `hexo`, which can be used from any computer, tablet, or smartphone. In this post  I am going to show you exactly how to create a blog so that you get the most out of it.
+In this post I am going to guide on how create you first angularjs application using visual studio.
 
 
-## What is Hexo? 
+## What is Angularjs? 
 
-Hexo is a fast, simple and powerful blog framework. You write posts in Markdown (or other languages) and Hexo generates static files with a beautiful theme in seconds.
+Angularjs is javascipt front-end web framework maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.
 
-Installing Hexo is quite easy. However, you do need to have `Nodejs` & `Git` installed first.
 
-In order to install `Nodejs` you can see [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).
+if you don't already have visual studio you can download free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
-In order to install `Git` you can see [https://git-scm.com/ ](https://git-scm.com/).
+## Create a empty asp.net project? 
 
-## Install Hexo? 
+launch visual studio and create a new asp.net application: 
 
-Once all the requirements are installed, you can install Hexo.
+    Click New Project in the Start page or in the File menu.
+
+![CMD](/images/firstAngularApp/newAspApp.png){:class="img-responsive" }
+
+In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane.
+
+Specify project Name , Location, and other options, and then click OK.
+
+![CMD](/images/firstAngularApp/EmptywebApp.png){:class="img-responsive" }
+
+The New ASP.NET Project dialog appears Click a empty template , and then click OK.
+
+![CMD](/images/firstAngularApp/AddHtmlPage.png){:class="img-responsive" }
+
+
+
+![CMD](/images/firstAngularApp/index.html.png){:class="img-responsive" }
+
+![CMD](/images/firstAngularApp/angularjs.org.png){:class="img-responsive" }
+
+![CMD](/images/firstAngularApp/angularjs.download.png){:class="img-responsive" }
 
 ```
-    $ npm install -g hexo-cli
+    
      
 ```
 
