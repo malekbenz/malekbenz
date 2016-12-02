@@ -13,13 +13,13 @@ You've always heard about Angularjs, but you don't know how or why to use it ?, 
 
 In this post I am going to guide on how create you first angularjs application using visual studio.
 
+if you don't already have visual studio you can download free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
 ## What is Angularjs? 
 
 Angularjs is javascipt front-end web framework maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.
 
 
-if you don't already have visual studio you can download free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
 ## Create a empty asp.net project? 
 
