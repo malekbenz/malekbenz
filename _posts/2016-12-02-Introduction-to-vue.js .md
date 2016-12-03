@@ -15,7 +15,7 @@ Vue is light and fast javascript framework, it's easy to learn, focused on the v
 
 In this post I am going to guide on how use Vue.js based application using visual studio.
 
-if you don't already have visual studio you can download free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
+if you don't already have visual studio you can download the free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
 ## What is Vue.js? 
 
@@ -51,7 +51,7 @@ update `index.html` :
         <title></title>
         <meta charset="utf-8" />
     </head>
-    <body ng-app="app">
+    <body>
         <h1>My first Vue.js application with visual studio</h1>
 
     </body>
@@ -60,70 +60,86 @@ update `index.html` :
   
 ```
 
-![CMD](../images/firstAngularApp/index.html.png){:class="img-responsive" }
-
 this is a simple web application.
 
-## But what about Angularjs :
+## Install Vue.js :
 
-Now it's time for `angularjs`, in order to use `angularjs` we have first to go to [angularjs web site ](https://angularjs.org/)  
+In order to use `Vue.js` download  `Vue.js` from [https://vuejs.org/v2/guide/installation.html ](https://vuejs.org/v2/guide/installation.html)  and click `Production version` of `vue.js` : 
 
-![CMD](../images/firstAngularApp/angularjs.org.png){:class="img-responsive" }
+![CMD](../images/vue.js/vuejs.download.png){:class="img-responsive" }
 
-and download by clicking `download` `angularjs 1` : 
-
-![CMD](../images/firstAngularApp/angularjs.download.png){:class="img-responsive" }
-
-Select `1.5x stable `  and click `download`, and copy `angular.min.js` to the `app` folder 
+Copy `vue.min.js` to the `app` folder 
 
 Update index.html : 
 
 ```
-<body ng-app="app">
-    <h1>My first Angular js application with visual studio</h1>
+<body>
+    <h1>My first Vuejs application with visual studio</h1>
 
-    <div ng-controller="booksController">
-        Select a title: <input type="text" ng-model="title" />
-        
+    <div id="app">
+        Select a title: <input type="text" v-model:value="title" />
+
         book title is : {{title}}
     </div>
 
-    <script src="app/angular.min.js"></script>
+    <script src="app/vue.min.js"></script>
     <script>
-        app = angular.module("app",[]);
-        app.controller("booksController", fnbooksController);
-
-        function fnbooksController($scope) {
-            $scope.title = "Learn angularjs";
-
-        }
+        app = new Vue({
+            el: "#app",
+            data: {
+                title: "First Vue.js app"
+            }
+        });
     </script>
 </body>
 
 ```
+you should get something like : 
 
-![CMD](../images/firstAngularApp/index.html.v01.png){:class="img-responsive" }
+![CMD](../images/vue.js/index.html.v01.png){:class="img-responsive" }
 
 Run the app and you should see something like: 
 
-![CMD](../images/firstAngularApp/index.html.v01.preview.png){:class="img-responsive" }
+![CMD](../images/vue.js/index.html.v01.preview.png){:class="img-responsive" }
 
-## How to use `ng-repeat` directive: 
+click `F12` to get `F12 tool`, in the console pane type:
 
-`ng-repeat` directive is used to iterate over an array or the properties of an object, let's add to our `booksController` an array of books: 
+```
+    app.title = "this is a new title"
+
+```
+Wow everything is in sync.
+
+## `v-for` directive: 
+
+`v-for` directive is used to iterate over an array or the properties of an object, let's add to our `app` an array of books: 
   
 ```
-        function fnbooksController($scope) {
+    <div id="app">
+        Select a title: <input type="text" v-model:value="title" />
 
-            $scope.title = "Learn angularjs";
-            $scope.books = [
+        book title is : {{title}}
+        <ul>
+            <li v-for ="book in books"> {{ book.id}} --  {{book.title}} </li>
+        </ul>
+    </div>
+
+    <script src="app/vue.min.js"></script>
+    <script>
+        app = new Vue({
+            el: "#app",
+            data: {
+                title: "First Vue.js app",
+
+                books : [
                 { id: 1, title: "Learn asp.net" },
                 { id: 2, title: "Learn javascript" },
                 { id: 3, title: "Learn angularjs" },
                 { id: 4, title: "Learn nodejs" }
-            ];
-
-        }
+                ]
+            }
+        });
+    </script>
 
 ```
 
@@ -131,7 +147,7 @@ Run the app and you should see something like:
 
 ```
         <ul>
-            <li ng-repeat="book in books">  {{ book.id}}   {{book.title}}</li>
+            <li v-for="book in books">  {{ book.id}}   {{book.title}}</li>
         </ul>
 
 ```
@@ -139,21 +155,51 @@ Run the app:
 
 ![CMD](../images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
 
-## Filter: 
+## Methods: 
 
-now let's add some Filter to add a search functionality, update `index.html` 
+Now let's add some serach functionality using methods property of our `app` object , update `index.html` 
 
 ```
-        <ul>
-            <li ng-repeat="book in books | filter: title">  {{ book.id}}   {{book.title}}</li>
+       <ul>
+            <li v-for ="book in filterByTitle(title)"> {{ book.id}} --  {{book.title}} </li>
         </ul>
 
 ```
 
+and the script part by adding new method `filterByTitle` to our  `app` object:  
+
+```
+        app = new Vue({
+            el: "#app",
+            data: {
+                title: "First Vue.js app",
+                books : [
+                { id: 1, title: "Learn asp.net" },
+                { id: 2, title: "Learn javascript" },
+                { id: 3, title: "Learn angularjs" },
+                { id: 4, title: "Learn nodejs" },
+                { id: 4, title: "Learn Vue.js" }
+                ]
+            },
+            methods: {
+                filterByTitle: function (title) {
+
+                    return this.books.filter(function (el) {
+                        
+                        return el.title.indexOf(title)>=0;
+                    });
+                }
+            }
+        });
+        
+```
+
+
+![CMD](../images/vue.js/index.html.v03.png){:class="img-responsive" }
 
 Run the app: 
 
-![CMD](../images/firstAngularApp/index.html.v03.preview.png){:class="img-responsive" }
+![CMD](../images/vue.js/index.html.v03.preview.png){:class="img-responsive" }
 
 
 
