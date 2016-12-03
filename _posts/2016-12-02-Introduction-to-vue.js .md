@@ -27,19 +27,19 @@ let's first create an empty web application, launch visual studio and create a n
 
 - Click New Project in the Start page or in the File menu.
 
-![CMD](../images/firstAngularApp/newAspApp.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/newAspApp.png){:class="img-responsive" }
 
 - In the New Project dialog, click Web in the left pane and ASP.NET Web Application in the middle pane.
 
 Specify project Name `firstApp`, Location, and other options, and then click OK.
 
-![CMD](../images/firstAngularApp/EmptywebApp.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/EmptywebApp.png){:class="img-responsive" }
 
 - The New ASP.NET Project dialog appears Click a empty template , and then click OK.
 
 Now create a new folder `app` and add new html page `index.html`:  
 
-![CMD](../images/firstAngularApp/AddHtmlPage.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/AddHtmlPage.png){:class="img-responsive" }
 
 update `index.html` : 
 
@@ -66,7 +66,7 @@ this is a simple web application.
 
 In order to use `Vue.js` download  `Vue.js` from [https://vuejs.org/v2/guide/installation.html ](https://vuejs.org/v2/guide/installation.html)  and click `Production version` of `vue.js` : 
 
-![CMD](../images/vue.js/vuejs.download.png){:class="img-responsive" }
+![CMD](/images/vue.js/vuejs.download.png){:class="img-responsive" }
 
 Copy `vue.min.js` to the `app` folder 
 
@@ -96,11 +96,11 @@ Update index.html :
 ```
 you should get something like : 
 
-![CMD](../images/vue.js/index.html.v01.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v01.png){:class="img-responsive" }
 
 Run the app and you should see something like: 
 
-![CMD](../images/vue.js/index.html.v01.preview.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v01.preview.png){:class="img-responsive" }
 
 click `F12` to get `F12 tool`, in the console pane type:
 
@@ -143,7 +143,7 @@ Wow everything is in sync.
 
 ```
 
-![CMD](../images/firstAngularApp/index.html.v02.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/index.html.v02.png){:class="img-responsive" }
 
 ```
         <ul>
@@ -153,7 +153,7 @@ Wow everything is in sync.
 ```
 Run the app: 
 
-![CMD](../images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
+![CMD](/images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
 
 ## Methods: 
 
@@ -195,11 +195,11 @@ and the script part by adding new method `filterByTitle` to our  `app` object:
 ```
 
 
-![CMD](../images/vue.js/index.html.v03.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v03.png){:class="img-responsive" }
 
 Run the app: 
 
-![CMD](../images/vue.js/index.html.v03.preview.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v03.preview.png){:class="img-responsive" }
 
 
 
