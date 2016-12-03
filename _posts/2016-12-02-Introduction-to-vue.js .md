@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Vue.js "
-date: 2016-12-01
+date: 2016-12-02
 author: Malekbenz
 comments: true
 category: Asp.Net
