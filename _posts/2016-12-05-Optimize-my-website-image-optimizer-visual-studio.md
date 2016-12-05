@@ -50,6 +50,9 @@ If you can sacrifice just a small amount of image quality (which in most cases i
 
 ![CMD](image/imageOptimizer/imageOptimizer/imageafterlossyoptimazation.png){:class="img-responsive" }
 
+Now it's time for me to optimize the post images.
+
+![CMD](image/imageOptimizer/imageOptimizer/postimages.png){:class="img-responsive" }
 
 >
 > ## That's it!.
