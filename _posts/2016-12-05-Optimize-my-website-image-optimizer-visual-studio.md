@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimize my web site - Image Optimizer with visual studio"
+title: "Optimize your website - Image Optimizer with visual studio"
 date: 2016-12-05
 author: Malekbenz
 comments: true
