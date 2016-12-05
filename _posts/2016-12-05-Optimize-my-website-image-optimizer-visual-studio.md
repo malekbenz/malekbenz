@@ -21,7 +21,7 @@ Image Optimizer is visual studio extension  that you can use  to optimize any JP
 
 - First you can download [https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer) 
 
-![CMD](images/imageOptimizer/imageOptimizer/download.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/download.png){:class="img-responsive" }
 
 - Click the file to install Install 
 
@@ -41,18 +41,18 @@ Right-click any file or folder containing images and click one of the image opti
 This will optimize the image without changing the quality of the image.
 
 
-![CMD](images/imageOptimizer/imageOptimizer/imageaftercompression.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageaftercompression.png){:class="img-responsive" }
 
 
 ### Lossy optimizations
 
 If you can sacrifice just a small amount of image quality (which in most cases is unnoticeable to the human eye), you will be able to save up to 90% of the initial file weight. Lossy optimization will give you outstanding results with just a fraction of image quality loss.
 
-![CMD](images/imageOptimizer/imageOptimizer/imageafterlossyoptimazation.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageafterlossyoptimazation.png){:class="img-responsive" }
 
 Now it's time for me to optimize the post images.
 
-![CMD](images/imageOptimizer/imageOptimizer/postimages.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/postimages.png){:class="img-responsive" }
 
 >
 > ## That's it!.
