@@ -9,7 +9,7 @@ tags : [ 'Javascript',  'Compression', 'Optimization', 'Image']
 categories: ['Asp.Net', 'Optimization']
 ---
 
-May be you are asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times. 
+May be you asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times. 
 
 In this post I am gonna show you  how to use Image Optimizer with visual studio. 
 
@@ -21,7 +21,7 @@ Image Optimizer is visual studio extension  that you can use  to optimize any JP
 
 - First you can download [https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer) 
 
-![CMD](image/imageOptimizer/imageOptimizer/download.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageOptimizer/download.png){:class="img-responsive" }
 
 - Click the file to install Install 
 
@@ -30,29 +30,29 @@ Image Optimizer is visual studio extension  that you can use  to optimize any JP
 - Create / open visual studio project.
 
 
-![CMD](image/imageOptimizer/imagebeforcompression.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imagebeforcompression.png){:class="img-responsive" }
 
 Right-click any file or folder containing images and click one of the image optimization buttons.
 
-![CMD](image/imageOptimizer/imagecompression.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imagecompression.png){:class="img-responsive" }
 
 ### Lossless optimization
 
 This will optimize the image without changing the quality of the image.
 
 
-![CMD](image/imageOptimizer/imageOptimizer/imageaftercompression.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageOptimizer/imageaftercompression.png){:class="img-responsive" }
 
 
 ### Lossy optimizations
 
 If you can sacrifice just a small amount of image quality (which in most cases is unnoticeable to the human eye), you will be able to save up to 90% of the initial file weight. Lossy optimization will give you outstanding results with just a fraction of image quality loss.
 
-![CMD](image/imageOptimizer/imageOptimizer/imageafterlossyoptimazation.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageOptimizer/imageafterlossyoptimazation.png){:class="img-responsive" }
 
 Now it's time for me to optimize the post images.
 
-![CMD](image/imageOptimizer/imageOptimizer/postimages.png){:class="img-responsive" }
+![CMD](images/imageOptimizer/imageOptimizer/postimages.png){:class="img-responsive" }
 
 >
 > ## That's it!.
