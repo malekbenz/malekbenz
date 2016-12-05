@@ -9,7 +9,7 @@ tags : [ 'Javascript',  'Compression', 'Optimization', 'Image']
 categories: ['Asp.Net', 'Optimization']
 ---
 
-May be you asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times. 
+Maybe you asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times. 
 
 In this post I am gonna show you  how to use Image Optimizer with visual studio. 
 
@@ -23,11 +23,11 @@ Image Optimizer is visual studio extension  that you can use  to optimize any JP
 
 ![CMD](/images/imageOptimizer/download.png){:class="img-responsive" }
 
-- Click the file to install Install 
+- Click to install the extension. 
 
 - Restart Visual studio
 
-- Create / open visual studio project.
+- Create / Open visual studio project.
 
 
 ![CMD](/images/imageOptimizer/imagebeforcompression.png){:class="img-responsive" }
