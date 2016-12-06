@@ -17,7 +17,7 @@ if you don't already have visual studio you can download a free version of visua
 
 ## Create Asp.net web application  
 
-Create an MVC web application, launch visual studio and create a new asp.net application: 
+Create an MVC web application, launch visual studio and create a new asp.net MVC application: 
 
 - Click New Project in the Start page or in the File menu.
 
@@ -29,11 +29,11 @@ Specify project Name `AspNetApp`, Location, and other options, and then click OK
 
 ![CMD](/images/AspNetOath2/newAspApp.png){:class="img-responsive" }
 
-- In Solution Explorer, right click the MvcAuth project and select Properties.
+- In Solution Explorer, right click the project and select Properties.
 
 ![CMD](/images/AspNetOath2/apsNet.settings.website.png){:class="img-responsive" }
 
-- Select the Web tab, and then paste the URL `http://localhost:2016` into the Project Url box. Save the file. You will need this URL to configure Facebook authentication apps.
+- Select the Web tab, and then paste the URL `http://localhost:2016` into the Project Url box. Save the file.
 
 ![CMD](/images/AspNetOath2/aspnet.website.port.png){:class="img-responsive" }
 
@@ -65,7 +65,7 @@ This must be unique across Facebook. The App Namespace is the part of the URL th
 
 ![CMD](/images/AspNetOath2/facebook.settings.website.png){:class="img-responsive" }
 
-- Make a note of your App ID and your App Secret so that you can add both into your MVC application later in this tutorial. Also, Add your Site URL (http://localhost:2016/) to test your MVC application. Also, add a Contact Email. Then, select Save Changes. 
+- Your App ID and your App Secret will be added both into your MVC application later. Also, Add your Site URL (http://localhost:2016/) to test your MVC application. Also, add a Contact Email. Then, select Save Changes. 
 
 
 ##  Connecting the Facebook app to our project
@@ -74,13 +74,13 @@ This must be unique across Facebook. The App Namespace is the part of the URL th
 
 ![CMD](/images/AspNetOath2/aspnet.Startup.auth.png){:class="img-responsive" }
 
-- Copy and paste the AppId and App Secret  into the UseFacebookAuthentication method. The AppId and App Secret values shown below are samples and will not work.
+- Copy and paste the `AppId` and `App Secret`  into the `UseFacebookAuthentication` method.
 
 - Click Save Changes.
 
 - Run the application.
 
-- Select Log in to display the Login page. Click Facebook under Use another service to log in.
+- Select Log in to display the Login page. Click `Facebook` under Use another service to log in.
 
 ![CMD](/images/AspNetOath2/app.Login.png){:class="img-responsive" }
 
