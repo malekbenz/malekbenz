@@ -2,10 +2,10 @@
 # Blog Settings
 #
 author: Malekbenz
-description: I'm FullStack Developer
-url: https://blog.malekbenz.com
 title: Malekbenz Blog
-subtitle: ...and you like it
+subtitle: I'm FullStack Developer
+url: https://malekbenz.com
+description: Learn how to program with Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5 & CSS
 gravatar_url: http://2.gravatar.com/avatar/8b40bf825a021162659ab478804bff5b"
 
 # Github repositoriesname: Malekbenz, weblog

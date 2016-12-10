@@ -11,9 +11,14 @@
 	</script>
 	
 	{% assign title = site.title %}
+	{% assign description = site.title %}
 	
 	{% if page.title  %} 
 	{% assign title = page.title %}
+	{% endif %} 
+
+	{% if page.description  %} 
+	{% assign description = page.description %}
 	{% endif %} 
 	
 
@@ -31,7 +36,7 @@
 	
 	<meta property="og:url"                content="https://malekbenz.com" />
 	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="{% if page.title %}{{ page.title }} {% else %} {{ site.title }} {% endif %}" />
+	<meta property="og:title"              content="{{title}}" />
 	<meta property="og:description"        content="Learn how to program with Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5 & CSS" />
 	<meta property="og:image"              content="" />
 	
