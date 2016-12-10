@@ -7,6 +7,7 @@ comments: true
 category: Asp.Net
 tags : [ 'Asp.Net',  'facebook', 'OAuth2 ']
 categories: ['Asp.Net', 'OAuth2 ']
+description:Instead of using your own user database to maintain user credentials. I will give you step by step demo on how to integrate Facebook login into you  ASP.NET MVC 5 application.
 ---
 
 Instead of using your own user database to maintain user credentials. I will give you step by step demo on how to integrate Facebook login into you  ASP.NET MVC 5 application.
