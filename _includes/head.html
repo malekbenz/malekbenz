@@ -11,21 +11,22 @@
 	</script>
 	
 	{% assign title = site.title %}
-	{% assign description = site.title %}
 	
 	{% if page.title  %} 
-	{% assign title = page.title %}
+		{% assign title = page.title %}
 	{% endif %} 
 
+	{% assign description = site.description %}
+	
 	{% if page.description  %} 
-	{% assign description = page.description %}
+		{% assign description = page.description %}
 	{% endif %} 
 	
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="title" content="Welcome to malekbenz blog">
-    <meta name="description" content="Learn how to program with Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5 & CSS">
-    <meta name="author" content="malekbenz">
+    <meta name="title" content="{{site.title}}">
+    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="{{site.author}}">
 	<meta name="keywords" content="Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5, CSS, malekbenz, gulp, Angularjs ">
 	
 	<meta name="twitter:card" content="summary" />
