@@ -9,15 +9,18 @@
 			enable_page_level_ads: true
 		});
 	</script>
+	var title = "{% if page.title %}{{ page.title }}  {% else %}{{ site.title }} {% endif %}";
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="title" content="Welcome to malekbenz blog">
     <meta name="description" content="Learn how to program with Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5 & CSS">
     <meta name="author" content="malekbenz">
 	<meta name="keywords" content="Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5, CSS, malekbenz, gulp, Angularjs ">
+	
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@malekbenzemam" />
 	<meta name="twitter:domain" content="malekbenz.com" />
-	<meta name="twitter:title" content="malekbenz blog" />
+	<meta name="twitter:title" content=title />
 	<meta name="twitter:description" content="Learn how to program with Dotnet, Javascript, C#, ASP.NET , NodeJS, SQL Server, HTML5 & CSS" />
 	
 	<meta property="og:url"                content="https://malekbenz.com" />
