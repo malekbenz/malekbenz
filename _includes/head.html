@@ -21,6 +21,12 @@
 	{% if page.description  %} 
 		{% assign description = page.description %}
 	{% endif %} 
+
+	{% assign image = site.image %}
+	
+	{% if page.image  %} 
+		{% assign image = page.image %}
+	{% endif %} 
 	
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -39,7 +45,7 @@
 	<meta property="og:type"               content="article" />
 	<meta property="og:title"              content="{{title}}" />
 	<meta property="og:description"        content="{{description}}" />
-	<meta property="og:image"              content="" />
+	<meta property="og:image"              content="{{image}}" />
 	
 	<title>{{title}}</title>
 
