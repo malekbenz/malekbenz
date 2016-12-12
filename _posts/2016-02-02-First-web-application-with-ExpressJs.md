@@ -7,6 +7,9 @@ comments: true
 category: NodeJs
 tags : ['Javascript',  'NodeJs', 'Express']
 categories: ['Javascript', 'NodeJs', 'Express']
+description: Express is a web application framework for nodejs, It is designed for building web applications and APIs. Express  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. Express js is great for creating web application and web API.
+image: /images/helloexpress/web.png
+
 ---
 
 Express is a web application framework for nodejs, It is designed for building web applications and APIs. Express  is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. Express js is great for creating web application and web API.
