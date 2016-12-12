@@ -7,7 +7,7 @@ comments: true
 category: Asp.Net
 tags : [ 'nodejs', 'hexo', 'Github']
 categories: ['Asp.Net', '.Net']
-description: If you’ve ever wondered how to start a blog, you’re in luck because that’s exactly what I’m going to show you today. Starting your own blog doesn’t have to be complicated or difficult. In fact, more and more people are starting blogs every day. It seems that just about every person or business hasa blog these days.
+description: If you’ve ever wondered how to start a blog, you’re in luck because that’s exactly what I’m going to show you today. Starting your own blog doesn’t have to be complicated or difficult. In fact, more and more people are starting blogs every day.
 image: /images/hexo/hexo-preview-web.png
 ---
 
