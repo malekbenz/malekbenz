@@ -7,6 +7,8 @@ comments: true
 category: Github
 tags : ['html', 'Github', 'website']
 categories: ['html',  'NodeJs', 'Angularjs']
+description: In this post we are going see how to create and Host a website for Free on Github
+image: /images/github/13.png
 ---
 
 if you already have `github account` you can  [skip this section](#create-new-repository). 
