@@ -7,6 +7,8 @@ comments: true
 category: Asp.Net
 tags : ['Asp.Net', '.Net']
 categories: ['Asp.Net', '.Net']
+description: This post will guide you to Build a simple static file server using only the CLI and a text editor. I also wanted to do this completely in Linux.
+image: /images/dotnet/webserverbrowsedir.png
 ---
 
 What we are going to do today is Serving a static content without using `Appache`, `nginx` or `IIS`. 
