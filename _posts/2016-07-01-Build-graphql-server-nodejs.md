@@ -7,6 +7,8 @@ comments: true
 category: Github
 tags : ['html', 'Github', 'website']
 categories: ['html',  'NodeJs', 'Angularjs']
+description: GraphQL is a data query language and runtime designed and used at Facebook to request and deliver data to mobile and web apps since 2012.
+image: /images/graph-ql/05.png
 ---
 
 GraphQL is a data query language and runtime designed and used at Facebook to request and deliver data to mobile and web apps since 2012. 
