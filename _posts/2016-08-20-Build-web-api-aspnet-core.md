@@ -7,6 +7,8 @@ comments: true
 category: Asp.Net
 tags : ['Asp.Net', '.Net', 'WebAPI', 'JQuery']
 categories: ['Asp.Net', '.Net']
+description: ASP.NET MVC was designed for creating websites. Throughout the platform are obvious design decisions that indicate the assumed usage: responding to requests from browsers and returning HTML.
+image: /images/webapi/index.preview3.png
 ---
 
 ASP.NET MVC was designed for creating websites. Throughout the platform are obvious design decisions that indicate the assumed usage: responding to requests from browsers and returning HTML.
