@@ -7,6 +7,8 @@ comments: true
 category: Asp.Net
 tags : [ 'Javascript',  'Compression', 'Optimization', 'Image']
 categories: ['Asp.Net', 'Optimization']
+description: Maybe you asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times.
+image: /images/imageOptimizer/imagebeforcompression.png
 ---
 
 Maybe you asking yourself why should I use image Optimizer ?, so it's for a simple raison to save you bandwidth and storage space and will dramatically improve your website’s load times. 
