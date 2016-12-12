@@ -7,7 +7,7 @@ comments: true
 category: Asp.Net
 tags : [ 'Javascript',  'Angularjs']
 categories: ['Asp.Net', 'Angularjs']
-description: You've always heard about Angularjs, but you don't know how or why to use it ?, you’re in luck because you are in the right place to learn that.
+description: "You've always heard about Angularjs, but you don't know how or why to use it ?, you’re in luck because you are in the right place to learn that".
 image: /images/firstAngularApp/index.html.v01.png
 ---
 
