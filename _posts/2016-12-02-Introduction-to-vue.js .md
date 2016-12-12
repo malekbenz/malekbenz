@@ -7,6 +7,9 @@ comments: true
 category: Asp.Net
 tags : [ 'Javascript',  'Vue.js']
 categories: ['Asp.Net', 'Vue.js']
+description: If you never heard about Vue.js or use it befor, you are probably thinking, Oh my God! another javascript framework! what the hell is going on, well in fact the first release of Vue is was in 2014.
+image: /images/vue.js/index.html.v01.png
+
 ---
 
 If you never heard about Vue.js or use it befor, you are probably thinking: Oh my God! another javascript framework! what the hell is going on, well in fact the first release of Vue is was in 2014. 
