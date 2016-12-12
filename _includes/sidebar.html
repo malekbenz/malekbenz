@@ -6,7 +6,27 @@
 		</div>
 		<button type="submit" class="btn btn-default pull-right"><i class="fa fa-search"></i></button>
 	</form>-->
+
 	<div class="sidebar-text">
+        <div class="share-page">
+
+            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}"
+              rel="nofollow" target="_blank" title="Share on Twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+
+            <a class="btn btn-social-icon btn-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow"
+              target="_blank" title="Share on Twitter">
+              <span class="fa fa-facebook"></span>
+            </a>
+
+            <a class="btn btn-social-icon btn-google" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow"
+              target="_blank" title="Share on Google+">
+              <span class="fa fa-google"></span>
+            </a>
+
+          </div>
+
 		<h2>Recent posts</h2>
 		<ul class="posts">
 			{% for post in site.posts limit:5 %}
