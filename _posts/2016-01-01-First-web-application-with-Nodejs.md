@@ -11,7 +11,6 @@ tags : ['Javascript',  'NodeJs']
 categories: ['Javascript',  'NodeJs']
 description: Node js is great for creating web application. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
 image: /images/helloweb/web.png
-
 ---
 Node js is great for creating web application. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 

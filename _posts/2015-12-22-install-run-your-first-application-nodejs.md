@@ -9,6 +9,8 @@ tags : CSS Javascript NodeJs
 comments: true
 tags : ['Javascript',  'NodeJs']
 categories: ['Javascript',  'NodeJs']
+description: Today We are going to install Nodejs and build our first application, of course a HelloWorld application. 
+image: /images/nodejs/nodejsfs06.png
 ---
 
 Today We are going to install Nodejs and build our first application, of course a HelloWorld application.
