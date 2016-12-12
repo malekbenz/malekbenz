@@ -7,6 +7,8 @@ comments: true
 category: Angularjs
 tags : ['Javascript', 'NodeJs', 'Angularjs']
 categories: ['Javascript',  'NodeJs', 'Angularjs']
+description: AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA).
+image: /images/vstudio/angular.First.preview.png
 ---
 
 AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA). 
