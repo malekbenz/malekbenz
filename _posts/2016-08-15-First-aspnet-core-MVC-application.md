@@ -7,6 +7,8 @@ comments: true
 category: Asp.Net
 tags : ['Asp.Net', '.Net', 'WebAPI']
 categories: ['Asp.Net', '.Net']
+description: This post will guide you to Build a your First MVC application with ASP.NET Core. I also wanted to do this completely on Linux.
+image: /images/aspnet/runwithModel.png
 ---
 
 This post will guide you to Build a your First MVC application with ASP.NET Core. I also wanted to do this completely on Linux.
