@@ -7,12 +7,11 @@ comments: true
 category: .Net
 tags : ['.Net',  'Asp']
 categories: ['.Net',   'Asp']
-description: ASP.NET Core is an open source web framework for building modern web applications that canrun on Windows, Linux and the Mac. It includes the MVC framework,  combines the features of MVC and Web API into a single web programming framework. ASP.NET Core is built on the .NET Core runtime
-image: /images/dotnet/browseaspnet.png
+description: This post shows you hown to Install & Run .Net Core on linux
+image: /images/dotnet/run.png
 ---
 
 In order to install .NET Core on Ubuntu or Linux Mint, we need to first set up the apt-get feed that hosts the package we need.
-
 
 ## Ubuntu 14.04 / Linux Mint 17
 
