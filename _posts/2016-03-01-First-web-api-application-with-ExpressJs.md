@@ -7,6 +7,8 @@ comments: true
 category: NodeJs
 tags : ['Javascript', 'NodeJs', 'Express']
 categories: ['Javascript',  'NodeJs', 'webapi', 'Express']
+description: This post is an introduction to build a simple `WEB API`, we'll only cover  get request,  (post, delete, put will be covered in an other post).
+image: /images/helloexpress/webapi.png
 ---
 
 This post is an introduction to build a simple `WEB API`, we'll only cover  get request,  (post, delete, put will be covered in an other post). 
