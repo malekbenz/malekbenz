@@ -7,6 +7,8 @@ comments: true
 category: Asp.Net
 tags : ['Asp.Net', '.Net', 'WebAPI', 'JQuery','EntityFramework','Cloud9']
 categories: ['Asp.Net', '.Net']
+description: ASP.NET MVC core is a framework for building web applications that applies the general Model-View-Controller pattern to the ASP.NET framework.
+image: /images/c9Aspnet/c9signin.png
 ---
 
 ASP.NET MVC core is a framework for building web applications that applies the general Model-View-Controller pattern to the ASP.NET framework.
