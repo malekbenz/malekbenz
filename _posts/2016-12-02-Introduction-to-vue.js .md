@@ -146,7 +146,7 @@ Wow everything is in sync.
 
 ```
 
-![CMD](/images/firstAngularApp/index.html.v02.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v02.png){:class="img-responsive" }
 
 ```
         <ul>
@@ -156,7 +156,7 @@ Wow everything is in sync.
 ```
 Run the app: 
 
-![CMD](/images/firstAngularApp/index.html.v02.preview.png){:class="img-responsive" }
+![CMD](/images/vue.js/index.html.v02.preview.png){:class="img-responsive" }
 
 ## Methods: 
 
