@@ -32,5 +32,5 @@ disqus_show_comment_count: true
 #
 gems: [jekyll-paginate]
 paginate: 1
-exclude: ["README.md"]
+exclude: ["README.md",node_modules, package.json, npm-debug.log, gulp.js,  bower_components]
 
