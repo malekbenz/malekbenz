@@ -28,6 +28,9 @@ category_dir: categories
 # Disqus Comments
 disqus_short_name: blog-malekbenz-com
 disqus_show_comment_count: true
+
+#
+gems: [jekyll-paginate]
 paginate: 1
 exclude: ["README.md"]
 
