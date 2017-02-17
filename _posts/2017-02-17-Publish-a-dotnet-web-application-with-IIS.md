@@ -41,7 +41,7 @@ Launch `IIS` :
 
 Right Click on `Site` then click `Add website` 
 
-![CMD](/images/PublishSpaApp/IISAddWebsite.png){:class="img-responsive" }
+![CMD](/images/PublishSpaApp/Addwebsite.png){:class="img-responsive" }
 
 Name you website `SpaApp` , choose a port `8080`, and select your application path `e:\SpaApplication`:
 
