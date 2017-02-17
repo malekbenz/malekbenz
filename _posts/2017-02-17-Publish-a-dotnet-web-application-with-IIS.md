@@ -7,7 +7,7 @@ comments: true
 category: Asp.Net
 tags : [ 'Asp.Net',  'SPA', 'AngularJs', 'IIS']
 categories: ['Asp.Net', 'IIS']
-description: Last time we've created SPA Single Page Application  using a dontnet command with dotnet, but how to deploy my application to production on IIS [Create a Single Page Application with dotnet core](/blog/2017-02-15-Create-Single-page-application-with-dotnet-core). In this post I'm going to guide you on how to do that.
+description: Last time we've created SPA Single Page Application  using a dontnet command with dotnet, but how to deploy my application to production on IIS . In this post I'm going to guide you on how to do that.
 image: /images/PublishSpaApp/SpaBrowse.png
 ---
 
