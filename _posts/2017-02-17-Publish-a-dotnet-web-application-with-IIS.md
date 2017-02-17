@@ -45,11 +45,11 @@ Right Click on `Site` then click `Add website`
 
 Name you website `SpaApp` , choose a port `8080`, and select your application path `e:\SpaApplication`:
 
-![CMD](/images/PublishSpaApp/IISWebsiteCreated.png){:class="img-responsive" }
+![CMD](/images/PublishSpaApp/IISWebSiteCreated.png){:class="img-responsive" }
 
 Click OK, make sure that your website is Running.
 
-![CMD](/images/PublishSpaApp/IISWebsiteRunning.png){:class="img-responsive" }
+![CMD](/images/PublishSpaApp/IISWebSiteRunning.png){:class="img-responsive" }
 
 In the browser, navigate to [http://localhost:8080](http://localhost:8080) .
 
