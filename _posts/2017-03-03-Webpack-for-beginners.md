@@ -21,9 +21,9 @@ Webpack is a powerful module bundler. A bundle is a JavaScript file that incorpo
 
 Webpack roams over your application source code, looking for import statements, building a dependency graph, and emitting one (or more) bundles. With plugins and rules, Webpack can preprocess and minify different non-JavaScript files such as TypeScript, SASS, and LESS files.
 
-You determine what Webpack does and how it does it with a JavaScript configuration file, webpack.config.js.
-
 ![CMD](/images/webpack-intro/webpackimg.png){:class="img-responsive" }
+
+You determine what Webpack does and how it does it with a JavaScript configuration file, webpack.config.js.
 
 ###  Entries and outputs
 
@@ -61,7 +61,7 @@ Create a directory `webpack-intro`
 Create new project and install webpack.
 
 ```
-   $ npm Init -y 
+   $ npm init -y 
    $ npm install --save-dev webpack
 
 ```
