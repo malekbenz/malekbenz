@@ -8,7 +8,7 @@ category: Nodejs
 tags : [ 'JavaScript',  'Nodejs', 'Wabpack']
 categories: ['Nodejs']
 description: I was about creating a new project, and decided to use webpack to manage my dependency, so let's me share with you what I think is the esiest way to learn Webpack, guess what ?... Exactly is by creating a simple project, so let's do it.
-image: /images/AspNetSpaTemplates/DotnetRunBrowser.png
+image: /images/webpack-intro/webpackimg.png
 ---
 
 I was about creating a new project, and decided to use webpack to manage my dependency, so let's me share with you what I think is the esiest way to learn Webpack, guess what ?... Exactly is by creating a simple project, so let's do it.     
@@ -23,7 +23,7 @@ Webpack roams over your application source code, looking for import statements, 
 
 You determine what Webpack does and how it does it with a JavaScript configuration file, webpack.config.js.
 
-![CMD](/images/webpack-intro/webpack.bng){:class="img-responsive" }
+![CMD](/images/webpack-intro/webpackimg.png){:class="img-responsive" }
 
 ###  Entries and outputs
 
