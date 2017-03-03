@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to Webpack 2"
+title: "Webpack for beginners"
 date: 2017-03-03
 author: Malekbenz
 comments: true
@@ -8,7 +8,7 @@ category: Nodejs
 tags : [ 'JavaScript',  'Nodejs', 'Wabpack']
 categories: ['Nodejs']
 description: I was about creating a new project, and decided to use webpack to manage my dependency, so let's me share with you what I think is the esiest way to learn Webpack, guess what ?... Exactly is by creating a simple project, so let's do it.
-image: /images/webpack-intro/webpackimg.png
+image: /images/webpack-intro/Presentation.png
 ---
 
 I was about creating a new project, and decided to use webpack to manage my dependency, so let's me share with you what I think is the esiest way to learn Webpack, guess what ?... Exactly is by creating a simple project, so let's do it.     
