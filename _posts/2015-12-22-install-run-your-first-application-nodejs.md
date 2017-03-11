@@ -27,19 +27,19 @@ To install nodejs go to [Nodejs Official website](https://nodejs.org/) and downl
 ![Node js website](/images/nodejs/nodejswebsite.png){:class="img-responsive" :max-width="80%"}
 
 
-after that launch the installer.
+After that launch the installer.
 
 ![click next](/images/nodejs/nodejsfs01.png)
 
-click next.
+Click next.
 
 ![Next](/images/nodejs/nodejsfs02.png)
 
-click install.
+Click install.
 
 ![Install](/images/nodejs/nodejsfs03.png)
 
-click Finish.
+Click Finish.
 
 
 ![Finish](/images/nodejs/nodejsfs04.png)
@@ -58,7 +58,7 @@ To confim that everything is ok, launch the (node.js command line) and type 'nod
 
 
 ```javascript
-node --version
+    $ node --version
 ```
 
 
@@ -67,7 +67,7 @@ node --version
 Create new file 'app.js' and type the code above:  
 
 ```javascript
-console.log("Hello World: ");
+    console.log("Hello World: ");
 ```
 
 ![CMD](/images/nodejs/nodejsfs06.png)
@@ -76,11 +76,9 @@ console.log("Hello World: ");
 Run the application: 
 
 ```javascript
-node app.js
+    $ node app.js
 ```
 
 >
 > ## **Congratulation! your first application is working**
 >
-
-
