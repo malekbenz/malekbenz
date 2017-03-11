@@ -38,7 +38,7 @@ Initiate a new project:
  
 ```
 
-![CMD](/images/firstSocketIO/newproject.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/newproject.png){:class="img-responsive" }
 
 Install express
 
@@ -47,7 +47,7 @@ Install express
  
 ```
 
-![CMD](/images/firstSocketIO/installexpress.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/installexpress.png){:class="img-responsive" }
 
 Then install Socket.io
 
@@ -56,7 +56,7 @@ Then install Socket.io
  
 ```
 
-![CMD](/images/firstSocketIO/installsocketio.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/installsocketio.png){:class="img-responsive" }
 
 
 ###  Create a Server app
@@ -86,7 +86,7 @@ Create `app.js` file, and update :
  
 ```
 
-![CMD](/images/firstSocketIO/app.js.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/app.js.png){:class="img-responsive" }
 
 ###  Add index.html (Client)
 
@@ -108,7 +108,7 @@ Create a `index.html` inside a `www`folder and update the `body` content with:
 
 ```
 
-![CMD](/images/firstSocketIO/index.html.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/index.html.png){:class="img-responsive" }
 
 > The script file named `/socket.io/socket.io.js` is dynamically generateed at runtime by the socket.io. 
 
@@ -125,13 +125,13 @@ The application starts a server and listens on `port 3000`.
 
 Browse to http://localhost:3000
 
-![CMD](/images/firstSocketIO/running1.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/running1.png){:class="img-responsive" }
 
 Copy the URL from the address line of the browser and use it to open two more browser instances. In each browser instance you will get the same slide and it will changed synchronously in all browser.
 
 And after 5 second
 
-![CMD](/images/firstSocketIO/running2.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/running2.png){:class="img-responsive" }
 
 
 >
