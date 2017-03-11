@@ -8,7 +8,7 @@ category: Nodejs
 tags : [ 'JavaScript',  'SignalR', 'Asp.net']
 categories: ['SignalR']
 description: Today tutorial demonstrates how to use ASP.NET SignalR to create a  simple real-time slide application. You will add SignalR to an Empty ASP.NET application and create a Slide application to send slide that we want to display.
-image: /images/webpack-intro/Presentation.png
+image: /images/firstSignalr/running1.png
 ---
 
 Today tutorial demonstrates how to use ASP.NET SignalR to create a  simple `real-time` slide application. You will add SignalR to an Empty ASP.NET application and create a Slide application to send slide that we want to display.
