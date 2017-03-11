@@ -30,9 +30,11 @@ In the New ASP.NET Project dialog, and select `Empty` project , and click OK.
 
 ![CMD](/images/firstSignalr/emptytemplate.png){:class="img-responsive" }
 
+###  Install signalR
+
 In Solution Explorer, right-click the project, select Manage Nuget package.
 
-![CMD](/images/firstSignalr/addnugget.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/addnugets.png){:class="img-responsive" }
 
 Serach for signalR and click install: 
 
@@ -47,7 +49,7 @@ Click Accept.
 ![CMD](/images/firstSignalr/installsignalraccept.png){:class="img-responsive" }
 
 
-In Solution Explorer, right-click the project, select Add | Class.
+In Solution Explorer, right-click the project, select Add => Class.
 
 ![CMD](/images/firstSignalr/addStartupclass.png){:class="img-responsive" }
 
@@ -65,15 +67,17 @@ Replace the code in the Configuration methode with the following code.
 
 ```
 
-In Solution Explorer, right-click the project, select Add | New Folder, and add a new folder named Hubs.
+###  Create the SlideHub class
+
+In Solution Explorer, right-click the project, select Add => New Folder, and add a new folder named Hubs.
 
 ![CMD](/images/firstSignalr/folder.hubs.png){:class="img-responsive" }
 
-Right-click the Hubs folder, click Add | New Item.
+Right-click the Hubs folder, click Add => New Item.
 
 ![CMD](/images/firstSignalr/add.element.png){:class="img-responsive" }
 
-Select the Visual C# | Web | SignalR node in the Installed pane, select SignalR Hub Class (v2) from the center pane, and create a new hub named SlideHub.cs.
+Select the Visual C# => Web => SignalR node in the Installed pane, select SignalR Hub Class (v2) from the center pane, and create a new hub named SlideHub.cs.
 
 ![CMD](/images/firstSignalr/add.newhub.png){:class="img-responsive" }
 
@@ -105,12 +109,19 @@ Replace the code in the SlideHub class with the following code.
 
 ```
 
+>> ### Access to the Hubs from outside of the Hub class 
+The Clients dynamic property of the Hub gives you access to all clients connected to the hub within the hub class. However, what if you would like to push data to the clients from outside of the Hub class. This is where the static `GlobalHost` SignalR class comes to rescue. It gives you access to the `HubContext` through the IConnectionManager interface.
+The `IHubContext`, which is returned from the `GetHubContext` exposes the dynamic Clients and IGroupManager Groups. This means that you can get access to the clients connected to the hubs from anywhere in your app.
+
+
 ![CMD](/images/firstSignalr/slidehub.png){:class="img-responsive" }
 
+###  Add index.html (Client)
 
-In Solution Explorer, right-click the project, select Add | HTML Page  named index.html.
+In Solution Explorer, right-click the project, select Add => HTML Page  named index.html.
 
 ![CMD](/images/firstSignalr/slidehub.png){:class="img-responsive" }
+
 
 Replace the code in the Body tage with the following code.
 
@@ -141,7 +152,7 @@ Replace the code in the Body tage with the following code.
 </body>
 ```
 
-The script file named `hubs` is dynamically generateed at runtime by the SignalR library . This file manages the communication between jQuery script and server-side code. you can also access the dynamic hubs file by browsing to it directly, for example http://firstsignalr/signalr/hubs.
+>The script file named `hubs` is dynamically generateed at runtime by the SignalR library . This file manages the communication between jQuery script and server-side code. you can also access the dynamic hubs file by browsing to it directly, for example http://firstsignalr/signalr/hubs.
 
 ## Run the project
 
