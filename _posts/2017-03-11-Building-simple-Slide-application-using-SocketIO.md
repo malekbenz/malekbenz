@@ -56,7 +56,7 @@ Then install Socket.io
  
 ```
 
-![CMD](/images/firstSocketio/installsocketio.png){:class="img-responsive" }
+![CMD](/images/firstSocketio/installSocketio.png){:class="img-responsive" }
 
 
 ###  Create a Server app
