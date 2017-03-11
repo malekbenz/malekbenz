@@ -8,7 +8,7 @@ category: Nodejs
 tags : [ 'JavaScript',  'SocketIO', 'Nodejs']
 categories: ['Nodejs']
 description: I've wrote a tutorial demonstrates how to use ASP.NET SignalR to create a  simple `real-time` slide application  [Create a simple Slide application with Singalr](/blog/2015/12/22/2017-03-10-Create-simple-Slide-application-with-Singalr). But Today we will see how to do the same thing with `scoketIO` and Nodejs. We will use nodejs to send slide that we want to display.
-image: /images/firstSignalr/prensentation.png
+image: /images/firstSocketio/prensentation.png
 ---
 
 I've wrote a tutorial demonstrates how to use ASP.NET SignalR to create a  simple `real-time` slide application  [Create a simple Slide application with Singalr](/blog/2015/12/22/2017-03-10-Create-simple-Slide-application-with-Singalr). But Today we will see how to do the same thing with `scoketIO` and Nodejs. We will use nodejs to send slide that we want to display.
