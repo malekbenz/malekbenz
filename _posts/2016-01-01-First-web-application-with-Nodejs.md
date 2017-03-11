@@ -21,9 +21,9 @@ In this post we are going to build our first web application, a HelloWeb applica
 Create a folder 'HelloWeb'
 
 ```javascript
-$ mkdir  HelloWeb
+    $ mkdir  HelloWeb
 ```
-and within a folder create a file 'app.js'
+And within a folder create a file 'app.js'
 
 
 ![CMD](/images/helloweb/cmd.png){:class="img-responsive" :max-width="80%"}
