@@ -55,7 +55,7 @@ In Solution Explorer, right-click the project, select Add => Class.
 
 Search for OWIN, name it Startup and click Add.
 
-![CMD](/images/firstSignalr/addOwinStartupclass.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/addowinStartupclass.png){:class="img-responsive" }
 
 Replace the code in the Configuration methode with the following code.
 
@@ -79,7 +79,7 @@ Right-click the Hubs folder, click Add => New Item.
 
 Select the Visual C# => Web => SignalR node in the Installed pane, select SignalR Hub Class (v2) from the center pane, and create a new hub named SlideHub.cs.
 
-![CMD](/images/firstSignalr/add.newhub.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/add.newHub.png){:class="img-responsive" }
 
 Replace the code in the SlideHub class with the following code.
 
@@ -114,7 +114,7 @@ The Clients dynamic property of the Hub gives you access to all clients connecte
 The `IHubContext`, which is returned from the `GetHubContext` exposes the dynamic Clients and IGroupManager Groups. This means that you can get access to the clients connected to the hubs from anywhere in your app.
 
 
-![CMD](/images/firstSignalr/slidehub.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/slideHub.png){:class="img-responsive" }
 
 ###  Add index.html (Client)
 
