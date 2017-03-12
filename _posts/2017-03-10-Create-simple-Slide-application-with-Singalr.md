@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create a simple Slide application with SignalR"
+title: "Create a RealTime (simple Slide application) with SignalR"
 date: 2017-03-10
 author: Malekbenz
 comments: true
