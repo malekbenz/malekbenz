@@ -154,7 +154,7 @@ Replace the code in the Body tage with the following code.
 </body>
 ```
 
-![CMD](/images/firstSignalr/name.index.html.v1.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/name.index.v2.html.png){:class="img-responsive" }
 
 >The script file named `hubs` is dynamically generateed at runtime by the SignalR library . This file manages the communication between jQuery script and server-side code. you can also access the dynamic hubs file by browsing to it directly, for example http://firstsignalr/signalr/hubs.
 
