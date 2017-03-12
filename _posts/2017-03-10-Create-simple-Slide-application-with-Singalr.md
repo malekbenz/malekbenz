@@ -120,7 +120,9 @@ The `IHubContext`, which is returned from the `GetHubContext` exposes the dynami
 
 In Solution Explorer, right-click the project, select Add => HTML Page  named index.html.
 
-![CMD](/images/firstSignalr/slidehub.png){:class="img-responsive" }
+![CMD](/images/firstSignalr/add.html.png){:class="img-responsive" }
+
+![CMD](/images/firstSignalr/name.index.html.png){:class="img-responsive" }
 
 
 Replace the code in the Body tage with the following code.
@@ -151,6 +153,8 @@ Replace the code in the Body tage with the following code.
     </script>
 </body>
 ```
+
+![CMD](/images/firstSignalr/name.index.html.v1.png){:class="img-responsive" }
 
 >The script file named `hubs` is dynamically generateed at runtime by the SignalR library . This file manages the communication between jQuery script and server-side code. you can also access the dynamic hubs file by browsing to it directly, for example http://firstsignalr/signalr/hubs.
 
