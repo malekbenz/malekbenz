@@ -81,7 +81,7 @@ Select the Visual `C# => Web => SignalR` node in the Installed pane, select `Sig
 
 ![CMD](/images/firstSignalr/add.newHub.png){:class="img-responsive" }
 
-Replace the code in the SlideHub class with the following code.
+Replace the code in the `SlideHub` class with the following code.
 
 ```
    public class SlideHub : Hub
@@ -118,14 +118,14 @@ The `IHubContext`, which is returned from the `GetHubContext` exposes the dynami
 
 ###  Add index.html (Client)
 
-In Solution Explorer, right-click the project, select Add => HTML Page  named index.html.
+In Solution Explorer, right-click the project, select `Add => HTML Page`  named `index.html`.
 
 ![CMD](/images/firstSignalr/add.html.png){:class="img-responsive" }
 
 ![CMD](/images/firstSignalr/name.index.html.png){:class="img-responsive" }
 
 
-Replace the code in the Body tage with the following code.
+Replace the code in the `Body` tage with the following code.
 
 ```
 <body>
