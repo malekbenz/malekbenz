@@ -77,7 +77,7 @@ Right-click the Hubs folder, click Add => New Item.
 
 ![CMD](/images/firstSignalr/add.element.png){:class="img-responsive" }
 
-Select the Visual C# => Web => SignalR node in the Installed pane, select SignalR Hub Class (v2) from the center pane, and create a new hub named SlideHub.cs.
+Select the Visual `C# => Web => SignalR` node in the Installed pane, select `SignalR Hub Class (v2)` from the center pane, and create a new hub named `SlideHub.cs`.
 
 ![CMD](/images/firstSignalr/add.newHub.png){:class="img-responsive" }
 
