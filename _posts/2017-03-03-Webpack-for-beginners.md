@@ -124,7 +124,7 @@ In this case, there are implicit dependencies between the `<script> tags`.
 
 Now run the the app:
 
-![/CMD](/images/webpack-intro/running01.png){:class="img-responsive" }
+![/CMD](/images/webpack-intro/Running01.png){:class="img-responsive" }
 
 As you can see we access to `$title` and `$ul` variable from the console which is bad:
 
