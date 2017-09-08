@@ -13,6 +13,18 @@ image: /images/graph-ql/05.png
 
 GraphQL is a data query language and runtime designed and used at Facebook to request and deliver data to mobile and web apps since 2012. 
 
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- malekbenz.autobanner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5586778286582193"
+     data-ad-slot="1751653660"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Build a simple GraphQL server
 
 If you don't have node js already installed you can [Install & run your first application Nodejs](/blog/2015/12/22/install-run-your-first-application-nodejs).
