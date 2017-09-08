@@ -34,6 +34,19 @@ Install-Package CsvHelper
 
 ```
 
+### A Person Class     
+
+```
+    internal class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
+
+```
+
+
 
 ### Reading function     
 
