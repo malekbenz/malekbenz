@@ -17,6 +17,17 @@ This post shows you how to enables users to log in using OAuth 2.0  with credent
 
 if you don't already have visual studio you can download a free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- malekbenz.autobanner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5586778286582193"
+     data-ad-slot="1751653660"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Create Asp.net web application  
 
 Create an MVC web application, launch visual studio and create a new asp.net MVC application: 

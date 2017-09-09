@@ -19,6 +19,17 @@ In this post I am going to guide on how create your first angularjs application 
 
 if you don't already have visual studio you can download a free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- malekbenz.autobanner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5586778286582193"
+     data-ad-slot="1751653660"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## What is Angularjs? 
 
 Angularjs is javascipt front-end web framework maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.

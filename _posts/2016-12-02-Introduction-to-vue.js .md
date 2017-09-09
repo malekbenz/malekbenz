@@ -20,6 +20,17 @@ In this post I am going to guide on how use Vue.js based application using visua
 
 if you don't already have visual studio you can download the free version of visual studio [https://www.visualstudio.com/vs/community/](https://www.visualstudio.com/vs/community/).
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- malekbenz.autobanner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5586778286582193"
+     data-ad-slot="1751653660"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## What is Vue.js? 
 
 Vue.js is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is very easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
