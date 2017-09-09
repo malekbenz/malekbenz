@@ -1,56 +1,54 @@
----
-layout: default
----
+--- layout: default ---
 
-<h1 class ="section-post" >{{ page.title }}</h1>
+<h1 class="section-post">{{ page.title }}</h1>
 
-  <ul class="post-by">
-    <li> By:<span>{{page.author}}</span></li>
-    <li>Category:<span>{{page.category}}</span></li>
-    <li>tags:<span>{{ page.tags | array_to_sentence_string}}</span></li>
-    <li>Time:<span>{{page.date | date_to_string}}</span></li>
-    <li>
+<ul class="post-by">
+  <li> By:<span>{{page.author}}</span></li>
+  <li>Category:<span>{{page.category}}</span></li>
+  <li>tags:<span>{{ page.tags | array_to_sentence_string}}</span></li>
+  <li>Time:<span>{{page.date | date_to_string}}</span></li>
+  <li>
 
-    </li>
-  </ul>
+  </li>
+</ul>
 <div class="content">
-    
-  <!-- <a href="//www.bluehost.com/track/malekbenz/" target="_blank"> 
-    <img border="0" src="//bluehost-cdn.com/media/partner/images/malekbenz/620x203/bh-620x203-03-dy.png"> 
-  </a> -->
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- malekbenz.autobanner -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5586778286582193" data-ad-slot="1751653660" data-ad-format="auto"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
   <artcicle class="section-post">
     {{ content }}
   </artcicle>
 
 
-{% if page.comments %}
-    <h1 class="title">Comments</h1>
- 
-      {% include post/disqus_thread.html %}
-  
-            <script>
-             (function() { // DON'T EDIT BELOW THIS LINE
-                 var d = document, s = d.createElement('script');
-                 s.src = '//blog-malekbenz-com.disqus.com/embed.js';
-                 s.setAttribute('data-timestamp', +new Date());
-                 (d.head || d.body).appendChild(s);
-              })();
-            </script>
-    {% endif %}
+  {% if page.comments %}
+  <h1 class="title">Comments</h1>
 
-<div>   
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- malekbenz.autobanner -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-5586778286582193"
-          data-ad-slot="1751653660"
-          data-ad-format="auto"></ins>
+  {% include post/disqus_thread.html %}
+
   <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = '//blog-malekbenz-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
   </script>
+  {% endif %}
+
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- malekbenz.autobanner -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5586778286582193" data-ad-slot="1751653660" data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+  </div>
 
 </div>
-
-</div>
-
