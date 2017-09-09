@@ -15,16 +15,6 @@ ASP.NET Core is an open source web framework for building modern web application
 
 In order to install .NET Core on Ubuntu or Linux Mint you can see [Install .Net Core on linux](/blog/2016/08/01/Install-dotnet-core-linux).
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Create .Net Core project 
 

@@ -16,16 +16,6 @@ ASP.NET MVC core is a framework for building web applications that applies the g
 In this post we will use Asp.NET core to create Web application on cloud9 using different technologies `Yeoman`, `gulp` and `nodejs` .
 
 If you don't kown how to create a simple web server you can see [Create a First web application with .Net Core ](/blog/2016/08/05/First-web-application-dotnet-core-linux).
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Create a new workspace in cloud9 
 
@@ -44,6 +34,18 @@ Name the workspace `aspnet`, Select `Blank` template and click on `Create a new 
 Now your machine is created, type  `sudo apt update` update the system.
 
 ![CMD](/images/c9Aspnet/c9npm-upgrade.png){:class="img-responsive" :max-width="80%"}
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- malekbenz.autobanner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5586778286582193"
+     data-ad-slot="1751653660"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 
 Install the package apt-transport-https.
 

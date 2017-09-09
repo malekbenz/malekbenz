@@ -16,16 +16,6 @@ a blog these days.
 
 I am going to show you exactly how to start a blog with the `hexo`, which can be used from any computer, tablet, or smartphone. In this post  I am going to show you exactly how to create a blog so that you get the most out of it.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## What is Hexo? 
 

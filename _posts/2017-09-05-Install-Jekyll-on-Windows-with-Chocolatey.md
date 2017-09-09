@@ -12,16 +12,6 @@ image: /images/installJekyll/run.png
 ---
 
 [Jekyll](https://jekyllrb.com) is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx ,IIS  or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories.
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
  
 ## Install Chocolatey     
 

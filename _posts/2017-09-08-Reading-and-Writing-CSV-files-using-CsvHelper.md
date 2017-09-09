@@ -14,16 +14,6 @@ image: /images/csvHelper/cover.png
 
 [CsvHelper](https://joshclose.github.io/CsvHelper/) is .NET library for reading and writing CSV files. Extremely fast, flexible and easy to use. Supports reading and writing of custom class objects.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
  
 ## Simple application        
 

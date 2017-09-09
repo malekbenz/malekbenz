@@ -14,16 +14,6 @@ image: /images/vstudio/angular.First.preview.png
 AngularJS JavaScript-based front-end web application framework, it alows you to easily build single-page web applications (SPA). 
  
 AngularJS provide a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. You can [download Visual studio community](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx).  
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- malekbenz.autobanner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5586778286582193"
-     data-ad-slot="1751653660"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## Create a web application  
 
