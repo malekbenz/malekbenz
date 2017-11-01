@@ -138,29 +138,36 @@
 body {
 	background: #fff;
 	font-family: "Lato", Arial, Verdana;
+	font-size: 16px;
 	}
 	
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: "Lato", Arial, Verdana;
-	font-weight: 100;
+	/* font-weight: 100; */
 	color: #444649;
-	}
-	
-ul {
-	margin: 0px;
-	padding: 0px;
-	}
-	
-li {
-	list-style: none;
-	}
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
 
-	
+h1, h2 {
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #eaecef;
+}	
+
+h1, h2 {
+		font-size: 1.5em;
+}	
+h1 {
+    font-size: 2em;
+}
+
 p {
 	
 	font-family: 'Open Sans',sans-serif;
 	font-weight:300;
-	font-size: 15px;
+	/* font-size: 15px; */
 }
 
 a {
@@ -991,6 +998,7 @@ textarea.form-control {
 	
 ul.inner-link {
 	background: rgba(255,255,255,0.2);
+	list-style: none;
 	margin: 0px auto;
 	margin-top: 30px;
 	display: table;
@@ -1004,7 +1012,6 @@ ul.inner-link li {
 	}
 	
 ul.inner-link li a {
-	font-size: 14px;
 	color: #fff;
 	padding: 8px 20px;
 	float: left;
@@ -1227,13 +1234,13 @@ ul.category li a:hover span.count, ul.category li a:hover {
 
 ul.tags {
 	margin: 0px;
-	padding: 0xp;
 	}
 	
 ul.tags li {
 	float: left;
 	margin-right: 10px;
 	width: auto;
+	list-style: none;
 	}
 	
 ul.tags li a.tg-btn {
@@ -1253,4 +1260,3 @@ ul.tags li a.tg-btn:hover {
 	color: #fff;
 	}
 
-	

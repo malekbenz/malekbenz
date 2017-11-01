@@ -21,6 +21,13 @@
 Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
 
 */
+
+pre {
+  padding: 2.5px;
+  margin: 0 0 3px;
+  line-height: 1.42857143;
+}
+
 pre code {
   font-family: Consolas,Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
   font-size: 1.1em;
@@ -30,12 +37,20 @@ pre code {
   background: #fff;
   color: #000;
   border: solid 1px #eee;
-  box-shadow: 1px 1px 2px #aaa;
-  margin: 10px 0 8px 0;
-  padding: 5px 15px;
+  box-shadow: 1px 1px 0px #aaa;
+  margin: 0px 0 0px 0;
+  padding: 5px 12px;
   overflow-x: auto;
   word-wrap: break-word;
 }
 
 .highlight .m { color: #009999 } /* Literal Number */
 .highlight .o, .highlight .p, .highlight .p-indicator, .highlight .nv { color: #666666 } /* Operator */
+.highlight pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
