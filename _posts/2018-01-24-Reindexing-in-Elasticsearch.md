@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reindexing in Elasticsearch "
-date: 2017-10-15
+date: 2018-01-24
 author: Malekbenz
 comments: true
 category: elasticsearch
@@ -25,9 +25,9 @@ In this tutorial I'm going to show you how to index from an existing index in el
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
  
-## Create an index 
+## Create a sample **index**
 
-Let's first create an index  **myindex** with two properties (FirstName and LastName)
+Let's first create an index  and name it **myindex** with two properties (FirstName and LastName)
 
 
 ```
@@ -50,7 +50,7 @@ PUT localhost:9200/myindex
 
 ### Indexing documents 
 
-We need to index some sample data : 
+We need to index some documents (sample data ): 
 
 ```
 POST localhost:9200/myindex/developer
@@ -90,7 +90,7 @@ GET localhost:9200/myindex/developer/_search
 
 ![CMD](/images/reindexingelasticsearch/03.png){:class="img-responsive" }
 
-## Create mynewindex & index it from myindex     
+## Create **mynewindex** & index it from **myindex**     
 
 Create an index  and name it **mynewindex** :
 
@@ -127,7 +127,7 @@ POST localhost:9200/_reindex
 
 ![CMD](/images/reindexingelasticsearch/05.png){:class="img-responsive" }
 
-if you ask our **mynewindex** :
+if we ask our index  **mynewindex** :
 ```
 GET localhost:9200/mynewindex/developer/_search
 
@@ -138,7 +138,7 @@ GET localhost:9200/mynewindex/developer/_search
 
 
 >
-> **NOTE:** For more informations , please see  [CsvHelper](https://www.elastic.co/). 
+> **NOTE:** For more informations , please see  [ElasticSearch website ](https://www.elastic.co/). 
 > 
 
 ![CMD](/images/reindexingelasticsearch/cover.png){:class="img-responsive" }
