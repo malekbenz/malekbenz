@@ -8,7 +8,7 @@ category: elasticsearch
 tags : [ 'elasticsearch' ]
 categories: ['elasticsearch']
 description: Reindexing in Elasticsearch.
-image: /images/csvHelper/cover.png
+image: /images/reindexingelasticsearch/cover.png
 ---
 
 
