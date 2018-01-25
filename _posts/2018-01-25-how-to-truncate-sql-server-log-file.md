@@ -8,7 +8,7 @@ category: SQL Server
 tags : [ 'SQL Server' ]
 categories: ['SQL Server']
 description: How to truncate sql server log file.
-image: /images/sqltruncatelog/cover.png
+image: /images/sqltruncatelog/coversql.png
 ---
 
 
