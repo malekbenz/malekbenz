@@ -72,7 +72,7 @@ You can you achieve the same results using **Trasact SQL** script :
 
   SELECT @LogName= name
   FROM sys.master_files
-  Where db_id('FNE') = database_id and  type_desc = 'LOG'
+  Where db_id(@DBName) = database_id and  type_desc = 'LOG'
 
 
   SELECT @recovery_model = recovery_model_desc
