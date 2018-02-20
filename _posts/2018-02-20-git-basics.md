@@ -46,79 +46,71 @@ then to create a Git repo you type :
 
 ```
 
-
-Right click on it and select properties: 
-
-![CMD](/images/sqltruncatelog/02.png){:class="img-responsive" }
-
-Go to the **options** and change the  recovery model to **simple** and click ok.
-
-![CMD](/images/sqltruncatelog/03.png){:class="img-responsive" }
-
-Now let's truncate the **log file**  to section Tasks -> Shrink -> Files.
-
-![CMD](/images/sqltruncatelog/04.png){:class="img-responsive" }
-
- In File type select Log and click ok.
-
-![CMD](/images/sqltruncatelog/05.png){:class="img-responsive" }
-
-Now you can check the size of your file
-
-![CMD](/images/sqltruncatelog/06.png){:class="img-responsive" }
+![CMD](/images/gitbasics/00.jpg){:class="img-responsive" }
 
 
+You'll get some like this : 
 
+![CMD](/images/gitbasics/01.jpg){:class="img-responsive" }
 
-### Using Transact SQL
+## Add Changes to the index (Stage) :
 
-You can you achieve the same results using **Trasact SQL** script :
+Now let's create a file **file.txt** and check the status: 
 
 ```
-  DECLARE @SQL nvarchar(100)
-  DECLARE @DBName varchar(60)
-
-  DECLARE @LogName varchar(60)
-  DECLARE @recovery_model varchar(60)
-
-  SELECT @DBName= DB_NAME()
-
-
-  SELECT @LogName= name
-  FROM sys.master_files
-  Where db_id(@DBName) = database_id and  type_desc = 'LOG'
-
-
-  SELECT @recovery_model = recovery_model_desc
-  FROM sys.databases
-  WHERE name = @DBName
-
-
-
-  IF @recovery_model <> 'SIMPLE'
-    BEGIN
-      SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY SIMPLE;';
-      exec sp_executesql @SQL
-    END
-  DBCC SHRINKFILE( @LogName , 2);
-
-
-  IF @recovery_model <> 'SIMPLE'
-  BEGIN
-      IF @recovery_model = 'FULL'
-          BEGIN
-        SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY FULL;';
-        exec sp_executesql @SQL
-      END
-      ELSE
-      BEGIN
-        SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY BULK_LOGGED;'
-        exec sp_executesql @SQL
-      END
-      
-  END /*IF*/
+ $ git status 
 
 ```
+![CMD](/images/gitbasics/02.jpg){:class="img-responsive" }
+
+
+![CMD](/images/gitbasics/03.jpg){:class="img-responsive" }
+
+To add the file **file.txt** to the index : 
+```
+ $ git add file.txt 
+
+```
+
+![CMD](/images/gitbasics/04.jpg){:class="img-responsive" }
+
+which give us: 
+
+![CMD](/images/gitbasics/05.jpg){:class="img-responsive" }
+
+## Remove Changes (or file ) from index (Stage) :
+
+
+To unstages files we can use :
+
+```
+ $ git rm --cached file.txt 
+
+```
+![CMD](/images/gitbasics/04.jpg){:class="img-responsive" }
+
+Which means that: 
+
+![CMD](/images/gitbasics/03.jpg){:class="img-responsive" }
+
+## Commit changes:
+Now to commit our changes let's first stage our file **file.txt** 
+
+```
+ $ git add file.txt 
+```
+To commit type : 
+
+```
+ $ git commit -m "My First commit "
+
+```
+![CMD](/images/gitbasics/07.jpg){:class="img-responsive" }
+
+Which means that: 
+
+![CMD](/images/gitbasics/08.jpg){:class="img-responsive" }
+
 
 
 >
