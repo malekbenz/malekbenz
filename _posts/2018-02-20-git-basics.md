@@ -49,7 +49,7 @@ then to create a Git repo you type :
 ![CMD](/images/gitbasics/00.jpg){:class="img-responsive" }
 
 
-You'll get some like this : 
+You'll get some thing like this : 
 
 ![CMD](/images/gitbasics/01.jpg){:class="img-responsive" }
 
@@ -111,7 +111,57 @@ Which means that:
 
 ![CMD](/images/gitbasics/08.jpg){:class="img-responsive" }
 
+Perfect, but what if we modify the **file.txt**: 
 
+![CMD](/images/gitbasics/09.jpg){:class="img-responsive" }
+
+```
+  $ git status
+```
+Give us: 
+
+![CMD](/images/gitbasics/10.jpg){:class="img-responsive" }
+
+Then  we stage the **file.txt** (add it to the index):
+
+```
+  $ git add file.txt
+```
+
+![CMD](/images/gitbasics/11.jpg){:class="img-responsive" }
+
+Modify the **file.txt** again to looks like this: 
+
+![CMD](/images/gitbasics/12.jpg){:class="img-responsive" }
+
+Which leaves us with: 
+
+![CMD](/images/gitbasics/13.jpg){:class="img-responsive" }
+
+Now let's have some fun with git : 
+
+## git reset **- - file.txt**
+
+
+Copie **file.txt** from the latest commit to the stage: 
+
+```
+  $ git reset -- file.txt
+```
+
+
+
+![CMD](/images/gitbasics/14.jpg){:class="img-responsive" }
+
+## git checkout - - file.txt
+
+```
+  $ git reset -- file.txt
+```
+
+Copie **file.txt** from the stage to the working directory
+
+![CMD](/images/gitbasics/15.jpg){:class="img-responsive" }
 
 >
 > ## That's it see you soon!.
