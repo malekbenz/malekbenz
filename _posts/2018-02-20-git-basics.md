@@ -8,7 +8,7 @@ category: GIT
 tags : [ 'GIT', 'GitHub' ]
 categories: ['GIT']
 description: Git Basics.
-image: /images/gitbasics/cover.png
+image: /images/gitbasics/cover.jpg
 ---
 
 
