@@ -12,7 +12,7 @@ image: /images/gitbasics/cover.png
 ---
 
 
-In this toturial we are going to understand some basic git commands by practice. if you don't know Git **(Git is distrubuted version control system)**..
+In this toturial we are going to understand some basic **Git** commands by practice. if you don't know Git **(Git is distrubuted version control system)**..
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- malekbenz.autobanner -->
@@ -32,14 +32,14 @@ In this toturial we are going to understand some basic git commands by practice.
 ## Create new git repository
 
 
-Let's create a new directory  **learngit**:
+Let's create a new directory  and name it  **learngit**:
 
 ```
  $ mkdir learngit
  $ cd learngit
 
 ```
-then to create a Git repo you type :
+Then to create a Git repo you type :
 
 ```
  $ git init 
@@ -55,7 +55,7 @@ You'll get some thing like this :
 
 ## Add Changes to the index (Stage) :
 
-Now let's create a file **file.txt** and check the status: 
+Now let's create a new file **file.txt** and check the status: 
 
 ```
  $ git status 
@@ -66,7 +66,7 @@ Now let's create a file **file.txt** and check the status:
 
 ![CMD](/images/gitbasics/03.jpg){:class="img-responsive" }
 
-To add the file **file.txt** to the index : 
+To add the file **file.txt** to the index we use: 
 ```
  $ git add file.txt 
 
@@ -94,12 +94,12 @@ Which means that:
 ![CMD](/images/gitbasics/03.jpg){:class="img-responsive" }
 
 ## Commit changes:
-Now to commit our changes let's first stage our file **file.txt** 
+Now to commit our changes let's first stage our file  **file.txt** again :
 
 ```
  $ git add file.txt 
 ```
-To commit type : 
+We commit by typing : 
 
 ```
  $ git commit -m "My First commit "
@@ -111,7 +111,7 @@ Which means that:
 
 ![CMD](/images/gitbasics/08.jpg){:class="img-responsive" }
 
-Perfect, but what if we modify the **file.txt**: 
+Perfect, but what if we modify the **file.txt**? 
 
 ![CMD](/images/gitbasics/09.jpg){:class="img-responsive" }
 
@@ -122,7 +122,7 @@ Give us:
 
 ![CMD](/images/gitbasics/10.jpg){:class="img-responsive" }
 
-Then  we stage the **file.txt** (add it to the index):
+Then  if we stage the **file.txt** (add it to the index):
 
 ```
   $ git add file.txt
@@ -138,7 +138,7 @@ Which leaves us with:
 
 ![CMD](/images/gitbasics/13.jpg){:class="img-responsive" }
 
-Now let's have some fun with git : 
+Now let's have some fun with **Git** : 
 
 ## git reset **- - file.txt**
 
@@ -163,6 +163,9 @@ Copie **file.txt** from the stage to the working directory
 
 ![CMD](/images/gitbasics/15.jpg){:class="img-responsive" }
 
->
-> ## That's it see you soon!.
+
+Everything is clean again. 
+
+> 
+> ## That's it & see you soon!.
 > 
