@@ -19,16 +19,16 @@ This how to remove a duplicated rows, using **ROW_NUMBER()** :
 
 
 ```
-WITH TempEmp (ID,rowNumber)
+WITH TempTable (ID,rowNumber)
 AS
 (
 	SELECT ID,ROW_NUMBER() OVER(PARTITION by ID ORDER BY ID) 
 	AS rowNumber
 	FROM CASNOS 
 )
---& then delete Duplicate Rows
+--Then delete all Duplicate Rows
 
-DELETE FROM TempEmp
+DELETE FROM TempTable
 WHERE rowNumber > 1 
 
 
