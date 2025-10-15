@@ -83,7 +83,7 @@ You can you achieve the same results using **Trasact SQL** script :
 
   IF @recovery_model <> 'SIMPLE'
     BEGIN
-      SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY SIMPLE;';
+      SET @SQL = N'ALTER DATABASE ['+ @DBName+ ']'+  N' SET RECOVERY SIMPLE;';
       exec sp_executesql @SQL
     END
   DBCC SHRINKFILE( @LogName , 2);
@@ -93,12 +93,12 @@ You can you achieve the same results using **Trasact SQL** script :
   BEGIN
       IF @recovery_model = 'FULL'
           BEGIN
-        SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY FULL;';
+        SET @SQL = N'ALTER DATABASE ['+ @DBName +']' + N' SET RECOVERY FULL;';
         exec sp_executesql @SQL
       END
       ELSE
       BEGIN
-        SET @SQL = N'ALTER DATABASE '+ @DBName+ N' SET RECOVERY BULK_LOGGED;'
+        SET @SQL = N'ALTER DATABASE ['+ @DBName+']' + N' SET RECOVERY BULK_LOGGED;'
         exec sp_executesql @SQL
       END
       
