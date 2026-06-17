@@ -7,8 +7,8 @@ comments: true
 category: SQL
 tags : [ 'SQL', 'SQLITE']
 categories: ['SQLITE']
-description: Demystifying SQLite Isolation Levels: Architecture, Concurrency, and Gotchas
-# image: /images/sqlserverduplicaterows/cover.png
+description: "Demystifying SQLite Isolation Levels: Architecture, Concurrency, and Gotchas"
+image: /images/helloweb/web.png
 ---
 
 When developers transition from client-server database systems like PostgreSQL or Sql server to SQLite, they often bring assumptions about transaction isolation that do not align with SQLite's internal architecture. Common concepts like `READ COMMITTED` or `REPEATABLE READ` do not exist natively in SQLite in the way they do in other engines.
