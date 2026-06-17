@@ -7,7 +7,8 @@ comments: true
 category: SQL
 tags : [ 'SQL', 'SQLITE']
 categories: ['SQLITE']
-description: "Demystifying SQLite Isolation Levels Architecture, Concurrency, and Gotchas"
+description: 'Demystifying SQLite Isolation Levels Architecture, Concurrency, and Gotchas'
+
 image: /images/helloweb/web.png
 ---
 
