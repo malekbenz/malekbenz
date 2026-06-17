@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Demystifying SQLite Isolation Levels Architecture, Concurrency, and Gotchas"
-date: 2016-06-17
+date: 2026-06-17
 author: Malekbenz
 comments: true
 category: SQL
