@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Sql server, It's a Matter of Isolation, Not Transaction"
+title: "Sql server transactions -The right way, It's a Matter of Isolation, Not Transaction"
 date: 2026-01-07
 author: Malekbenz
 comments: true
 category: SQL
 tags : [ 'SQL', 'SQLSERVER']
 categories: ['SQLSERVER']
-description: 'Sql server, It''s a Matter of Isolation, Not Transaction'
+description: 'Sql server transactions -The right way, It''s a Matter of Isolation, Not Transaction'
 image: /images/helloweb/web.png
 ---
 
