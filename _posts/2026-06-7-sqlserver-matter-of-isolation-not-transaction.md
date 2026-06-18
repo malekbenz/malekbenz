@@ -7,7 +7,7 @@ comments: true
 category: SQL
 tags : [ 'SQL', 'SQLSERVER']
 categories: ['SQLSERVER']
-description: 'Sql server, It's a Matter of Isolation, Not Transaction'
+description: 'Sql server, It''s a Matter of Isolation, Not Transaction'
 image: /images/helloweb/web.png
 ---
 
