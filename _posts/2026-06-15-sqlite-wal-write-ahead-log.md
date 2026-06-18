@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sqlite WAL — Write-Ahead Log ,- The What, The Why, and The When"
-date: 2026-06-16
+date: 2026-06-15
 author: Malekbenz
 comments: true
 category: SQL
