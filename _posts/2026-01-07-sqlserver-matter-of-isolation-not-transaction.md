@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sql server, It's a Matter of Isolation, Not Transaction"
-date: 2026-06-07
+date: 2026-01-07
 author: Malekbenz
 comments: true
 category: SQL
