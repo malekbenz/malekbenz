@@ -151,7 +151,7 @@ COMMIT
 A user opens their account page. You need to show their current balance. You don't want to show them a balance from a transaction mid-flight — but you also don't need to guarantee the value won't change if they refresh the page one second later.
 
 ```sql
--- This is the default — no SET needed, shown for clarity
+-- This is the default 
 SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
 
 -- User opens their account page
@@ -163,6 +163,8 @@ SELECT
 FROM dbo.Users
 WHERE UserId = @UserId;
 ```
+
+### Scenario — counter increment
 
 Now consider the counter increment — the standard pattern you'll use in high-traffic APIs:
 
@@ -182,7 +184,7 @@ This single-statement update is safe under `READ COMMITTED` because SQL Server t
 
 - The user never sees half-written data — balance changes are always committed.
 - Locks are released immediately after each read, so long-running reads don't block writers.
-- The default for a reason: it's the sweet spot between safety and throughput for most OLTP workloads.
+- The default for a reason: it's the good spot between safety and throughput for most OLTP workloads.
 
 **⚠️ Watch out for:**
 
@@ -192,16 +194,46 @@ If you read a value, do some business logic, then read again in the same transac
 
 ## REPEATABLE READ
 
-### What it does
+### The problem with READ COMMITTED for multi-step reads
 
-`REPEATABLE READ` guarantees that if you read a row once in a transaction, **no other transaction can modify or delete it** until your transaction ends. SQL Server holds shared locks on all rows read until the transaction commits or rolls back.
+Under `READ COMMITTED`, shared locks are released **immediately after each read**. That means between two reads in the same transaction, another transaction is free to modify the row. This is called a **non-repeatable read** — and it's a real problem when your logic depends on a value staying stable.
+
+```sql
+Timeline — the race condition under READ COMMITTED:
+
+Transaction B (reader)                     Transaction A (writer)
+──────────────────────────────────────────────────────────────────
+BEGIN TRAN
+SELECT Balance FROM Users
+  WHERE UserId = 1;
+→ 500.00  ← shared lock acquired, then
+           RELEASED immediately
+                                            BEGIN TRAN
+                                            UPDATE Users
+                                              SET Balance = 0.00
+                                              WHERE UserId = 1;
+                                            COMMIT  ← succeeds, no lock blocking it
+-- business logic: "she has 500, transfer 150"
+SELECT Balance FROM Users
+  WHERE UserId = 1;
+→ 0.00  ← different value — the row changed
+          between our two reads!
+-- we deduct 150 from 0.00 → account goes negative 💥
+COMMIT
+```
+
+The first read saw `500.00`. The logic said "enough funds". By the time the UPDATE ran, the balance was `0.00`. `READ COMMITTED` gave no protection in that window.
+
+### What REPEATABLE READ does
+
+`REPEATABLE READ` fixes this by holding shared locks on every row you read **until the transaction commits or rolls back** — not releasing them immediately. No other transaction can modify or delete those rows while you hold the lock.
 
 - No dirty reads ✅
 - No non-repeatable reads ✅
 - Phantom reads are still possible ⚠️ (new rows can be inserted)
 
 ```sql
-Timeline:
+Timeline — the same scenario under REPEATABLE READ:
 
 Transaction B (reader, REPEATABLE READ)    Transaction A (writer)
 ──────────────────────────────────────────────────────────────────
@@ -211,16 +243,17 @@ SELECT Balance FROM Users
 → 500.00  ← shared lock held on this row
                                             BEGIN TRAN
                                             UPDATE Users
-                                              SET Balance = 100.00
+                                              SET Balance = 0.00
                                               WHERE UserId = 1;
-                                            → BLOCKED — shared lock held by B
--- business logic runs...
+                                            → BLOCKED — shared lock still held by B
+-- business logic: "she has 500, transfer 150" — still safe
 SELECT Balance FROM Users
   WHERE UserId = 1;
 → 500.00  ← guaranteed same value          (still waiting...)
-COMMIT
-                                            → Now proceeds, commits 100.00
+COMMIT                                      → Now proceeds, commits 0.00
 ```
+
+---
 
 ![CMD](/images/sqlserverisolation/01.png){:class="img-responsive" }
 
@@ -278,36 +311,81 @@ COMMIT;
 
 ---
 
+Here's the improved section:
+
+---
+
 ## SERIALIZABLE
 
-### What it does
+### The problem with REPEATABLE READ for range queries
 
-`SERIALIZABLE` is the strictest isolation level. It behaves as if all transactions run sequentially, one after another. SQL Server holds **range locks** — not just on rows you read, but on the **gaps between rows** that match your WHERE clause. This prevents both non-repeatable reads and phantom reads.
+`REPEATABLE READ` locks the rows you **already read** — but it does nothing about rows that **don't exist yet**. Another transaction can still insert new rows that fall inside your WHERE clause range. You read a count, trust it, act on it — then a phantom row appears and breaks your logic.
+
+```sql
+Timeline — the phantom insert under REPEATABLE READ:
+
+Transaction B (reader)                     Transaction A (inserter)
+────────────────────────────────────────────────────────────────────
+BEGIN TRAN
+SELECT COUNT(*) FROM dbo.UserSessions
+  WHERE UserId = 1
+    AND ExpiresAt > SYSDATETIME();
+→ 4  ← shared locks on existing rows,
+       but NO lock on the gap (new rows)
+                                            BEGIN TRAN
+                                            INSERT INTO dbo.UserSessions
+                                              (UserId, Token, ExpiresAt)
+                                              VALUES (1, NEWID(),
+                                                DATEADD(HOUR,24,SYSDATETIME()));
+                                            COMMIT  ← succeeds, nothing blocking it
+-- logic: "4 sessions < 5 max, allow login"
+INSERT INTO dbo.UserSessions
+  (UserId, Token, ExpiresAt)
+  VALUES (1, NEWID(),
+    DATEADD(HOUR,24,SYSDATETIME()));
+COMMIT
+-- user now has 6 active sessions 💥
+-- both transactions passed the same check
+```
+
+`REPEATABLE READ` protected the rows it read — but Transaction A inserted a **new** row into the same range while B wasn't looking. Both transactions saw 4, both inserted, user ends up with 6. This is a **phantom read**.
+
+### What SERIALIZABLE does
+
+`SERIALIZABLE` closes that gap. Instead of locking only existing rows, it locks the **entire key range** that matches your WHERE clause — including the space where new rows would land. Any attempt to insert into that range is blocked until your transaction finishes.
 
 - No dirty reads ✅
 - No non-repeatable reads ✅
 - No phantom reads ✅
 
 ```sql
-Timeline:
+Timeline — the same scenario under SERIALIZABLE:
 
 Transaction B (SERIALIZABLE)               Transaction A (inserter)
 ────────────────────────────────────────────────────────────────────
 BEGIN TRAN
-SELECT COUNT(*) FROM Users
-  WHERE Status = 'Active';
-→ 3  ← range lock on Status = 'Active' range
+SELECT COUNT(*) FROM dbo.UserSessions
+  WHERE UserId = 1
+    AND ExpiresAt > SYSDATETIME();
+→ 4  ← range lock on UserId = 1 session range
+       new rows CANNOT be inserted here
                                             BEGIN TRAN
-                                            INSERT INTO Users
-                                              (Username, Email, Status)
-                                              VALUES ('dave', ..., 'Active');
+                                            INSERT INTO dbo.UserSessions
+                                              (UserId, Token, ExpiresAt)
+                                              VALUES (1, NEWID(),
+                                                DATEADD(HOUR,24,SYSDATETIME()));
                                             → BLOCKED — range lock held by B
-SELECT COUNT(*) FROM Users
-  WHERE Status = 'Active';
-→ 3  ← still 3, guaranteed                 (still waiting...)
-COMMIT
-                                            → Now proceeds, inserts dave
+-- logic: "4 sessions < 5 max, allow login"
+INSERT INTO dbo.UserSessions ...
+COMMIT                                      → Now proceeds, user has 5 sessions
+                                            COMMIT  ← now blocked at 6? No —
+                                            → this is the 6th insert, but B
+                                              already committed, lock released.
+                                            -- You handle this with app logic
+                                            -- or a UNIQUE constraint as a safety net
 ```
+
+---
 
 ![CMD](/images/sqlserverisolation/02.png){:class="img-responsive" }
 
@@ -430,6 +508,95 @@ Do you read a row, do logic, then update that same row?
 Do you COUNT or SELECT a range, then INSERT based on that count?
   → SERIALIZABLE  (lock the range to prevent phantom inserts)
 ```
+
+Here's a section you can slot in right after the "Setup" section and before `READ UNCOMMITTED` — it gives the reader the vocabulary they need before the isolation levels start talking about shared locks, exclusive locks, and range locks.
+
+---
+
+## Lock types — the magic behind
+
+Isolation levels don't conjure magic — they work by acquiring and releasing different types of locks at different moments. Before diving into each level, it's worth understanding what those locks actually are.
+
+### Shared lock (S)
+
+Acquired when a transaction **reads** a row. Multiple transactions can hold a shared lock on the same row at the same time — reads don't block each other. But a shared lock blocks any transaction that wants to **modify** that row.
+
+```sql
+Transaction A: SELECT Balance FROM Users WHERE UserId = 1  → acquires S lock on row 1
+Transaction B: SELECT Balance FROM Users WHERE UserId = 1  → acquires S lock on row 1  ✅ allowed
+Transaction C: UPDATE Users SET Balance = 0 WHERE UserId = 1  → wants X lock → BLOCKED ❌
+```
+
+### Exclusive lock (X)
+
+Acquired when a transaction **writes** a row (INSERT, UPDATE, DELETE). Only one transaction can hold an exclusive lock on a row — and it blocks everyone else, both readers and writers.
+
+```sql
+Transaction A: UPDATE Users SET Balance = 0 WHERE UserId = 1  → acquires X lock on row 1
+Transaction B: SELECT Balance FROM Users WHERE UserId = 1  → wants S lock → BLOCKED ❌
+Transaction C: UPDATE Users SET Balance = 500 WHERE UserId = 1  → wants X lock → BLOCKED ❌
+```
+
+### Update lock (U)
+
+A stepping stone between S and X. When SQL Server plans to read a row **with the intent to update it**, it acquires a U lock first. A U lock is compatible with S locks (readers can still read) but not with other U or X locks. This prevents a common deadlock pattern where two transactions each hold S locks and both try to upgrade to X.
+
+```sql
+Transaction A: SELECT ... WITH (UPDLOCK)  → acquires U lock on row 1
+Transaction B: SELECT ... WITH (UPDLOCK)  → wants U lock → BLOCKED ❌
+  (prevents both from trying to upgrade to X simultaneously → no deadlock)
+```
+
+### Range lock (RangeS-S, RangeX-X, ...)
+
+Exclusive to `SERIALIZABLE`. Instead of locking individual rows, SQL Server locks the **key range** covered by your WHERE clause — including the gaps between existing rows. This prevents another transaction from inserting a new row that would fall inside your range.
+
+```sql
+Transaction A (SERIALIZABLE):
+SELECT COUNT(*) FROM UserSessions WHERE UserId = 1  → range lock on [UserId = 1] key space
+
+Transaction B:
+INSERT INTO UserSessions (UserId, ...) VALUES (1, ...)  → BLOCKED ❌
+  (the gap where this row would land is locked)
+```
+
+### Lock compatibility at a glance
+
+| | S (Shared) | U (Update) | X (Exclusive) | Range |
+|---|---|---|---|---|
+| **S (Shared)** | ✅ | ✅ | ❌ | ❌ |
+| **U (Update)** | ✅ | ❌ | ❌ | ❌ |
+| **X (Exclusive)** | ❌ | ❌ | ❌ | ❌ |
+| **Range** | ❌ | ❌ | ❌ | ❌ |
+
+### Lock granularity
+
+SQL Server doesn't always lock at the row level. It decides the granularity based on how many rows are affected:
+
+| Granularity | When SQL Server uses it |
+|---|---|
+| **Row** | Small targeted queries (WHERE on indexed PK) |
+| **Page** | Query touches several rows on the same 8KB page |
+| **Table** | Query touches a large portion of the table, or no useful index exists |
+
+A table lock is faster to acquire than thousands of row locks — but it kills concurrency. This is why **indexes matter for isolation**: a missing index on your WHERE column can silently escalate a row lock to a table lock, blocking every other transaction.
+
+```sql
+-- Check current locks held in the session (useful for debugging)
+SELECT
+    resource_type,
+    resource_description,
+    request_mode,
+    request_status
+FROM sys.dm_exec_requests r
+JOIN sys.dm_tran_locks l
+    ON r.session_id = l.request_session_id
+WHERE r.session_id = @@SPID;
+```
+
+---
+
+Now when the isolation levels talk about "shared lock held until COMMIT" or "range lock on the key space" you know that means;
 
 ### Performance cost at a glance
 
