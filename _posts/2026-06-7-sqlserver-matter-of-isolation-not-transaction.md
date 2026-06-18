@@ -309,7 +309,7 @@ COMMIT
                                             → Now proceeds, inserts dave
 ```
 
-![CMD](/images/sqlserverisolation/01.png){:class="img-responsive" }
+![CMD](/images/sqlserverisolation/02.png){:class="img-responsive" }
 
 ### Scenario — counter with read-check-write logic
 
