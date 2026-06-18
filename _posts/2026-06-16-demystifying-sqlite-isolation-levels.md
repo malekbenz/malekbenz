@@ -11,11 +11,11 @@ description: 'Demystifying SQLite Isolation Levels: Architecture, Concurrency, a
 image: /images/helloweb/web.png
 ---
 
-When developers transition from client-server database systems like PostgreSQL or Sql server to SQLite, they often bring assumptions about transaction isolation that do not align with SQLite's int[...]
+When developers transition from client-server database systems like PostgreSQL or Sql server to SQLite, they often bring assumptions about transaction isolation that do not align with SQLite internal architecture.
 
 SQLite is single-file database, it delivers robust ACID compliance. However, its isolation model is based on  its file-locking mechanisms and journaling modes.
 
-In this post we gonna breaks down how SQLite handles isolation, the critical distinction between transaction modes and isolation levels, and how to design your application to prevent concurrency i[...]
+In this post we gonna breaks down how SQLite handles isolation, the critical distinction between transaction modes and isolation levels, and how to design your application to prevent concurrency issues like the dreaded `SQLITE_BUSY` error.
 
 ---
 
@@ -36,7 +36,7 @@ By default, **all transactions in SQLite are `SERIALIZABLE`**.
 
 In a traditional client-server database, serializability is achieved using complex row-level or page-level locks ..etc
 
-SQLite takes a far simpler approach: **It serializes writes at the database level [file].** There can only be **one writer** to an SQLite database file at any given moment. Because multiple concur[...]
+SQLite takes a far simpler approach: **It serializes writes at the database level [file].** There can only be **one writer** to an SQLite database file at any given moment. Because multiple concurrent write transactions cannot coexist, anomalies like dirty writes, lost updates, and write skew are structurally impossible across separate connections.
 
 ---
 
@@ -54,25 +54,25 @@ In standard rollback journal modes (`DELETE`, `TRUNCATE`, `PERSIST`), SQLite man
 4. **PENDING:** The writer is waiting for all active `SHARED` locks to clear so it can write. No new readers are allowed to enter.
 5. **EXCLUSIVE:** The writer has full, exclusive control. No other connection can read or write.
 
-**Consequence:** Readers block writers, and writers block readers. If a transaction is writing, all other connections are completely locked out from reading until the transaction commits or rolls [...]
+**Consequence:** Readers block writers, and writers block readers. If a transaction is writing, all other connections are completely locked out from reading until the transaction commits or rolls back.
 
 ### B: Write-Ahead Logging (WAL) Mode (The Modern Standard)
 
-When you enable WAL mode (`PRAGMA journal_mode=WAL;`), SQLite alters its concurrency model. Instead of writing modifications directly to the main database file, changes are appended to a separate [...]
+When you enable WAL mode (`PRAGMA journal_mode=WAL;`), SQLite alters its concurrency model. Instead of writing modifications directly to the main database file, changes are appended to a separate  `-wal` file.
 
 * **Readers do not block writers.**
 * **Writers do not block readers.**
 
 **How Isolation Works under WAL:**
-When a connection opens a read transaction under WAL mode, it queries the WAL index (`-shm` file) to determine the exact end of the log at that instant. This gives the reader a fixed, immutable **[...]
+When a connection opens a read transaction under WAL mode, it queries the WAL index (`-shm` file) to determine the exact end of the log at that instant. This gives the reader a fixed, immutable **Snapshot Isolation** view of the database.
 
-If another connection commits a massive write transaction five seconds later, those changes are appended to the WAL file, but the active reader remains completely isolated, seeing only the data as[...]
+If another connection commits a massive write transaction five seconds later, those changes are appended to the WAL file, but the active reader remains completely isolated, seeing only the data as it existed when its transaction began.
 
 ---
 
 ## 3. Transaction Modes: The #1 Source of Confusion
 
-Many developers mistake SQLite's transaction modes for isolation levels. Commands like `BEGIN DEFERRED` or `BEGIN IMMEDIATE` do not change *what* data is visible; instead, they define **when locks[...]
+Many developers mistake SQLite's transaction modes for isolation levels. Commands like `BEGIN DEFERRED` or `BEGIN IMMEDIATE` do not change *what* data is visible; instead, they define **when locks are acquired**.
 
 SQLite supports three transaction startup modes:
 
@@ -101,7 +101,7 @@ BEGIN EXCLUSIVE;
 ### 3. EXCLUSIVE
 
 * **Behavior:** It instantly attempts to acquire an `EXCLUSIVE` lock.
-* **The Flow:** In rollback journal mode, it prevents any other connection from even reading the database. In WAL mode, its behavior mimics `IMMEDIATE` because readers read from snapshots and ign[...]
+* **The Flow:** In rollback journal mode, it prevents any other connection from even reading the database. In WAL mode, its behavior mimics `IMMEDIATE` because readers read from snapshots and ignore the main database lock state.
 
 ---
 
@@ -120,7 +120,9 @@ Imagine two parallel database connections (Connection A and Connection B) execut
 5. **Connection A:** Executing `UPDATE users SET status = 'active';` -> Attempts to upgrade to a **RESERVED** lock. This succeeds because no other connection has a reserved lock yet.
 6. **Connection B:** Executing `UPDATE users SET status = 'pending';` -> Attempts to upgrade to a **RESERVED** lock. **FAILS!** Only one reserved lock can exist. Connection B receives an `SQLITE_[...]
 7. **Connection A:** Tries to commit. To commit, it must upgrade from `RESERVED` -> `PENDING` -> `EXCLUSIVE`. It enters the `PENDING` state and waits for all `SHARED` locks to clear.
-8. **The Deadlock:** Connection A is waiting for Connection B to release its `SHARED` lock. Connection B is stuck handling an `SQLITE_BUSY` error inside its uncommitted transaction, holding onto [...]
+8. **The Deadlock:** Connection A is waiting for Connection B to release its `SHARED` lock. Connection B is stuck handling an `SQLITE_BUSY` error inside its uncommitted transaction, holding onto its `SHARED` lock.
+
+![CMD](/images/sqlite-isolation/sqlite-dead-lock.png){:class="img-responsive" }
 
 ### The Solution: "Upfront" Locking
 
@@ -150,7 +152,7 @@ PRAGMA read_uncommitted = TRUE;
 
 ```
 
-When these criteria are met, a `SELECT` statement on Connection A can read data that has been modified by Connection B inside a transaction, *before* Connection B has issued a `COMMIT`. If Connec[...]
+When these criteria are met, a `SELECT` statement on Connection A can read data that has been modified by Connection B inside a transaction, *before* Connection B has issued a `COMMIT`. If Connection B performs a `ROLLBACK`, Connection A has officially performed a **Dirty Read**.
 
 *Note: For almost all modern web and desktop applications, Shared Cache mode is discouraged, and lowering the isolation level is unnecessary.*
 
@@ -167,7 +169,7 @@ To build applications with SQLite, keep these rules in mind:
    * Use `BEGIN IMMEDIATE` for any transaction that modifies data.
 
 4. **Handle `SQLITE_BUSY` Gracefully:** Configure a busy timeout (`PRAGMA busy_timeout = 5000;`) so that SQLite will automatically retry acquiring locks for up to 5000ms before throwing an error [...]
-5. **SQLite is a Single-Writer DB:** No matter how many threads or processes you throw at it, write operations must take turns. Design your long-running processes around short, atomic transaction[...]
+5. **SQLite is a Single-Writer DB:** No matter how many threads or processes you throw at it, write operations must take turns. Design your long-running processes around short, atomic transactions to keep the write lock available.
 
 ## 6.  Dotnet example
 

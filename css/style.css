@@ -165,12 +165,16 @@ h6,
 ul {
 	margin: 0px;
 	padding: 0px;
+	line-height: 2;
 }
 
 li {
 	list-style: none;
 }
 
+ol {
+	line-height: 2;
+}
 
 p {
 
