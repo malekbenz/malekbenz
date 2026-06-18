@@ -9,12 +9,10 @@
 
 	<div id="tm-toolbar" class="sidebar-text">
 		<div class="share-page">
-
 			<a class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}"
 			    rel="nofollow" target="_blank" title="Share on Twitter">
               <span class="fa fa-twitter"></span>
             </a>
-
 			<a class="btn btn-social-icon btn-lg  btn-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}"
 			    rel="nofollow" target="_blank" title="Share on facebook">
               <span class="fa fa-facebook"></span>
@@ -29,12 +27,9 @@
 			    target="_blank" title="Share on Google+">
               <span class="fa fa-google"></span>
             </a>
-
 		</div>
-
 	</div>
 	<div class="sidebar-text">
-
 		<h2>Recent posts</h2>
 		<ul class="posts">
 			{% for post in site.posts limit:5 %}
@@ -50,95 +45,23 @@
 
 	</div>
 	<div class="sidebar-text">
-		<!-- <a href="//www.bluehost.com/track/malekbenz/" target="_blank">
-	 		<img border="0" src="//bluehost-cdn.com/media/partner/images/malekbenz/160x600/bh-160x600-03-dy.png"> 
-		</a> -->
 	</div>
 
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
 	<div class="sidebar-text">
 		<h2>Categories</h2>
-
 		<ul class="category">
 			{% for tag in site.categories %}
 			<li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }} <span class="count">100</span></a></li>
 			{% endfor %}
-
 		</ul>
-
-	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
 	</div>
 
 	<div class="sidebar-text">
 		<h2>Tags</h2>
-
 		<ul class="tags">
 			{% for tag in site.tags %}
 			<li><a href="#{{ tag[0] | slugify }}" class="tg-btn">{{ tag[0] }}</a></li>
 			{% endfor %}
-
 		</ul>
-
 	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- banniere vertical -->
-		<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5586778286582193" data-ad-slot="7468613269"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-
-	<div class="sidebar-text">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- malekbenz.autobanner -->
-		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5586778286582193" data-ad-slot="1751653660" data-ad-format="auto"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-
 </div>
