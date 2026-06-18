@@ -118,7 +118,7 @@ Imagine two parallel database connections (Connection A and Connection B) execut
 3. **Connection A:** Executing `SELECT * FROM users;` -> Acquires a **SHARED** lock.
 4. **Connection B:** Executing `SELECT * FROM users;` -> Acquires a second, concurrent **SHARED** lock.
 5. **Connection A:** Executing `UPDATE users SET status = 'active';` -> Attempts to upgrade to a **RESERVED** lock. This succeeds because no other connection has a reserved lock yet.
-6. **Connection B:** Executing `UPDATE users SET status = 'pending';` -> Attempts to upgrade to a **RESERVED** lock. **FAILS!** Only one reserved lock can exist. Connection B receives an `SQLITE_[...]
+6. **Connection B:** Executing `UPDATE users SET status = 'pending';` -> Attempts to upgrade to a **RESERVED** lock. **FAILS!** Only one reserved lock can exist. Connection B receives  an `SQLITE_BUSY` error.
 7. **Connection A:** Tries to commit. To commit, it must upgrade from `RESERVED` -> `PENDING` -> `EXCLUSIVE`. It enters the `PENDING` state and waits for all `SHARED` locks to clear.
 8. **The Deadlock:** Connection A is waiting for Connection B to release its `SHARED` lock. Connection B is stuck handling an `SQLITE_BUSY` error inside its uncommitted transaction, holding onto its `SHARED` lock.
 
