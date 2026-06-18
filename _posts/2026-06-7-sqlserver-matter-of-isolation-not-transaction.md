@@ -222,6 +222,8 @@ COMMIT
                                             → Now proceeds, commits 100.00
 ```
 
+![CMD](/images/sqlserverisolation/01.png){:class="img-responsive" }
+
 ### Scenario — account transfer with validation
 
 A user initiates a transfer. You need to: read Alice's balance, verify she has enough funds, and then deduct. If another transaction reduces her balance between your check and your deduct, you could overdraft her account.
@@ -286,7 +288,7 @@ COMMIT;
 - No non-repeatable reads ✅
 - No phantom reads ✅
 
-```
+```sql
 Timeline:
 
 Transaction B (SERIALIZABLE)               Transaction A (inserter)
@@ -306,6 +308,8 @@ SELECT COUNT(*) FROM Users
 COMMIT
                                             → Now proceeds, inserts dave
 ```
+
+![CMD](/images/sqlserverisolation/01.png){:class="img-responsive" }
 
 ### Scenario — counter with read-check-write logic
 
