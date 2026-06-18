@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Demystifying SQLite Isolation Levels Architecture, Concurrency, and Gotchas"
+title: "Demystifying SQLite Isolation Levels ,Concurrency and Gotchas"
 date: 2026-06-17
 author: Malekbenz
 comments: true
 category: SQL
 tags : [ 'SQL', 'SQLITE']
 categories: ['SQLITE']
-description: 'Demystifying SQLite Isolation Levels: Architecture, Concurrency, and Gotchas'
+description: 'Demystifying SQLite Isolation Levels , Concurrency, and Gotchas'
 image: /images/helloweb/web.png
 ---
 
