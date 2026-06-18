@@ -179,7 +179,7 @@ using Dapper;
 
 public class UserRepository
 {
-    private readonly string _connectionString = "Data Source=myapp.db;Cache=Shared;";
+    private readonly string _connectionString = "Data Source=myapp.db";
 
     public void DoWork()
     {
@@ -194,13 +194,13 @@ public class UserRepository
 
     private void InitializePragmas(SqliteConnection connection)
     {
-        // 1. Enable Write-Ahead Logging
+        // Enable Write-Ahead Logging
         connection.Execute("PRAGMA journal_mode=WAL;");
         
-        // 2. Set Busy Timeout (Waits up to 5000ms / 5 seconds for locks)
+        // Set Busy Timeout (Waits up to 5000ms / 5 seconds for locks)
         connection.Execute("PRAGMA busy_timeout = 5000;"); 
         
-        // 3. Recommended performance/safety settings for WAL
+        // Recommended performance/safety settings for WAL
         connection.Execute("PRAGMA synchronous=NORMAL;");
         connection.Execute("PRAGMA foreign_keys=ON;");
     }
