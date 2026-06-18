@@ -163,7 +163,7 @@ When these criteria are met, a `SELECT` statement on Connection A can read data 
 To build applications with SQLite, keep these rules in mind:
 
 1. **Isolation within the same connection is non-existent:** Isolation only exists *between distinct connections*.
-2. **Always Use WAL Mode:** Unless you are running on a network filesystem (which WAL doesn't support due to shared-memory architecture limitations), always use `PRAGMA journal_mode=WAL;`. It dec[...]
+2. **Always Use WAL Mode:** Unless you are running on a network filesystem (which WAL doesn't support due to shared-memory architecture limitations), always use `PRAGMA journal_mode=WAL;`. It decouples readers from writers and mimics standard production databases.
 3. **Match Your `BEGIN` to Your Intent:** * Use default `BEGIN` (`DEFERRED`) only for purely read-only transactions.
 
    * Use `BEGIN IMMEDIATE` for any transaction that modifies data.
