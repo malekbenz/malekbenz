@@ -12,7 +12,7 @@ image: /images/gitbasics/cover.jpg
 ---
 
 
-In this toturial we are going to understand some basic **Git** commands by practice. if you don't know Git **(Git is distrubuted version control system)**..
+In this tutorial we are going to understand some basic **Git** commands by practice. if you don't know Git **(Git is distrubuted version control system)**..
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- malekbenz.autobanner -->

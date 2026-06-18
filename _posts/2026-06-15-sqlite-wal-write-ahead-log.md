@@ -12,7 +12,9 @@ image: /images/helloweb/web.png
 ---
 
 
-In this toturial we are going to try to understand and break down sqlite journal-mode `WAL` how it works and why we should use it.
+If you've ever seen `database is locked` in a concurrent .NET app using SQLite, WAL mode is probably the fix you're looking for. Let's break down how it works, why it matters, and when to use it.
+
+In this tutorial we are going to try to understand and break down sqlite journal-mode `WAL` how it works and why we should use it.
 
 ## The core idea
 
