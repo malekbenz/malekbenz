@@ -8,7 +8,7 @@ category: SQL
 tags : [ 'SQL', 'SQLITE']
 categories: ['SQLITE']
 description: 'Sqlite WAL — Write-Ahead Log ,- The What, The Why, and The When'
-image: /images/helloweb/web.png
+image: /images/covers/sqlite-wal-write-ahead-log.png
 ---
 
 

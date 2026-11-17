@@ -8,7 +8,7 @@ category: SQL
 tags : [ 'SQL', 'SQLITE']
 categories: ['SQLITE']
 description: 'Demystifying SQLite Isolation Levels , Concurrency, and Gotchas'
-image: /images/helloweb/web.png
+image: /images/covers/demystifying-sqlite-isolation-levels.png
 ---
 
 When developers transition from client-server database systems like PostgreSQL or Sql server to SQLite, they often bring assumptions about transaction isolation that do not align with SQLite internal architecture.

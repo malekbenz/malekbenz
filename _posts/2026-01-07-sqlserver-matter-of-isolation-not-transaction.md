@@ -8,7 +8,7 @@ category: SQL
 tags : [ 'SQL', 'SQLSERVER']
 categories: ['SQLSERVER']
 description: 'Sql server transactions -The right way, It''s a Matter of Isolation, Not Transaction'
-image: /images/helloweb/web.png
+image: /images/covers/sqlserver-matter-of-isolation-not-transaction.png
 ---
 
 If you've ever seen ghost rows appear in a report, a counter go negative under load, or two users overwrite each other's data without warning — you've already hit isolation level problems. Let's break down each level with real scenarios, so you know exactly when and why to use each one.
